@@ -1,0 +1,4 @@
+Contact: mailto:mattias.pilroth@gmail.com
+Expires: 2026-12-31T23:59:59z
+Preferred-Languages: en
+Canonical: https://mattiaspilroth.com/.well-known/security.txt
