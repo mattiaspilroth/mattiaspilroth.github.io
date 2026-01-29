@@ -1,57 +1,99 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-               Roboto, Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background: #ffffff;
-  color: #222;
+  color: #1a1a1a; /* Slightly deeper black for better contrast */
+  -webkit-font-smoothing: antialiased;
 }
 
 main {
-  max-width: 720px;
-  margin: 60px auto;
-  padding: 0 20px;
+  max-width: 680px; /* Slightly tighter for better readability */
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+/* --- Hero Section --- */
+header.hero {
+  border-left: 3px solid #1a1a1a; /* The vertical anchor */
+  padding-left: 24px;
+  margin-bottom: 48px;
 }
 
 h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
+.professional-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
+.mission-statement {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-top: 24px;
+  color: #222;
+  font-weight: 450;
+  max-width: 32ch; /* Forces a punchy, block-like shape */
+}
+
+/* --- Content Typography --- */
 h2 {
-  font-size: 1.2rem;
-  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 3rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
 }
 
 p {
-  margin: 1rem 0;
+  margin: 1.2rem 0;
 }
 
 ul {
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style-type: none; /* Cleaner, more modern look */
 }
 
 li {
-  margin: 0.6rem 0;
+  margin-bottom: 1.2rem;
+  position: relative;
 }
 
+/* Links */
 a {
   color: #0055aa;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #0055aa;
 }
 
+/* --- Footer & Misc --- */
 footer {
-  margin-top: 4rem;
-  font-size: 0.9rem;
+  margin-top: 5rem;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
   color: #666;
 }
 
 .disclaimer {
   margin-top: 1rem;
   font-style: italic;
+  opacity: 0.8;
 }
