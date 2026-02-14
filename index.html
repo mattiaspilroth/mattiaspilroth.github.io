@@ -26,83 +26,32 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Schema.org structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "@id": "https://mattiaspilroth.com/#profilepage",
-    "url": "https://mattiaspilroth.com/",
-    "name": "Mattias Pilroth | Industrial Cybersecurity Architecture",
-    "description": "Designing resilient cybersecurity architectures for safety-critical industrial environments, with a focus on identity, trust, and operational constraints.",
-    "inLanguage": "en",
-    "isPartOf": {
-      "@type": "WebSite",
-      "@id": "https://mattiaspilroth.com/#website",
-      "url": "https://mattiaspilroth.com/",
-      "name": "Mattias Pilroth"
-    },
     "mainEntity": {
       "@type": "Person",
-      "@id": "https://mattiaspilroth.com/#person",
       "name": "Mattias Pilroth",
+      "jobTitle": "Industrial Cybersecurity Architect",
       "url": "https://mattiaspilroth.com/",
-      "description": "Works on the strategic and technical foundations of cybersecurity in safety-critical industrial environments, with a focus on identity, trust, network boundaries, and risk management.",
-      "image": "https://mattiaspilroth.com/profile.jpg",
       "sameAs": [
         "https://github.com/mattiaspilroth",
         "https://www.linkedin.com/in/mattiaspilroth/"
-      ],
-      "knowsAbout": [
-        "OT cybersecurity",
-        "Industrial cybersecurity architecture",
-        "Identity and access in industrial systems",
-        "Trust and certificate validation",
-        "Network boundaries and segmentation",
-        "Risk assessments in OT environments",
-        "Security governance"
-      ],
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://mattiaspilroth.com/#profilepage"
-      }
-    },
-    "hasPart": [
-      {
-        "@type": "CreativeWork",
-        "@id": "https://github.com/mattiaspilroth/ot-security-notes#repo",
-        "url": "https://github.com/mattiaspilroth/ot-security-notes",
-        "name": "ot-security-notes",
-        "description": "Ongoing reflections on OT-specific system behavior, risk, and failure modes where traditional IT assumptions break down.",
-        "author": {
-          "@id": "https://mattiaspilroth.com/#person"
-        }
-      },
-      {
-        "@type": "CreativeWork",
-        "@id": "https://github.com/mattiaspilroth/ot-trust-in-isolated-networks#repo",
-        "url": "https://github.com/mattiaspilroth/ot-trust-in-isolated-networks",
-        "name": "ot-trust-in-isolated-networks",
-        "description": "A focused deep-dive into PKI, certificate validation, and trust management in isolated OT environments.",
-        "author": {
-          "@id": "https://mattiaspilroth.com/#person"
-        }
-      }
-    ]
+      ]
+    }
   }
   </script>
 </head>
 
 <body>
   <main>
-    <section class="hero">
-      <div class="identity">
-        <h1>Mattias Pilroth</h1>
-        <p class="professional-title">Industrial Cybersecurity Architect</p>
-      </div>
+    <header class="hero">
+      <h1>Mattias Pilroth</h1>
+      <p class="professional-title">Industrial Cybersecurity Architect</p>
     </header>
       
-    <section class="content">
+    <section class="intro">
       <p>
         Designing resilient cybersecurity for industrial systems where operational reality dictates the architecture.
       </p>
@@ -114,57 +63,55 @@
       </p>
 
       <p>
-        Rather than advocating for isolated controls, I prioritize durable foundations, including identity, trust, and network boundaries, that can be sustained by the line organization over time.
+        Rather than advocating for isolated controls, I prioritize durable foundations—identity, trust, and network boundaries—that can be sustained by the line organization over time.
       </p>
     </section>
       
-    <section>
+    <section class="disciplines">
       <h2>Core Disciplines</h2>
       <ul>
-        <li><strong>Industrial Identity</strong>: Architecture and access foundations across the OT system lifecycle.</li>
-        <li><strong>Grounded Risk Management</strong>: Targeted assessments that lead to technically viable controls.</li>
-        <li><strong>Infrastructure Boundaries</strong>: Practical network segmentation patterns for industrial operations.</li>
-        <li><strong>Regulatory Engineering</strong>: Bridging the gap between legislative intent (such as NIS2) and operational reality.</li>
+        <li><strong>Identity Architecture</strong>: Designing access foundations that persist across the system lifecycle.</li>
+        <li><strong>Grounded Risk Management</strong>: Moving from compliance checklists to technically viable controls.</li>
+        <li><strong>Infrastructure Boundaries</strong>: Practical network segmentation patterns for continuous operations.</li>
+        <li><strong>Regulatory Engineering</strong>: Bridging the gap between legislative intent (NIS2) and plant-floor reality.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Public technical notes</h2>
+    <section class="notes">
+      <h2>Public Notes</h2>
       <p>
-        Public notes documenting architectural reasoning, technical edge cases,
+        Documentation of architectural reasoning, technical edge cases,
         and failure modes encountered in real OT environments.
       </p>
-      <ul>
+      
+      <ul class="repo-list">
         <li>
           <a href="https://github.com/mattiaspilroth/ot-security-notes" target="_blank" rel="noopener noreferrer">
-            OT security notes
-          </a><br>
-          Architectural reasoning and failure modes where traditional IT assumptions break down.
+            OT Security: Structural Constraints & Reality
+          </a>
+          <br>
+          <span class="repo-desc">Architectural reasoning on failure modes where traditional IT assumptions break down.</span>
         </li>
         <li>
           <a href="https://github.com/mattiaspilroth/ot-trust-in-isolated-networks" target="_blank" rel="noopener noreferrer">
-            Trust in isolated OT networks
-          </a><br>
-          A technical deep-dive into PKI and certificate validation under constrained connectivity.
+            OT Trust in Isolated Networks
+          </a>
+          <br>
+          <span class="repo-desc">A deep-dive into PKI, certificate validation, and trust continuity under constrained connectivity.</span>
         </li>
       </ul>
     </section>
 
     <footer>
-      <p>
+      <p class="links">
         <a href="https://github.com/mattiaspilroth" target="_blank" rel="me noopener noreferrer">GitHub</a> ·
         <a href="https://www.linkedin.com/in/mattiaspilroth/" target="_blank" rel="me noopener noreferrer">LinkedIn</a> ·
         <a href="mailto:mattias@pilroth.com">mattias@pilroth.com</a>
       </p>
       <p class="disclaimer">
-        Personal technical observations. Not employer or vendor guidance.
+        Personal technical observations based on professional experience. Not employer or vendor guidance.
       </p>
     </footer>
   </main>
 </body>
 </html>
-
-
-
-
-
