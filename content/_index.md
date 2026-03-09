@@ -44,7 +44,6 @@ Analysis and technical papers on OT security architecture, operational constrain
 <p>
   <strong><a href="/papers/compliance-and-consequence/" data-umami-event="click-paper-compliance">Compliance and Consequence: Competing Priorities in OT Security</a></strong><br>
   <span style="color: #666; font-size: 0.95em;">Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires.</span>
-</p>quence-driven security in high-consequence industrial environments. Covers identity, trust, and the limits of compliance-driven programs.</span>
 
 ### OT Secuirty notes
 
