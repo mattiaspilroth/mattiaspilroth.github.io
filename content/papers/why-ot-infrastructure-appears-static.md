@@ -3,6 +3,7 @@ title: "Why OT Infrastructure Appears Static: A Process Industry Perspective"
 date: 2026-02-25
 lastmod: 2026-02-25
 description: "Stability in continuous process industries is often an engineered response to asymmetric risk rather than technical stagnation."
+image: "images/og-why-ot-static.jpg"
 ---
 
 Industrial control systems in chemical plants, refineries, and power generation often appear static to IT and cybersecurity teams. Systems run for decades. Patch levels lag. Legacy platforms remain in service long after vendor support ends. Change is slow and frequently deferred.
