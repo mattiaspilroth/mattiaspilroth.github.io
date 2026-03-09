@@ -1,7 +1,7 @@
 ---
 title: "Trust Decay in Constrained OT Environments"
-date: 2026-02-25
-lastmod: 2026-02-25
+date: 2026-03-08
+lastmod: 2026-03-08
 description: "An analysis of trust drift in isolated networks."
 ---
 

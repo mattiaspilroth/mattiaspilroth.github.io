@@ -1,7 +1,7 @@
 ---
 title: "OT Identity Architecture: Federation, PAM, and Residual Risk"
-date: 2026-02-25
-lastmod: 2026-02-25
+date: 2026-03-08
+lastmod: 2026-03-08
 description: "A structural analysis of three common identity models in OT, the risks they redistribute, and why no single model resolves the underlying tensions."
 image: "images/og-ot-identity.jpg"
 ---
@@ -10,7 +10,7 @@ Identity architectures in OT operate under the same constraints that shape all l
 
 Modern identity models emphasize federation and centralized authentication. OT environments impose structural limits on how far those models can extend. Identity controls must remain viable over decades, operate under partial isolation, and degrade safely when external systems fail.
 
-This paper examines three common identity patterns, the risks they redistribute, and why no single model resolves the underlying tensions. It compares isolated, trusted, and federated approaches, then addresses federation scope, third-party access, and residual risk.
+This analysis examines three common identity patterns, the risks they redistribute, and why no single model resolves the underlying tensions. It compares isolated, trusted, and federated approaches, then addresses federation scope, third-party access, and residual risk.
 
 ## Identity as an architectural constraint in OT
 

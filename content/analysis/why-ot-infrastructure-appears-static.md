@@ -1,7 +1,7 @@
 ---
 title: "Why OT Infrastructure Appears Static: A Process Industry Perspective"
-date: 2026-02-25
-lastmod: 2026-02-25
+date: 2026-03-08
+lastmod: 2026-03-08
 description: "Stability in continuous process industries is often an engineered response to asymmetric risk rather than technical stagnation."
 image: "images/og-why-ot-static.jpg"
 ---
@@ -228,29 +228,17 @@ Misreading this equilibrium leads to security strategies that are elegant on pap
 
 The constraints described above are not arguments against improvement. They define the boundaries within which security architecture must function.
 
-### Favor durability
+- **Favor durability:** Assume solutions must remain effective for decades.
 
-Assume solutions must remain effective for decades.
+- **Expect patch latency:** Design defenses that retain value when updates are slow.
 
-### Expect patch latency
+- **Maintain diagnosability:** If operators cannot understand or restore it, it will not persist.
 
-Design defenses that retain value when updates are slow.
+- **Extend beyond containment:** Perimeter measures are necessary but insufficient. Introduce detection, identity discipline, and recovery capability in forms that can be supported locally.
 
-### Maintain diagnosability
+- **Align with operational time:** Enduring change follows maintenance and investment rhythms.
 
-If operators cannot understand or restore it, it will not persist.
-
-### Extend beyond containment
-
-Perimeter measures are necessary but insufficient. Introduce detection, identity discipline, and recovery capability in forms that can be supported locally.
-
-### Align with operational time
-
-Enduring change follows maintenance and investment rhythms.
-
-### Account for the authority gap
-
-Assume operators may lack the authority to modify validated systems independently. Design controls that function within vendor validation constraints rather than depending on their removal.
+- **Account for the authority gap:** Assume operators may lack the authority to modify validated systems independently. Design controls that function within vendor validation constraints rather than depending on their removal.
 
 ## Moving forward
 

@@ -1,7 +1,7 @@
 ---
 title: "Compliance and Consequence: Competing Priorities in OT Security"
-date: 2026-02-25
-lastmod: 2026-02-25
+date: 2026-03-09
+lastmod: 2026-03-09
 description: "Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires."
 image: "images/og-ot-compliance.jpg"
 ---
@@ -12,7 +12,7 @@ When these requirements conflict, demonstrable compliance tends to dominate engi
 
 Regulatory frameworks such as NIS2 are crystallizing this tension across European industry. Organizations facing compliance timelines are discovering that demonstrable progress and actual resilience are not the same objective. Understanding the structural reasons for this divergence is prerequisite to addressing it.
 
-This paper examines why that structure exists, the patterns it produces, and what an alternative orientation requires.
+This analysis examines why that structure exists, the patterns it produces, and what an alternative orientation requires.
 
 ## The evidence gap
 
