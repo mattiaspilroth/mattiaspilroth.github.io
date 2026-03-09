@@ -1,0 +1,37 @@
+# ----------------------------------------------------------------------
+# Hugo-specific ignores
+# ----------------------------------------------------------------------
+# We ignore the public folder because GitHub Actions builds this for us.
+# Pushing the generated files manually just creates messy merge conflicts.
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# ----------------------------------------------------------------------
+# Secrets and Local Configurations
+# ----------------------------------------------------------------------
+.env
+.env.*
+*.secret
+
+# ----------------------------------------------------------------------
+# Editor and Environment (code-server / VS Code)
+# ----------------------------------------------------------------------
+.vscode/
+.history/
+
+# ----------------------------------------------------------------------
+# OS Generated Files
+# ----------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ----------------------------------------------------------------------
+# Node / NPM (Just in case you add frontend tools later)
+# ----------------------------------------------------------------------
+node_modules/
