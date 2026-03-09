@@ -44,7 +44,3 @@ Analysis and technical papers on OT security architecture, operational constrain
 <p>
   <strong><a href="/papers/compliance-and-consequence/" data-umami-event="click-paper-compliance">Compliance and Consequence: Competing Priorities in OT Security</a></strong><br>
   <span style="color: #666; font-size: 0.95em;">Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires.</span>
-
-### OT Security notes
-
-* <a href="https://github.com/mattiaspilroth/ot-security-notes" target="_blank" rel="noopener noreferrer" data-umami-event="click-repo-ot-security-notes">OT Security Notes</a><br><span style="color: #666; font-size: 0.95em;">Working notes and developing thinking. Earlier drafts, fragments, and ideas that have not yet resolved into finished analysis.</span>
