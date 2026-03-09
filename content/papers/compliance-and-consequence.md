@@ -2,7 +2,7 @@
 title: "Compliance and Consequence: Competing Priorities in OT Security"
 date: 2026-02-25
 lastmod: 2026-02-25
-description: "Analysis of diverging incentives in OT security programs."
+description: "Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires."
 image: "images/og-ot-compliance.jpg"
 ---
 

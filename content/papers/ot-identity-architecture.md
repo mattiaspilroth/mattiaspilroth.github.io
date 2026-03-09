@@ -2,7 +2,7 @@
 title: "OT Identity Architecture: Federation, PAM, and Residual Risk"
 date: 2026-02-25
 lastmod: 2026-02-25
-description: "A structural analysis of common identity models in OT."
+description: "A structural analysis of three common identity models in OT, the risks they redistribute, and why no single model resolves the underlying tensions."
 image: "images/og-ot-identity.jpg"
 ---
 
