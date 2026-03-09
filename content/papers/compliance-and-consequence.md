@@ -3,6 +3,7 @@ title: "Compliance and Consequence: Competing Priorities in OT Security"
 date: 2026-02-25
 lastmod: 2026-02-25
 description: "Analysis of diverging incentives in OT security programs."
+image: "images/og-ot-compliance.jpg"
 ---
 
 Security in high-consequence industrial control environments operates under a persistent tension: organizations must demonstrate measurable security progress while the evidence for what actually reduces risk remains limited.

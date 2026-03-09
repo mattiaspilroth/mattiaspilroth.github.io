@@ -3,6 +3,7 @@ title: "OT Identity Architecture: Federation, PAM, and Residual Risk"
 date: 2026-02-25
 lastmod: 2026-02-25
 description: "A structural analysis of common identity models in OT."
+image: "images/og-ot-identity.jpg"
 ---
 
 Identity architectures in OT operate under the same constraints that shape all long-lifecycle operational infrastructure: limited change capacity, intermittent connectivity, and operational accountability that prioritizes continuity over administrative convenience.

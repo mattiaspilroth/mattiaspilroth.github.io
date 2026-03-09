@@ -3,6 +3,7 @@ title: "Silent Degradation under IT/OT Convergence"
 date: 2026-02-25
 lastmod: 2026-02-25
 description: "Analysis of recurring failure pattern in production OT environments undergoing IT/OT convergence."
+image: "images/og-ot-silent.jpg"
 ---
 
 This paper describes a recurring failure pattern in production OT environments undergoing IT/OT convergence.
