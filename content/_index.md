@@ -1,8 +1,10 @@
+Security failures in industrial environments carry physical consequences, not merely informational ones. Architecture that cannot survive production reality does not reduce risk. It creates the illusion of it.
+
 I design OT security architecture for high-consequence industrial environments. My work focuses on trust boundaries, identity structures, and network segmentation patterns that remain durable under operational pressure, long system lifecycles, and distributed organizational accountability.
 
 ## Context
 
-My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six years of operational responsibility at a SEVESO-classified PVC production facility, into enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
+My background starts in field automation engineering and EPCM project delivery for oil and gas and petrochemicals. It moves through six years of operational responsibility at a SEVESO-classified PVC production facility. I currently drive enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
 
 I arrived at security architecture through operations. That origin shapes how I evaluate what holds under operational pressure and what does not.
 
@@ -16,7 +18,7 @@ Industrial control environments operate under constraints that differ fundamenta
 
 <p>
   <strong><a href="/analysis/why-ot-infrastructure-appears-static/" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">Stability in continuous process industries is often an engineered response to asymmetric risk rather than technical stagnation. Examines validated configurations, lifecycle economics, vendor authority boundaries, and why ignoring these constraints leads to security strategies that cannot be sustained.</span>
+  <span style="color: #666; font-size: 0.95em;">Stability in continuous process industries is often an engineered response to asymmetric risk rather than technical stagnation. This paper examines validated configurations, lifecycle economics, vendor authority boundaries, and why ignoring these constraints leads to security strategies that cannot be sustained.</span>
 </p>
 
 <p>
@@ -30,7 +32,7 @@ Authentication and authorization in OT environments must function across segment
 
 <p>
   <strong><a href="/analysis/ot-identity-architecture/" data-umami-event="click-ot-identity">OT Identity Architecture: Federation, PAM, and Residual Risk</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">A structural analysis of common identity models in OT. Explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.</span>
+  <span style="color: #666; font-size: 0.95em;">A structural analysis of common identity models in OT. It explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.</span>
 </p>
 
 <p>
@@ -40,5 +42,5 @@ Authentication and authorization in OT environments must function across segment
 
 <p>
   <strong><a href="/analysis/trust-flow-in-constrained-ot-environments/" data-umami-event="click-ot-flow">Part 2: Trust Flow in Constrained OT Environments</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">Defines the properties required for validation to occur predictably and repeatedly inside constrained zones. Written as architectural requirements to prevent the failure modes identified in Part 1.</span>
+  <span style="color: #666; font-size: 0.95em;">This part defines the properties required for validation to occur predictably and repeatedly inside constrained zones. It is written as architectural requirements to prevent the failure modes identified in Part 1.</span>
 </p>
