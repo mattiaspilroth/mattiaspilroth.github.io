@@ -1,8 +1,9 @@
 ---
 title: "Silent Degradation under IT/OT Convergence"
-description: "Redundant IT infrastructure inside segmented OT zones can degrade invisibly when health signals do not reach actors with authority to intervene. The gap is often not the absence of signals, but the absence of a clearly defined owner for acting on them."
+date: 2026-02-25
+lastmod: 2026-02-25
+description: "Analysis of recurring failure pattern in production OT environments undergoing IT/OT convergence."
 ---
-# Silent Degradation under IT/OT Convergence
 
 This paper describes a recurring failure pattern in production OT environments undergoing IT/OT convergence.
 

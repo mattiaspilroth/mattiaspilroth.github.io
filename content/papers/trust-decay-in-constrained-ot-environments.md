@@ -1,8 +1,9 @@
 ---
 title: "Trust Decay in Constrained OT Environments"
-description: "Certificate validation assumes trust material is continuously obtainable. In segmented OT architectures, that assumption may not hold. Trust erosion can remain latent until operational stress reveals it."
+date: 2026-02-25
+lastmod: 2026-02-25
+description: "An analysis of trust drift in isolated networks."
 ---
-# Trust Decay in Constrained OT Environments
 
 A backup agent update fails during a scheduled maintenance window.
 

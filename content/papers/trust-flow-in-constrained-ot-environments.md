@@ -1,5 +1,7 @@
 ---
 title: "Trust Flow in Constrained OT Environments"
+date: 2026-02-25
+lastmod: 2026-02-25
 description: "Defines the properties required for validation to occur predictably and repeatedly inside constrained zones."
 ---
 # Trust Flow in Constrained OT Environments

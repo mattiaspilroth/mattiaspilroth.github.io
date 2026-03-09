@@ -1,8 +1,9 @@
 ---
 title: "Compliance and Consequence: Competing Priorities in OT Security"
-description: "Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires."
+date: 2026-02-25
+lastmod: 2026-02-25
+description: "Analysis of diverging incentives in OT security programs."
 ---
-# Compliance and Consequence: Competing Priorities in OT Security
 
 Security in high-consequence industrial control environments operates under a persistent tension: organizations must demonstrate measurable security progress while the evidence for what actually reduces risk remains limited.
 

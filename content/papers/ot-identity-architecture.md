@@ -1,8 +1,9 @@
 ---
 title: "OT Identity Architecture: Federation, PAM, and Residual Risk"
-description: "A structural analysis of common identity models in OT. Explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined."
+date: 2026-02-25
+lastmod: 2026-02-25
+description: "A structural analysis of common identity models in OT."
 ---
-# OT Identity Architecture: Federation, PAM, and Residual Risk
 
 Identity architectures in OT operate under the same constraints that shape all long-lifecycle operational infrastructure: limited change capacity, intermittent connectivity, and operational accountability that prioritizes continuity over administrative convenience.
 
