@@ -1,0 +1,12 @@
+baseURL = 'https://mattiaspilroth.com/'
+languageCode = 'en-us'
+title = 'Mattias Pilroth | Principal OT Security Architect'
+enableRobotsTXT = true
+
+[params]
+    author = "Mattias Pilroth"
+    description = "Principal OT Security Architect and Industrial Cybersecurity Advisor. Consequence-driven architecture for high-hazard industrial environments."
+    og_image = "images/og-image.jpg"
+    github = "https://github.com/mattiaspilroth"
+    linkedin = "https://www.linkedin.com/in/mattiaspilroth/"
+    email = "mattias@pilroth.com"

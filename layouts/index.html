@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.og_image }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="me" href="{{ .Site.Params.github }}">
+  <link rel="me" href="{{ .Site.Params.linkedin }}">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  
+  {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="7175ecb6-6d10-4e70-8f33-cc9f0e1226b4"></script>
+</head>
+
+<body>
+  <main>
+    <header class="hero">
+      <h1>{{ .Site.Params.author }}</h1>
+      <p class="professional-title">Principal OT Security Architect</p>
+    </header>
+
+    <section class="intro">
+      <p class="mission-statement">
+        Security failures in industrial environments carry physical consequences,
+        not merely informational ones.
+      </p>
+      {{ .Content }} </section>
+
+    <footer>
+      <p class="links">
+        <a href="{{ .Site.Params.github }}" target="_blank">GitHub</a> ·
+        <a href="{{ .Site.Params.linkedin }}" target="_blank">LinkedIn</a> ·
+        <a href="mailto:{{ .Site.Params.email }}">Email</a>
+      </p>
+      <p class="disclaimer">
+        Personal technical observations based on professional experience. Not employer or vendor guidance.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
