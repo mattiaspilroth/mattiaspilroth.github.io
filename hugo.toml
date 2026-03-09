@@ -10,3 +10,8 @@ enableRobotsTXT = true
     github = "https://github.com/mattiaspilroth"
     linkedin = "https://www.linkedin.com/in/mattiaspilroth/"
     email = "mattias@pilroth.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
