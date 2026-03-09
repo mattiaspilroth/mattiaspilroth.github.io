@@ -10,6 +10,8 @@ I arrived at security architecture through operations. That origin shapes how I 
 
 ## Analysis
 
+Structural analysis of OT security architecture, operational constraints, and recurring failure patterns in high-consequence industrial environments.
+
 ### Operational Reality
 
 Industrial control environments operate under constraints that differ fundamentally from enterprise IT. This section examines recurring system behaviors that shape what security architectures can realistically achieve.
