@@ -9,7 +9,8 @@ body {
 }
 
 main {
-  max-width: 680px;
+  width: 90%;
+  max-width: 850px;
   margin: 80px auto;
   padding: 0 24px;
 }
@@ -153,4 +154,5 @@ footer {
 .content pre code {
   background: none;
   padding: 0;
+
 }
