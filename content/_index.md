@@ -10,9 +10,9 @@ I arrived at security architecture through operations. That origin shapes how I 
 
 ## Analysis
 
-Analysis of OT security architecture, operating constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is not only on controls, but on the conditions that determine whether those controls remain effective in practice.
+Analysis of OT security architecture, operating constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is on the conditions that determine whether security measures remain effective in practice, not only on the measures themselves.
 
-### Operational Constraints and Security Outcomes
+### Operational Reality
 
 Industrial control environments operate under constraints that differ fundamentally from enterprise IT. These analyses examine how long lifecycles, validated systems, segmented architectures, and operational ownership shape failure behavior and define what security measures can realistically be sustained.
 
