@@ -1,6 +1,6 @@
 ---
 title: "Compliance and Consequence: Competing Priorities in OT Security"
-date: 2026-03-09
+date: 2026-03-03
 lastmod: 2026-03-09
 description: "Why compliance-driven and resilience-driven OT security programs diverge over time, and what consequence-oriented security requires in practice."
 image: "images/og-ot-compliance.jpg"
