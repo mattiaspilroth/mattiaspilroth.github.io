@@ -2,15 +2,15 @@
 title: "Compliance and Consequence: Competing Priorities in OT Security"
 date: 2026-03-09
 lastmod: 2026-03-09
-description: "Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires."
+description: "Why compliance-driven and resilience-driven OT security programs diverge over time, and what consequence-oriented security requires in practice."
 image: "images/og-ot-compliance.jpg"
 ---
 
-Security in high-consequence industrial control environments operates under a persistent tension: organizations must demonstrate measurable security progress while the evidence for what actually reduces risk remains limited.
+Security in high-consequence industrial control environments operates under a persistent tension: organizations must demonstrate measurable security progress even when evidence for what actually reduces risk remains limited.
 
 When these requirements conflict, demonstrable compliance tends to dominate engineering judgment. This is not because practitioners lack competence or leadership lacks concern. It is the predictable outcome of rational actors responding to the incentive structures they operate within.
 
-Regulatory frameworks such as NIS2 are crystallizing this tension across European industry. Organizations facing compliance timelines are discovering that demonstrable progress and actual resilience are not the same objective. Understanding the structural reasons for this divergence is prerequisite to addressing it.
+Regulatory frameworks such as NIS2 are bringing this tension into sharper focus across European industry. Organizations facing compliance timelines are discovering that demonstrable progress and actual resilience are not the same objective. Understanding the underlying reasons for this divergence is a prerequisite to addressing it.
 
 This analysis examines why that structure exists, the patterns it produces, and what an alternative orientation requires.
 
@@ -22,11 +22,11 @@ Evidence is scarce for structural reasons. Serious OT cyber incidents are rare r
 
 The result is a body of informed hypotheses derived from engineering judgment, threat modeling, incident analysis, and adjacent domain experience. What we generally lack is statistical proof at scale.
 
-This creates a structural problem. Organizations, regulators, and auditors require defensible answers. The market provides them not because certainty exists, but because sustained uncertainty is institutionally intolerable.
+This creates an operating problem. Organizations, regulators, and auditors require defensible answers. The market provides them not because certainty exists, but because sustained uncertainty is institutionally intolerable.
 
 Specific failure patterns illustrate the gap between documented assurance and operational reality. Trust architectures can appear intact on paper while their actual condition diverges from what was assumed at commissioning. Infrastructure can meet every documented specification while drifting from the state that was originally validated. Governance structures confirm that controls exist. They rarely confirm that controls behave as intended under operational conditions.
 
-These are not edge cases. They are predictable outcomes when assurance is derived from documentation rather than observed system behavior under stress.
+These are not edge cases. They are predictable outcomes when assurance is derived primarily from documentation rather than from evidence of how systems behave under realistic operating conditions.
 
 ## Why compliance becomes the objective
 
@@ -66,10 +66,12 @@ Programs report percentages of assets inventoried, systems patched, or vulnerabi
 Deploying multiple tools is visible progress. Spending months mapping attack paths through a specific process and implementing two targeted interventions may reduce more risk while producing fewer reportable artifacts. Both approaches generate activity. Only one systematically increases resilience. Compliance frameworks often measure the former more easily than the latter.
 
 **Priority flattening under regulatory pressure.**
-When compliance timelines create urgency, organizations default to comprehensive mandates. Everything becomes priority one. Uniform requirements such as universal MFA, encryption mandates, and continuous monitoring everywhere are applied without discrimination between environments that differ materially in exposure and consequence. A zone with frequent remote access and IT integration presents a different threat surface than a tightly segmented safety system with deterministic topology and limited ingress paths. Treating them identically misallocates effort in both directions: over-instrumenting low-exposure environments while under-protecting high-consequence ones. Sites with limited capacity cannot distinguish between what materially reduces risk and what merely satisfies a requirement.
+When compliance timelines create urgency, organizations default to comprehensive mandates. Everything becomes priority one. Uniform requirements such as universal MFA, encryption mandates, and continuous monitoring everywhere are applied without discrimination between environments that differ materially in exposure and consequence. A zone with frequent remote access and IT integration presents a different threat surface than a tightly segmented safety system with deterministic topology and limited ingress paths. 
+
+Treating them identically misallocates effort in both directions: over-instrumenting low-exposure environments while under-protecting high-consequence ones. Sites with limited capacity cannot distinguish between what materially reduces risk and what merely satisfies a requirement.
 
 **Metric displacement from IT-driven prioritization.**
-IT organizations prioritize controls based on ease of deployment at scale. In OT environments, scale does not exist in the same sense. Every implementation is context-specific and manually executed. Following IT-driven sequencing therefore selects for the most operationally burdensome path rather than the most effective one, not through poor intent but through the application of a prioritization logic that was never designed for this environment.
+IT organizations prioritize controls based on ease of deployment at scale. In OT environments, scale operates differently. Implementations are more context-specific, more manually executed, and more constrained by local operating conditions. Following IT-driven sequencing therefore selects for the most operationally burdensome path rather than the most effective one, not through poor intent but through the application of a prioritization logic that was never designed for this environment.
 
 **Self-assessment without calibration.**
 Organizations report control implementation without independent verification of what "implemented" means in practice. A control recorded as deployed may be non-functional, misconfigured, or mitigating a threat scenario that does not exist in the environment. Self-assessment optimizes for reportable progress, not for actual state. The gap between reported and actual condition remains invisible until an incident or rigorous external audit makes it visible.
@@ -99,7 +101,7 @@ A consequence-driven approach begins with different questions: which threats are
 
 This orientation produces different artifacts: threat models tracing attack paths to physical endpoints; consequence analyses describing operational impact of control loss; control selections justified by intervention effectiveness; and explicit documentation of residual risk acceptance.
 
-It may produce less visually impressive compliance dashboards while delivering stronger operational security.
+It may produce less visually impressive compliance dashboards while delivering greater operational resilience.
 
 In process environments, consequence-driven reasoning is already embedded in safety practice. Safety regulation requires operators to identify initiating events, analyze how failures propagate through systems, implement barriers at specific intervention points, and demonstrate that those barriers address credible scenarios. The emphasis is not on universal control deployment, but on whether defined safeguards interrupt realistic paths to intolerable outcomes.
 
@@ -113,7 +115,7 @@ Some controls are not local optimizations. They are structural minimums derived 
 
 This creates a necessary distinction. Organizational structural decisions define non-negotiable baseline conditions required to prevent systemic exposure. Contextual analysis determines how those conditions are implemented and what additional controls are warranted in a specific environment.
 
-Without structural minimums, risk calibration fragments across sites. Without contextual analysis, controls become disconnected from actual exposure. Resilience depends on both structural constraint and contextual judgment.
+Without structural minimums, risk calibration fragments across sites. Without contextual analysis, controls become disconnected from actual exposure. Resilience depends on both governance constraint and contextual judgment.
 
 ### Architectural dependency and the operational tax
 
