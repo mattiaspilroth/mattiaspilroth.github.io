@@ -2,20 +2,14 @@
 title: "Silent Degradation under IT/OT Convergence"
 date: 2026-03-08
 lastmod: 2026-03-08
-description: "An analysis of recurring failure pattern in production OT environments undergoing IT/OT convergence."
+description: "An analysis of recurring failure patterns in production OT environments undergoing IT/OT convergence."
 image: "images/og-ot-silent.jpg"
 ---
 
 When IT-style infrastructure is introduced into segmented OT zones,
-redundant components continue operating after partial failure while
-segmentation prevents health signals from reaching anyone who can act.
-The system remains functional while consuming the safety margin
-redundancy was meant to provide. By the time failure becomes visible,
-redundancy has been exhausted.
+redundant components can continue operating after partial failure while segmentation prevents health signals from reaching anyone who can act. The system remains functional while consuming the resilience margin redundancy was meant to provide. By the time failure becomes visible, redundancy has been exhausted.
 
-This is not a tooling failure. It is an architectural one. The gap is
-not telemetry. It is ownership.
-
+This is not a tooling failure. It is an architectural one. The gap is not telemetry. It is ownership.
 
 ## Where this pattern applies
 
@@ -41,7 +35,7 @@ It is the absence of a viable path for those signals to reach someone who can ac
 
 This failure pattern emerges from the interaction of three forces that are individually reasonable.
 
-### Convergence introduces opaque components
+### Convergence introduces indirect health signaling
 
 IT-style platforms encapsulate internal state.
 
@@ -75,9 +69,7 @@ The conditions that produce this outcome are structural.
 
 Converged infrastructure is typically delivered as part of a capital project. Success is defined by functional acceptance.
 
-FAT completed.  
-SAT passed.  
-System handed over.
+FAT completed. SAT passed. The system was handed over.
 
 Acceptance criteria verify function. They rarely verify that infrastructure health will remain observable after handover.
 
@@ -170,8 +162,7 @@ Most OT environments lack a durable capability to consume infrastructure health 
 
 Process control systems generate alarms as part of normal operation. IT-style infrastructure exposes health through SNMP, syslog, and management APIs. These signals typically terminate inside isolated zones.
 
-The gap is not telemetry.  
-It is ownership.
+The hardware generates the signals. The architecture prevents them from becoming operational reality.
 
 ### Why making health signals operational is difficult
 
@@ -198,6 +189,8 @@ Health information exists.
 Behavior does not change.
 
 In each case, the platforms assume sustained ownership and specialist capacity that many sites are neither funded nor organized to provide.
+
+The absence of durable ownership is not an organizational failure. It is a predictable consequence of operating budgets that carry no line item for continuous infrastructure stewardship after project close. Capital projects fund commissioning. They do not fund the decade of sustained attention required to keep health signal paths functional, authenticated, and acted upon.
 
 ## Trade-offs and architectural reality
 

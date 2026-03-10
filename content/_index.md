@@ -10,7 +10,7 @@ I arrived at security architecture through operations. That origin shapes how I 
 
 ## Analysis
 
-Structural analysis of OT security architecture, operational constraints, and recurring failure patterns in high-consequence industrial environments.
+Structural analysis of OT security architecture, operational constraints, and failure patterns in high-consequence industrial environments
 
 ### Operational Reality
 
@@ -28,19 +28,19 @@ Industrial control environments operate under constraints that differ fundamenta
 
 ### Identity and Trust
 
-Authentication and authorization in OT environments must function across segmented networks, long system lifecycles, and distributed operational authority. The following analyses examine how common identity models behave under those conditions.
+Identity and trust architectures in OT environments operate under constraints that standard enterprise models do not anticipate. The following analyses examine how common approaches behave across segmented networks, long system lifecycles, and distributed operational authority, and where they break down.
 
 <p>
-  <strong><a href="/analysis/ot-identity-architecture/" data-umami-event="click-ot-identity">OT Identity Architecture: Federation, PAM, and Residual Risk</a></strong><br>
+  <strong><a href="/architecture/ot-identity-architecture/" data-umami-event="click-ot-identity">OT Identity Architecture: Federation, PAM, and Residual Risk</a></strong><br>
   <span style="color: #666; font-size: 0.95em;">A structural analysis of common identity models in OT. It explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.</span>
 </p>
 
 <p>
-  <strong><a href="/analysis/trust-decay-in-constrained-ot-environments/" data-umami-event="click-ot-decay">Part 1: Trust Decay in Constrained OT Environments</a></strong><br>
+  <strong><a href="/architecture/trust-decay-in-constrained-ot-environments/" data-umami-event="click-ot-decay">Part 1: Trust Decay in Constrained OT Environments</a></strong><br>
   <span style="color: #666; font-size: 0.95em;">Certificate validation assumes trust material is continuously obtainable. In segmented OT architectures, that assumption may not hold. Trust erosion can remain latent until operational stress reveals it.</span>
 </p>
 
 <p>
-  <strong><a href="/analysis/trust-flow-in-constrained-ot-environments/" data-umami-event="click-ot-flow">Part 2: Trust Flow in Constrained OT Environments</a></strong><br>
+  <strong><a href="/architecture/trust-flow-in-constrained-ot-environments/" data-umami-event="click-ot-flow">Part 2: Trust Flow in Constrained OT Environments</a></strong><br>
   <span style="color: #666; font-size: 0.95em;">Defines the properties required for validation to occur predictably and repeatedly inside constrained zones. Written as architectural requirements to prevent the failure modes identified in Part 1.</span>
 </p>
