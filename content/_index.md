@@ -10,11 +10,11 @@ I arrived at security architecture through operations. That origin shapes how I 
 
 ## Analysis
 
-Structural analysis of OT security architecture, operational constraints, and failure patterns in high-consequence industrial environments
+Analysis of OT security architecture, operating constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is not only on controls, but on the conditions that determine whether those controls remain effective in practice.
 
-### Operational Reality
+### Operational Constraints and Security Outcomes
 
-Industrial control environments operate under constraints that differ fundamentally from enterprise IT. This section examines recurring system behaviors that shape what security architectures can realistically achieve.
+Industrial control environments operate under constraints that differ fundamentally from enterprise IT. These analyses examine how long lifecycles, validated systems, segmented architectures, and operational ownership shape failure behavior and define what security measures can realistically be sustained.
 
 <p>
   <strong><a href="/analysis/why-ot-infrastructure-appears-static/" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a></strong><br>
@@ -26,7 +26,7 @@ Industrial control environments operate under constraints that differ fundamenta
   <span style="color: #666; font-size: 0.95em;">Redundant IT infrastructure inside segmented OT zones can degrade invisibly when health signals do not reach actors with authority to intervene. The gap is often not the absence of signals, but the absence of a clearly defined owner for acting on them.</span>
 </p>
 
-### Identity and Trust
+### Identity and Trust in OT
 
 Identity and trust architectures in OT environments operate under constraints that standard enterprise models do not anticipate. The following analyses examine how common approaches behave across segmented networks, long system lifecycles, and distributed operational authority, and where they break down.
 
