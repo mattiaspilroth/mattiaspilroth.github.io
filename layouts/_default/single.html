@@ -23,6 +23,10 @@
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
   
+  {{ with .OutputFormats.Get "rss" -}}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}" />
+  {{ end -}}
+
   {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
@@ -45,6 +49,14 @@
         "{{ .Site.Params.linkedin }}"
       ]
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.author }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.Params.profile_image | absURL }}"
+      }
+    },
     {{ if .Date }}
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
     {{ end }}
@@ -61,22 +73,22 @@
 
 <body>
   <main>
-    <nav style="margin-bottom: 3rem; font-size: 0.9rem;">
+    <nav class="article-nav">
       <a href="/" data-umami-event="click-back-to-home">&larr; Back to Home</a>
     </nav>
 
     <article>
-      <header style="margin-bottom: 3rem;">
-        <div style="color: #666; font-size: 0.9rem; display: flex; gap: 1.5rem;">
+      <header class="article-header">
+        <div class="article-meta">
           {{ if .Date }}
-            <span>Published: {{ .Date.Format "January 2, 2006" }}</span>
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">Published: {{ .Date.Format "January 2, 2006" }}</time>
           {{ end }}
           
           {{ if and .Lastmod (ne .Lastmod .Date) }}
-            <span>Revised: {{ .Lastmod.Format "January 2, 2006" }}</span>
+            <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">Revised: {{ .Lastmod.Format "January 2, 2006" }}</time>
           {{ end }}
         </div>
-        <h1 style="margin-top: 1rem; text-transform: none; letter-spacing: normal;">{{ .Title }}</h1>
+        <h1>{{ .Title }}</h1>
       </header>
 
       <div class="content">
