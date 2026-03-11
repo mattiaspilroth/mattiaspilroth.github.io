@@ -109,8 +109,9 @@ a:hover {
 
 .intro p {
   max-width: 75ch;
-  font-size: 1.05rem;
+  font-size: 1rem;
   margin-bottom: 1.4rem;
+  color: #333;
 }
 
 /* Article Feed and Summaries */
