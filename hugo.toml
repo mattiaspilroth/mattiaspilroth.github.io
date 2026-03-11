@@ -16,6 +16,12 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    noClasses = true
+    style = "github"
 
 [sitemap]
   changefreq = "monthly"

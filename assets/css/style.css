@@ -239,3 +239,107 @@ footer {
   background: none;
   padding: 0;
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  main {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+
+  /* Hero Section */
+  header.hero {
+    margin-bottom: 2.5rem;
+    padding-left: 16px;
+    border-left-width: 3px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .professional-title {
+    font-size: 0.95rem;
+  }
+
+  .mission-statement {
+    font-size: 1.15rem;
+  }
+
+  /* Global and Intro Typography */
+  h2, .content h2 {
+    font-size: 1.35rem;
+    margin-top: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 1.15rem;
+    margin-top: 2.5rem;
+  }
+
+  .intro h3, .content h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Article Specific */
+  .article-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .article-link {
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 3.5rem;
+  }
+}
+
+/* --- Print Styling --- */
+@media print {
+  /* Enforce high contrast and reset sizing */
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  /* Remove unneeded screen elements */
+  nav, footer .links, .article-nav {
+    display: none !important;
+  }
+
+  /* Utilize full page width */
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Manage page breaks for structural integrity */
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+    margin-top: 24pt;
+  }
+
+  p, img, blockquote, pre, code {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Expand hyperlinks to show destination URLs */
+  .content a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: #333;
+    word-break: break-all;
+  }
+}
