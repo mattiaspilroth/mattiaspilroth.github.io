@@ -1,6 +1,6 @@
 # mattiaspilroth.com
 
-Source code and content for my personal site and OT security papers. 
+Source code and content for my personal site and OT security texts. 
 
 ## Structure
 - Built with Hugo (Static Site Generator).
