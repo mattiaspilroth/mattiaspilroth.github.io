@@ -1,11 +1,12 @@
 # mattiaspilroth.com
 
-Source code and content for my personal site and OT security papers. 
+Source code and content for my personal site and OT security texts. 
 
 ## Structure
 - Built with Hugo (Static Site Generator).
 - Hosted on GitHub Pages.
-- Content managed in a mono-repo structure under `content/papers/`.
+- Content managed in a structure under `content/`.
+- Loops are not used, each article needs to be referenced on the homepage manually
 
 ## Local Development
 To run the site locally:
