@@ -140,7 +140,9 @@ Patterns inform design. They do not replace engineering judgment.
 
 These constraints do not block security improvement. They determine what improvement can survive contact with operations.
 
-Where change windows are scarce, controls requiring continuous tuning or centralized expert support do not hold. Where operators must diagnose and respond to process upsets under pressure, controls that obscure system state or slow fault isolation directly compete with safe recovery. A control survives if it produces durable risk reduction within vendor validation limits, outage schedules, local competence, and restoration demands.
+Where change windows are scarce, controls requiring continuous tuning or centralized expert support do not hold. Where operators must diagnose and respond to process upsets under pressure, controls that obscure system state or slow fault isolation directly compete with safe recovery.
+
+A control survives if it produces durable risk reduction within vendor validation limits, outage schedules, local competence, and restoration demands.
 
 Security architecture that depends on operating assumptions the site cannot sustain does not hold.
 
