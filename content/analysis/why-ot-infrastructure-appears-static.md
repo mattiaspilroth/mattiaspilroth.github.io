@@ -42,9 +42,9 @@ Those same properties that made the model necessary also define its limits when 
 
 Under isolation assumptions, this arrangement worked. In connected environments it becomes a structural drag on security adaptation.
 
-The model also concentrates authority in a way that shapes how operators relate to their own systems. Responsibility for outcomes sits with the operator while authority over the system's internals sits with the vendor. Because operators could not see inside the validated assembly, they treated it as a machine component: maintained for continued function, not examined for internal state. Infrastructure layers stayed invisible until failure made them impossible to ignore. Stability became the default expectation, and teams judged change by process impact, not by technical currency.
+The model also concentrates authority in a way that shapes how operators relate to their own systems. Responsibility for outcomes sits with the operator while authority over the system's internals sits with the vendor. Because operators could not see inside the validated assembly, they treated it as a machine component: maintained for continued function, not examined for internal state. Stability became the default expectation, and teams judged change by process impact, not by technical currency.
 
-Inaction under that model is not always neglect. It is constraint. When those systems were deployed, their internal state rarely affected operational decision-making unless failure occurred. Visibility into those layers had no operational value, no organizational mandate, and no funding mechanism behind it.
+Inaction under that model is not always neglect. It is constraint. When those systems were deployed, their internal state rarely affected operational decision-making unless failure occurred. It had no operational value, no organizational mandate, and no funding mechanism behind it.
 
 Modern cybersecurity depends on exactly that visibility. That constraint narrows the space where security investment is structurally viable to controls that do not require interior change authority.
 
