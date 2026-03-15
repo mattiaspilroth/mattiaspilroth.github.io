@@ -382,3 +382,61 @@ footer {
     word-break: break-all;
   }
 }
+
+/* --- Dark Mode (System Preference) --- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #e0e0e0;
+  }
+
+  /* Structural Headers */
+  h1, h2, h3, 
+  .content h1, .content h2, .content h3, 
+  .intro h2, .intro h3,
+  .content th:first-child, .content td:first-child {
+    color: #f5f5f5;
+  }
+
+  /* Hero Section Border */
+  header.hero {
+    border-left-color: #f5f5f5;
+  }
+
+  /* Body Text Adjustments */
+  .intro p, .content td {
+    color: #cccccc;
+  }
+
+  .professional-title, .article-meta, footer, .disclaimer, .article-summary {
+    color: #aaaaaa;
+  }
+
+  /* Links */
+  a, .article-link {
+    color: #66b3ff;
+  }
+
+  a:hover {
+    border-bottom-color: #66b3ff;
+  }
+
+  /* Code Blocks */
+  .content code, .content pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+  }
+
+  /* Tables and Dividers */
+  .content th {
+    border-bottom-color: #f5f5f5;
+  }
+
+  .content td {
+    border-bottom-color: #333333;
+  }
+
+  footer {
+    border-top-color: #333333;
+  }
+}

@@ -20,6 +20,10 @@
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
   
+  {{ with .OutputFormats.Get "rss" -}}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}" />
+  {{ end -}}
+  
   {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
@@ -53,11 +57,12 @@
       {{ .Content }}
     </section>
 
-<footer>
+    <footer>
       <p class="links">
         <a href="{{ .Site.Params.github }}" target="_blank" rel="me noopener noreferrer" data-umami-event="click-footer-github">GitHub</a> ·
         <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="me noopener noreferrer" data-umami-event="click-footer-linkedin">LinkedIn</a> ·
-        <a href="mailto:{{ .Site.Params.email }}" data-umami-event="click-footer-email">Email</a>
+        <a href="mailto:{{ .Site.Params.email }}" data-umami-event="click-footer-email">Email</a> ·
+        <a href="/index.xml" type="application/rss+xml" target="_blank" data-umami-event="click-footer-rss">RSS</a>
       </p>
       <p class="disclaimer">
         Personal technical observations based on professional experience. Not employer or vendor guidance.
