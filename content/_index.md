@@ -10,37 +10,27 @@ I arrived at security architecture through operations. That origin shapes how I 
 
 ## Analysis
 
-Analysis of OT security architecture, operating constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is on the conditions that determine whether security measures remain effective in practice, not only on the measures themselves.
+Analysis of OT security architecture, operational constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is on the conditions that determine whether security measures remain effective in practice, not only on the measures themselves.
 
 ### Operational Reality
 
 Industrial control environments operate under constraints that differ fundamentally from enterprise IT. These analyses examine how long lifecycles, validated systems, segmented architectures, and operational ownership shape failure behavior and define what security measures can realistically be sustained.
 
-<p>
-  <strong><a href="/analysis/why-ot-infrastructure-appears-static/" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">Stability in continuous process industries is often an engineered response to asymmetric risk rather than technical stagnation. This analysis examines validated configurations, lifecycle economics, vendor authority boundaries, and why ignoring these constraints leads to security strategies that cannot be sustained.</span>
-</p>
+<a href="/analysis/why-ot-infrastructure-appears-static/" class="article-link" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a>
+<p class="article-summary">OT environments look frozen from the outside. From inside the fence, the behavior follows directly from how these systems were funded, validated, and operated. Understanding why requires mapping the constraints, because security strategies that ignore them will be overridden by them.</p>
 
-<p>
-  <strong><a href="/analysis/silent-degradation-under-it-ot-convergence/" data-umami-event="click-ot-degradation">Silent Degradation Under IT/OT Convergence</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">Redundant IT infrastructure inside segmented OT zones can degrade invisibly when health signals do not reach actors with authority to intervene. The gap is often not the absence of signals, but the absence of a clearly defined owner for acting on them.</span>
-</p>
+<a href="/analysis/silent-degradation-under-it-ot-convergence/" class="article-link" data-umami-event="click-ot-degradation">Silent Degradation Under IT/OT Convergence</a>
+<p class="article-summary">Redundant IT infrastructure inside segmented OT zones can degrade invisibly when health signals do not reach actors with authority to intervene. The gap is often not the absence of signals, but the absence of a clearly defined owner for acting on them.</p>
 
 ### Identity and Trust in OT
 
 Identity and trust architectures in OT environments operate under constraints that standard enterprise models do not anticipate. The following analyses examine how common approaches behave across segmented networks, long system lifecycles, and distributed operational authority, and where they break down.
 
-<p>
-  <strong><a href="/architecture/ot-identity-architecture/" data-umami-event="click-ot-identity">OT Identity Architecture: Federation, PAM, and Residual Risk</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">A structural analysis of common identity models in OT. It explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.</span>
-</p>
+<a href="/architecture/ot-identity-architecture/" class="article-link" data-umami-event="click-ot-identity">OT Identity Architecture: Federation, PAM, and Residual Risk</a>
+<p class="article-summary">A structural analysis of common identity models in OT. It explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.</p>
 
-<p>
-  <strong><a href="/architecture/trust-decay-in-constrained-ot-environments/" data-umami-event="click-ot-decay">Part 1: Trust Decay in Constrained OT Environments</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">Certificate validation assumes trust material is continuously obtainable. In segmented OT architectures, that assumption may not hold. Trust erosion can remain latent until operational stress reveals it.</span>
-</p>
+<a href="/architecture/trust-decay-in-constrained-ot-environments/" class="article-link" data-umami-event="click-ot-decay">Part 1: Trust Decay in Constrained OT Environments</a>
+<p class="article-summary">Certificate validation assumes trust material is continuously obtainable. In segmented OT architectures, that assumption may not hold. Trust erosion can remain latent until operational stress reveals it.</p>
 
-<p>
-  <strong><a href="/architecture/trust-flow-in-constrained-ot-environments/" data-umami-event="click-ot-flow">Part 2: Trust Flow in Constrained OT Environments</a></strong><br>
-  <span style="color: #666; font-size: 0.95em;">Defines the properties required for validation to occur predictably and repeatedly inside constrained zones. Written as architectural requirements to prevent the failure modes identified in Part 1.</span>
-</p>
+<a href="/architecture/trust-flow-in-constrained-ot-environments/" class="article-link" data-umami-event="click-ot-flow">Part 2: Trust Flow in Constrained OT Environments</a>
+<p class="article-summary">Defines the properties required for validation to occur predictably and repeatedly inside constrained zones. Written as architectural requirements to prevent the failure modes identified in Part 1.</p>
