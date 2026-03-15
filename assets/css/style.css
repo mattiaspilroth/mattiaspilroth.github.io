@@ -124,14 +124,14 @@ a:hover {
   font-weight: 600;
   display: inline-block;
   margin-top: 2rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0;
   color: #0055aa;
 }
 
 .article-summary {
   font-size: 0.95rem;
-  color: #444;
-  margin-top: 0;
+  color: #666; 
+  margin-top: 0.2rem;
 }
 
 /* --- Article Specific Layout --- */
@@ -408,8 +408,12 @@ footer {
     color: #cccccc;
   }
 
-  .professional-title, .article-meta, footer, .disclaimer, .article-summary {
+  .professional-title, .article-meta, footer, .disclaimer {
     color: #aaaaaa;
+  }
+
+  .article-summary {
+    color: #999999; 
   }
 
   /* Links */
