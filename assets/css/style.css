@@ -12,7 +12,7 @@ body {
 main {
   width: 90%;
   max-width: 750px;
-  margin: 80px auto;
+  margin: 50px auto;
   padding: 0 24px;
 }
 
@@ -20,7 +20,7 @@ main {
 header.hero {
   border-left: 4px solid #1a1a1a;
   padding-left: 24px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 h1 {
@@ -95,7 +95,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -108,7 +108,7 @@ a:hover {
 
 .intro p {
   font-size: 1rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 /* --- Article Feed and Summaries --- */
@@ -124,7 +124,7 @@ a:hover {
 .article-link {
   font-size: 1.1rem;
   font-weight: 600;
-  display: block;
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 0.2rem;
   line-height: 1.3;
