@@ -91,21 +91,19 @@ a:hover {
 
 /* --- Start Page Intro Section --- */
 .intro h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-top: 3.5rem;
   margin-bottom: 1rem;
-  color: #1a1a1a;
 }
 
 .intro h3 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #222;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
 }
 
 .intro p {
@@ -124,7 +122,7 @@ a:hover {
 }
 
 .article-link {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   display: block;
   margin-top: 0;
@@ -312,12 +310,12 @@ footer {
   }
 
   .intro h2 {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     margin-top: 2.5rem;
   }
 
   .intro h3, .content h3 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .article-header h1 {
@@ -330,17 +328,15 @@ footer {
   }
 
   .article-link {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
-  /* Force horizontal scroll for wide tables on narrow screens */
   .content table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  /* Prevent text crushing within scrolling tables */
   .content th,
   .content td {
     min-width: 140px;
@@ -348,6 +344,59 @@ footer {
 
   footer {
     margin-top: 3.5rem;
+  }
+}
+
+/* --- Dark Mode (System Preference) --- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #e5e5e5;
+  }
+
+  h1, h2, h3, 
+  .content h1, .content h2, .content h3, 
+  .intro h2, .intro h3,
+  .content th:first-child, .content td:first-child {
+    color: #ffffff;
+  }
+
+  header.hero {
+    border-left-color: #ffffff;
+  }
+
+  a, .article-link {
+    color: #58a6ff;
+  }
+
+  a:hover {
+    border-bottom-color: #58a6ff;
+  }
+
+  .article-summary {
+    color: #a3a3a3;
+  }
+
+  .professional-title, .article-meta, footer, .disclaimer {
+    color: #888888;
+  }
+
+  .content code, .content pre {
+    background: #1e1e1e;
+    color: #e5e5e5;
+  }
+
+  .content th {
+    border-bottom-color: #ffffff;
+  }
+
+  .content td {
+    border-bottom-color: #333333;
+    color: #cccccc;
+  }
+
+  footer {
+    border-top-color: #333333;
   }
 }
 
@@ -386,64 +435,5 @@ footer {
     font-size: 0.9em;
     color: #333;
     word-break: break-all;
-  }
-}
-
-/* --- Dark Mode (System Preference) --- */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #121212;
-    color: #e5e5e5; /* Soft white for long-form reading */
-  }
-
-  /* Structural Headers */
-  h1, h2, h3, 
-  .content h1, .content h2, .content h3, 
-  .intro h2, .intro h3,
-  .content th:first-child, .content td:first-child {
-    color: #ffffff; /* Pure white for structural hierarchy */
-  }
-
-  /* Hero Section Border */
-  header.hero {
-    border-left-color: #ffffff;
-  }
-
-  /* Links */
-  a, .article-link {
-    color: #58a6ff; /* High-contrast accessible blue */
-  }
-
-  a:hover {
-    border-bottom-color: #58a6ff;
-  }
-
-  /* Summaries and Meta */
-  .article-summary {
-    color: #a3a3a3; /* Distinct step down from body text */
-  }
-
-  .professional-title, .article-meta, footer, .disclaimer {
-    color: #888888;
-  }
-
-  /* Code Blocks */
-  .content code, .content pre {
-    background: #1e1e1e;
-    color: #e5e5e5;
-  }
-
-  /* Tables and Dividers */
-  .content th {
-    border-bottom-color: #ffffff;
-  }
-
-  .content td {
-    border-bottom-color: #333333;
-    color: #cccccc;
-  }
-
-  footer {
-    border-top-color: #333333;
   }
 }
