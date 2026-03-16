@@ -6,11 +6,9 @@ description: "Stability in process industries is an engineered response to the v
 image: "images/og-why-ot-static.jpg"
 ---
 
-Industrial control systems in chemical plants, refineries, and generating stations are engineered for long service life, deterministic behavior, and disturbance avoidance.
+Industrial control systems in chemical plants, refineries, and generating stations appear static to IT and cybersecurity teams. Systems stay in service for decades. Patch levels lag. Legacy platforms outlive vendor support. Change moves slowly because disturbing a stable process carries real operational cost.
 
-To IT and cybersecurity teams, this looks static. Systems stay in service for decades. Patch levels lag. Legacy platforms outlive vendor support. Change moves slowly because disturbing a stable process carries real operational cost.
-
-From outside the operating context, this appears irrational. Inside the fence, it is a rational response to consequence, liability, validation limits, and funding mechanics. The inertia follows from the constraints that determine what change the plant can safely absorb.
+From outside the operating context, this looks irrational. Inside the fence, it is a rational response to consequence, liability, validation limits, and funding mechanics. The inertia follows from the constraints that determine what change the plant can safely absorb.
 
 Many of these systems entered service under an isolation assumption. That assumption no longer holds. The contractual, technical, and organizational structures built around it still do.
 
