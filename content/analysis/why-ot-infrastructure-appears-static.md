@@ -6,7 +6,7 @@ description: "Stability in process industries is an engineered response to the v
 image: "images/og-why-ot-static.jpg"
 ---
 
-Industrial control systems in chemical plants, refineries, and generating stations appear static to IT and cybersecurity teams. Systems stay in service for decades. Patch levels lag. Legacy platforms outlive vendor support. Change moves slowly because disturbing a stable process carries real operational cost.
+Industrial control systems in chemical plants, refineries, and generating stations appear static to IT and cybersecurity teams. Systems stay in service for decades. Patch levels lag. Legacy platforms outlive vendor support. Change moves slowly.
 
 From outside the operating context, this looks irrational. Inside the fence, it is a rational response to consequence, liability, validation limits, and funding mechanics. The inertia follows from the constraints that determine what change the plant can safely absorb.
 
@@ -32,15 +32,15 @@ Those purpose-built systems did not enter service as configurable platforms. The
 
 IT buys platforms meant to be modified. OT process control buys validated functions because the engineering requirements demand it. Operating systems, firmware, drivers, vendor application software, and hardware form a validated configuration that anchors functional safety assumptions, warranty terms, liability boundaries, and regulatory claims. The operator does not own the platform in the IT sense. The operator runs a validated appliance designed to perform a defined function reliably for decades.
 
-The validated appliance model was not a commercial imposition. It was the engineering consequence of what those systems needed to be. The model applies most directly to core control functions. Surrounding infrastructure layers may appear more mutable but remain operationally coupled to validated processes in ways that carry the same change constraints in practice.
+The validated appliance model did not originate in vendor commercial strategy. It was the engineering consequence of what these systems needed to be. The model applies most directly to core control functions. Surrounding infrastructure layers may appear more mutable but remain operationally coupled to validated processes in ways that carry the same change constraints in practice.
 
-Those same properties that made the model necessary also define its limits when the operating environment changes. Changing the underlying stack without vendor validation can void warranty and support agreements, transfer liability to the operator, undermine safety cases, or push the system outside vendor-qualified migration paths. The operator gives up rapid independent remediation to preserve supportability, liability boundaries, and certified safety assumptions. Patch and upgrade timing follows vendor qualification cycles, not operator preference.
+Those same properties that made the model necessary also define its limits when the operating environment changes. Changing the underlying stack without vendor validation can void warranty and support agreements, transfer liability to the operator, compromise the basis for reliable operation, or push the system outside vendor-qualified migration paths. The operator gives up rapid independent remediation to preserve supportability, liability boundaries, and certified safety assumptions. Patch and upgrade timing follows vendor qualification cycles, not operator preference.
 
 Under isolation assumptions, this arrangement worked. In connected environments it becomes a structural drag on security adaptation.
 
 The model also concentrates authority in a way that shapes how operators relate to their own systems. Responsibility for outcomes sits with the operator while authority over the system's internals sits with the vendor. Because operators could not see inside the validated assembly, they treated it as a machine component: maintained for continued function, not examined for internal state.
 
-Inaction under that model is not always neglect. It is constraint. When those systems were deployed, their internal state rarely affected operational decision-making unless failure occurred. That state had no perceived operational value absent failure, no organizational mandate, and no funding mechanism behind it.
+Inaction under that model is not always neglect. It is constraint. When those systems were deployed, their internal state rarely affected operational decision-making unless failure occurred. That state had no operational value, no organizational mandate, and no budget line attached to it.
 
 The absence of that visibility now constrains the response. Security approaches that depend on visibility into layers that operations never had reason to examine arrive in environments where that visibility was never developed.
 
@@ -102,6 +102,6 @@ Patterns inherited from adjacent disciplines still shape OT security design toda
 
 Where operators must diagnose and respond to process upsets under pressure, controls that obscure system state or slow fault isolation compete with safe recovery.
 
-The test is not whether a control works at deployment. It is whether it holds through the operational life of the asset.
+The test is not whether a control works at deployment. The test is whether it holds across the operational life of the asset.
 
 Security in long-lifecycle OT is not primarily a deployment problem. It is a durability problem.
