@@ -90,7 +90,7 @@ A descriptive model became design doctrine because it aligned with how owner-ope
 
 What emerged at the discipline level arrived at the site level as a template to implement. Sites facing security obligations without a standing engineering function reached for the methods the discipline had already normalized: Purdue for structure, IT security controls for the catalog, and compliance evidence as the measure of progress.
 
-Those frameworks were available, auditable, and required no contextual engineering judgment the organization lacked. They were built for environments that tolerate frequent change, assume restartable assets, and treat bounded failure as normal.
+Those frameworks were available, auditable, and required no contextual engineering judgment, even though they were built for environments that tolerate frequent change, assume restartable assets, and treat bounded failure as normal.
 
 In IT environments, security controls carry an operational tax that the environment is designed to absorb: deployment effort, maintenance burden, update cycles, and the complexity they introduce are built into how IT operations run. In long-lifecycle OT, no equivalent absorption mechanism exists. The same tax lands on environments where change windows are scarce, centralized support is absent, and every modification competes for the same constrained maintenance opportunity. That tax compounds across decades. Controls that require continuous tuning, centralized support, or frequent updates were designed around operating assumptions these environments do not hold.
 
