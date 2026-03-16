@@ -28,7 +28,7 @@ In that context, isolation was not a security failure waiting to happen. It was 
 
 ## Validated functions, not configurable platforms
 
-Those purpose-built systems did not enter service as open platforms. They entered as validated functions.
+Those purpose-built systems did not enter service as configurable platforms. They entered as validated functions.
 
 IT buys platforms meant to be modified. OT process control buys validated functions because the engineering requirements demand it. Operating systems, firmware, drivers, vendor application software, and hardware form a validated configuration that anchors functional safety assumptions, warranty terms, liability boundaries, and regulatory claims. The operator does not own the platform in the IT sense. The operator runs a validated appliance designed to perform a defined function reliably for decades.
 
@@ -42,7 +42,7 @@ The model also concentrates authority in a way that shapes how operators relate 
 
 Inaction under that model is not always neglect. It is constraint. When those systems were deployed, their internal state rarely affected operational decision-making unless failure occurred. That state had no perceived operational value absent failure, no organizational mandate, and no funding mechanism behind it.
 
-That historical absence now constrains the response. Security approaches that depend on visibility into layers that operations never had reason to examine arrive in environments where that visibility was never developed.
+The absence of that visibility now constrains the response. Security approaches that depend on visibility into layers that operations never had reason to examine arrive in environments where that visibility was never developed.
 
 That constraint narrows the space where security investment is structurally viable to controls that do not require interior change authority.
 
@@ -72,9 +72,9 @@ Capital projects deliver major OT systems. After commissioning, operations inher
 
 Project funding covers engineering, integration, validation, and startup. The operations budget funds continuity, maintenance, and repair. Most sites do not fund operations teams to behave like product engineering organizations that continuously refactor running systems.
 
-The absence of a security engineering function was not an oversight. For most of the operational life of these systems, no credible threat materialized. Most operators did not directly experience a cyber event severe enough to change budget logic. Operating budgets reflect historical value delivery, and a capability that never had to act delivered no observable value. The funding gap persisted because the business case for closing it never arrived from inside the fence.
+The absence of a security engineering function was not an oversight. For most operators, cyber risk did not produce consequences visible enough to force budget decisions. A capability that rarely had to act delivered no observable value to the budgeting process. The funding gap persisted because the business case for closing it never arrived from inside the fence.
 
-The historical baseline is changing. Integration is expanding, tooling is advancing, and the paths from IT compromise into OT environments are widening. Regulation has arrived ahead of most operators' direct experience, but not ahead of the actual threat trajectory. The engineering discipline required to respond rarely exists when the obligation arrives.
+The historical baseline is changing. Integration is expanding, tooling is advancing, and the paths from IT compromise into OT environments are widening. Regulation has arrived ahead of most operators' direct experience, but not ahead of the actual threat trajectory. By the time the obligation arrives, the engineering discipline needed to respond usually does not exist.
 
 Slow change is not dysfunction. It is the equilibrium produced by capital delivery mechanics, operating budgets that never funded security engineering, and a threat history that gave no internal reason to change course.
 
@@ -90,9 +90,11 @@ A descriptive model became design doctrine because it aligned with how owner-ope
 
 What emerged at the discipline level arrived at the site level as a template to implement. Sites facing security obligations without a standing engineering function reached for the methods the discipline had already normalized: Purdue for structure, IT security controls for the catalog, and compliance evidence as the measure of progress.
 
-Those frameworks were available, auditable, and required no contextual engineering judgment, even though they were built for environments that tolerate frequent change, assume restartable assets, and treat bounded failure as normal.
+Those frameworks were available, auditable, and did not depend on contextual engineering judgment the organization often did not have. They were built for environments that tolerate frequent change, assume restartable assets, and treat bounded failure as normal.
 
-In IT environments, security controls carry an operational tax that the environment is designed to absorb: deployment effort, maintenance burden, update cycles, and the complexity they introduce are built into how IT operations run. In long-lifecycle OT, no equivalent absorption mechanism exists. The same tax lands on environments where change windows are scarce, centralized support is absent, and every modification competes for the same constrained maintenance opportunity. That tax compounds across decades. Controls that require continuous tuning, centralized support, or frequent updates were designed around operating assumptions these environments do not hold.
+In IT environments, security controls carry an operational tax that the environment is designed to absorb: deployment effort, maintenance burden, update cycles, and the complexity they introduce are built into how IT operations run. In long-lifecycle OT, no equivalent absorption mechanism exists. The same tax lands on environments where change windows are scarce, centralized support is absent, and every modification competes for the same constrained maintenance opportunity. 
+
+That tax compounds across decades. Many controls that require continuous tuning, centralized support, or frequent updates were designed around operating assumptions these environments do not hold.
 
 Patterns inherited from adjacent disciplines still shape OT security design today because they are legible to the institutions that fund, procure, and audit it.
 
@@ -100,6 +102,6 @@ Patterns inherited from adjacent disciplines still shape OT security design toda
 
 Where operators must diagnose and respond to process upsets under pressure, controls that obscure system state or slow fault isolation compete with safe recovery.
 
-What holds under operational pressure is what survives across the operational life of the asset.
+The test is not whether a control works at deployment. It is whether it holds through the operational life of the asset.
 
 Security in long-lifecycle OT is not primarily a deployment problem. It is a durability problem.
