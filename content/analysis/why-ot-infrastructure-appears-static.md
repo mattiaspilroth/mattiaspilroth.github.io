@@ -20,7 +20,7 @@ IT and OT optimize for different outcomes.
 
 IT favors adaptability, rapid change, scalable services, and regular refresh. Recovery assumes rollback, replacement, and spare capacity. Failure matters, but it is usually bounded.
 
-OT in continuous operations optimizes for deterministic behavior, safety, and continuity of the physical process. Predictability beats flexibility, timing precision beats feature velocity, and availability means correct action at the correct moment, not just system uptime.
+OT in continuous operations optimizes for deterministic behavior, safety, and continuity of the physical process. Predictability beats flexibility, and availability means correct action at the correct moment, not just system uptime.
 
 Control systems deployed through the 1990s and early 2000s reflected the engineering practice of the era. They were purpose-built for deterministic control, designed for decades of service, and deployed under risk models that centered on equipment failure, process upset, and human error. Enterprise connectivity stayed limited, remote access stayed tightly governed, and cyber intrusion had not yet emerged as a credible operational threat.
 
@@ -28,9 +28,9 @@ In that context, isolation was not a security failure waiting to happen. It was 
 
 ## Validated functions, not configurable platforms
 
-Those purpose-built systems did not enter service as configurable platforms. They entered as validated functions.
+Those purpose-built systems did not enter service as open platforms. They entered as validated functions.
 
-IT buys platforms meant to be modified. OT process control buys validated functions because the engineering requirements demand it. Operating systems, firmware, drivers, control applications, and hardware form a validated configuration that anchors functional safety assumptions, warranty terms, liability boundaries, and regulatory claims. The operator does not own the platform in the IT sense. The operator runs a validated appliance designed to perform a defined function reliably for decades.
+IT buys platforms meant to be modified. OT process control buys validated functions because the engineering requirements demand it. Operating systems, firmware, drivers, vendor application software, and hardware form a validated configuration that anchors functional safety assumptions, warranty terms, liability boundaries, and regulatory claims. The operator does not own the platform in the IT sense. The operator runs a validated appliance designed to perform a defined function reliably for decades.
 
 The validated appliance model was not a commercial imposition. It was the engineering consequence of what those systems needed to be. The model applies most directly to core control functions. Surrounding infrastructure layers may appear more mutable but remain operationally coupled to validated processes in ways that carry the same change constraints in practice.
 
@@ -90,9 +90,9 @@ A descriptive model became design doctrine because it aligned with how owner-ope
 
 What emerged at the discipline level arrived at the site level as a template to implement. Sites facing security obligations without a standing engineering function reached for the methods the discipline had already normalized: Purdue for structure, IT security controls for the catalog, and compliance evidence as the measure of progress.
 
-Those frameworks were available, auditable, and required no contextual engineering judgment the organization lacked. They were built for environments that tolerate frequent change, assume restartable assets, and treat bounded failure as normal. OT environments share none of those assumptions.
+Those frameworks were available, auditable, and required no contextual engineering judgment the organization lacked. They were built for environments that tolerate frequent change, assume restartable assets, and treat bounded failure as normal.
 
-The mismatch runs deeper than methodology. Security controls carry an operational tax in any environment: deployment effort, maintenance burden, change window consumption, and the diagnostic complexity they introduce into systems operators depend on for safe recovery. In long-lifecycle OT, that tax compounds across decades. Controls that require continuous tuning, centralized support, or frequent updates are structurally incompatible with how these environments are funded, staffed, and operated.
+In IT environments, security controls carry an operational tax that the environment is designed to absorb: deployment effort, maintenance burden, update cycles, and the complexity they introduce are built into how IT operations run. In long-lifecycle OT, no equivalent absorption mechanism exists. The same tax lands on environments where change windows are scarce, centralized support is absent, and every modification competes for the same constrained maintenance opportunity. That tax compounds across decades. Controls that require continuous tuning, centralized support, or frequent updates were designed around operating assumptions these environments do not hold.
 
 Patterns inherited from adjacent disciplines still shape OT security design today because they are legible to the institutions that fund, procure, and audit it.
 
