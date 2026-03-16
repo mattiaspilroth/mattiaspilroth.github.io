@@ -10,7 +10,7 @@ I arrived at security architecture through operations. That origin shapes how I 
 
 ## Analysis
 
-Analysis of OT security architecture, operational constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is on the conditions that determine whether security measures remain effective in practice, not only on the measures themselves.
+Structural analysis of OT security architecture, operational constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is on the conditions that determine whether security measures remain effective in practice, not only on the measures themselves.
 
 ### Operational Reality
 
