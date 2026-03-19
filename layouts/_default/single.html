@@ -37,6 +37,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "{{ .Title }}",
+    "image": "{{ .Params.image | default .Site.Params.og_image | absURL }}",
     "description": "{{ .Params.description | default (.Summary | default .Site.Params.description) }}",
     "author": {
       "@type": "Person",
