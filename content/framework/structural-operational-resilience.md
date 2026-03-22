@@ -6,7 +6,7 @@ description: "A consequence-driven engineering framework for OT security in indu
 image: "images/og-sor-framework.jpg"
 ---
 
-**An engineering discipline for operational resilience in high-consequence industrial environments.**
+**A consequence-driven engineering discipline for operational continuity in high-consequence industrial environments.**
 
 ## 1. The Core Thesis: Miscalibration and Realized Threats
 
@@ -55,7 +55,7 @@ Applies to Tiers 1 through 5. Every zone within these tiers is matured through t
 
 2. **Recovery capability:** Logic and configurations are backed up to offline, attack-resistant storage on physically separate media. Integrity is verified through test restoration, not by confirming that backup files exist.
 
-3. **Attack surface assessment:** Because step 1 is complete, all remaining paths crossing the isolated boundary are defined and documentable. Scope is determined by technical capability to affect the assessed zone, not by data flow direction or policy configuration. A connection is in scope if it carries or can trigger modification capacity within the zone through any chain of automated action. Human-mediated action is the scope boundary on the outbound side: a connection carrying data that a human reads and then acts upon is outside the assessed zone's attack surface, as the write action belongs to the zone the human operates from. Each in-scope path is documented with business justification, permitted protocols, and authentication requirements. Paths without current business justification are removed, not documented.
+3. **Attack surface assessment:** Because step 1 is complete, all remaining paths crossing the isolated boundary are defined. Scope is determined by technical capability to affect the assessed zone, not by data flow direction or policy configuration. A connection is in scope if it carries or can trigger modification capacity within the zone through any chain of automated action. Human-mediated action is the scope boundary on the outbound side: a connection carrying data that a human reads and then acts upon is outside the assessed zone's attack surface, as the write action belongs to the zone the human operates from. Each in-scope path is documented with business justification, permitted protocols, and authentication requirements. Paths without current business justification are removed, not documented.
 
 4. **Interior hardening:** Applied only where steps 1 through 3 leave a specific, credible residual risk. Interior hardening is the exception, not the default.
 
@@ -97,7 +97,7 @@ OT environments contain systems with operational lifespans of 15 to 30 years. Th
 
 The tier structure presented here is a working model, not a validated standard. It has not been tested at scale across a broad range of industrial environments. Implementation will surface edge cases: zone boundary ambiguities, architectural configurations that do not map cleanly to the tier definitions, and completion criteria that prove unworkable in specific operational contexts. Where implementation reveals structural gaps, the tier model should be revised. The priority order is derived from consequence and dependency analysis, not from field validation, and should be treated accordingly.
 
-The priority order reflects the current realized threat population. Material changes to that population, evidenced by shifts in the documented incident record at standard operators, not by advances in theoretical attack capability, warrant reassessment of tier sequencing. A new class of attack that remains theoretical carries no weight in this reassessment. Documented realized impact at standard operators is the threshold.
+The priority order reflects the current realized threat population. Material changes to that population warrant reassessment of tier sequencing. The threshold is shifts in the documented incident record at standard operators, not advances in theoretical attack capability. A new class of attack that remains theoretical carries no weight in this reassessment. Documented realized impact at standard operators is the threshold.
 
 The specific tier sequence defined here is derived from the consequence profile of high-hazard process environments: SEVESO-classified and similarly regulated facilities where the SIS is the consequence ceiling and IT-origin boundary crossing is the dominant realized threat vector. That consequence profile drives the priority ordering. Different operational contexts produce different consequence profiles and therefore different priority orderings. Discrete manufacturing, pharmaceutical OT, and utilities environments carry different consequence ceilings, different boundary architectures, and different realized threat populations. Applying this framework's logic to those contexts requires deriving the tier order from the specific consequence profile of that environment. Borrowing the SEVESO-derived sequence without that derivation is a category error.
 
