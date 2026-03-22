@@ -22,9 +22,9 @@ Industrial control environments operate under constraints that differ fundamenta
 </div>
 
 <div class="article-item">
-  <a href="/analysis/silent-degradation-under-it-ot-convergence/" class="article-link" data-umami-event="click-ot-degradation">Silent Degradation Under IT/OT Convergence</a>
-  <p class="article-summary">Redundant IT infrastructure inside segmented OT zones can degrade invisibly when health signals do not reach actors with authority to intervene. The gap is often not the absence of signals, but the absence of a clearly defined owner for acting on them.</p>
-</div>
+  <a href="/analysis/silent-degradation-in-ot/" class="article-link" data-umami-event="click-ot-degradation">Silent Degradation in OT Systems</a>
+  <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. The ownership gaps, decayed recovery paths, and eroded diagnosability that accumulate over a system's operational life are not visible until a disruption arrives that the environment can no longer absorb. Security controls placed on that foundation inherit it.</p>
+</div>"
 
 ### Identity and Trust in OT
 
