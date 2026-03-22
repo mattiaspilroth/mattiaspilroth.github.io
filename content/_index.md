@@ -24,7 +24,7 @@ Industrial control environments operate under constraints that differ fundamenta
 <div class="article-item">
   <a href="/analysis/silent-degradation-in-ot/" class="article-link" data-umami-event="click-ot-degradation">Silent Degradation in OT Systems</a>
   <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. The ownership gaps, decayed recovery paths, and eroded diagnosability that accumulate over a system's operational life are not visible until a disruption arrives that the environment can no longer absorb. Security controls placed on that foundation inherit it.</p>
-</div>"
+</div>
 
 ### Identity and Trust in OT
 
