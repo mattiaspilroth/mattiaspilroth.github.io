@@ -14,9 +14,9 @@ These systems drift. Configuration diverges from documentation. Temporary change
 
 This is not a failure of maintenance discipline. It is the structural consequence of how these environments are built, funded, and operated. The same conditions that make change slow also make degradation persistent.
 
-Operational decay is the accumulated condition in which actual state has drifted from documented, supported, and recoverable state without producing a signal that demands correction.
+Operational decay is the accumulated condition in which actual state has drifted from documented, supported, and recoverable state without producing a signal that demands correction. The sections that follow examine the mechanisms through which it accumulates.
 
-Security controls placed into that environment inherit it. They do not arrest it.
+Security controls placed into that environment inherit the condition. They do not arrest it.
 
 ## Why degradation is structural
 
@@ -40,10 +40,10 @@ A named asset in a maintenance scope gets serviced. A dependency crossing scopes
 
 Examples of this pattern are recognizable to practitioners in these environments:
 
-- A redundant network path or hardware component fails but production continues on the surviving path. The loss remains local until maintenance or a second fault removes the remaining margin.
 - A pair of domain controllers stays online while replication has been failing for weeks. Authentication appears normal until failover, password change, or incident response action turns inconsistency into an operational problem.
 - Backup jobs complete on schedule, but the restore path has degraded through media failure, catalog corruption, credential expiration, or application inconsistency. Success is recorded. Recoverability is assumed.
 - Software licenses and certificates carry known expiry dates that cross the boundary between vendor relationship management and operations. Neither side owns the renewal calendar. The service stops on a date that had always been visible and never acted on.
+- A redundant network path or hardware component fails but production continues on the surviving path. The loss remains local until maintenance or a second fault removes the remaining margin.
 
 These are not edge cases. They are the operating model producing its expected output.
 
@@ -53,9 +53,9 @@ The most consequential form of this pattern produces no failure signal at all. A
 
 Redundancy is designed to preserve availability. In degraded environments, redundancy conceals the consumption of the margin it was meant to preserve.
 
-A failed switch uplink in a redundant ring does not stop operations. A broken replication path does not matter while the primary remains available. A standby server can sit unpatched, unsynchronized, or dependent on storage paths that no longer fail over cleanly while the primary continues carrying the load. A stale credential cache can mask identity failure long enough to defer attention.
+A failed switch uplink in a redundant ring does not stop operations. A broken replication path does not matter while the primary remains available. A standby server can sit unpatched, unsynchronized, or dependent on storage paths that no longer fail over cleanly while the primary continues carrying the load.
 
-In each case the system continues by spending the margin redundancy was meant to preserve.
+In each case the system continues by spending the margin redundancy was meant to preserve, whether the surviving path is a network link, a replication primary, or a standby whose readiness has never been verified.
 
 That is why these failures feel sudden when they finally surface. The deterioration was gradual. What appears suddenly is the exhaustion of that margin.
 
@@ -99,17 +99,15 @@ The deeper problem is sequence.
 
 Security controls are selected and deployed against assumed conditions about how the environment will behave. Their effectiveness depends on the environment behaving as documented.
 
-A degraded environment does not behave as documented. A boundary control assumes a defined perimeter. Degraded network state may mean the perimeter is not where the diagram shows it. An identity control assumes a functional directory. Replication failure means the directory may not be consistent. A detection control assumes known baseline behavior. Configuration drift means the baseline may no longer reflect what normal looks like.
+A degraded environment does not behave as documented. A boundary control assumes a defined perimeter. Degraded network state may mean the perimeter is not where the diagram shows it. An identity control assumes a functional directory. Where replication has failed, that assumption does not hold. A detection control assumes known baseline behavior. Configuration drift means the baseline may no longer reflect what normal looks like.
 
 A firewall added to a decayed network boundary provides only the appearance of security. The control is present. The foundation is not stable. Security layered onto a degraded foundation inherits the instability it was meant to address.
 
 ## Convergence extends the degradation surface
 
-IT and OT convergence did not introduce this failure pattern. It enlarged the surface over which it operates and reduced the chance that normal operating routines will surface it early.
+IT and OT convergence did not introduce this failure pattern. Convergence enlarged the surface over which the pattern operates and reduced the chance that normal operating routines will surface degradation early.
 
-Traditional control systems usually express failure through process behavior: alarms, bad values, permissives, and trips that operators are trained to read. Converged infrastructure fails differently. Virtualization platforms, shared storage, domain services, backup systems, and management networks often degrade internally before the applications they support show symptoms. The early signals appear as replication lag, stale certificates, missed backups, or synchronization drift. These conditions do not naturally enter the process alarm model.
-
-Convergence also introduces dependencies the original OT architecture did not carry. Identity depends on time. Recovery depends on backup integrity. Redundancy depends on opaque network state. Each dependency is a boundary where ownership may be incomplete and degradation can accumulate silently.
+Converged infrastructure fails differently from traditional control systems. Virtualization platforms, shared storage, domain services, and management networks degrade internally before the applications they support show symptoms, and those early signals do not naturally enter the process alarm model. Convergence also introduces dependencies the original OT architecture did not carry: identity depends on time, recovery depends on backup integrity, redundancy depends on opaque network state. Each dependency is a boundary where ownership may be incomplete and degradation can accumulate silently.
 
 Those dependencies are also the paths that monitoring and management traffic must traverse to surface degrading conditions. Security segmentation designed to limit lateral movement can inadvertently block those same paths, suppressing the indicators needed to detect degradation before it reaches a failure threshold.
 

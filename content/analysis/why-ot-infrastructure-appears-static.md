@@ -86,21 +86,19 @@ The Purdue Enterprise Reference Architecture described how industrial systems we
 
 A descriptive model became design doctrine because it aligned with how owner-operators, engineering firms, and assessors already organized their work, and because no purpose-built security alternative existed to displace it.
 
+The model persists for the same reason the infrastructure it describes persists. The organizational and funding conditions that produced both remain largely in place.
+
 ## Pattern compliance versus risk reduction
 
 What emerged at the discipline level arrived at the site level as templates to implement. Sites facing security obligations without a standing engineering function reached for the methods the discipline had already normalized: Purdue for structure, IT security controls for the catalog, and compliance evidence as the measure of progress.
 
 Those frameworks were available, auditable, and did not depend on contextual engineering judgment the organization often did not have. They were built for environments that tolerate frequent change, assume restartable assets, and treat bounded failure as routine. They achieve scalability and consistency through centralized management, identity, and logging platforms. Importing those frameworks into OT reconnects independent process areas through shared management infrastructure, creating dependencies the physical architecture was designed to prevent.
 
-In IT environments, security controls carry an operational tax that the environment is designed to absorb: deployment effort, maintenance burden, update cycles, and the complexity they introduce are built into how IT operations run. In long-lifecycle OT, no equivalent absorption mechanism exists. The same tax lands on environments where change windows are scarce, centralized support is absent, and every modification competes for the same constrained maintenance opportunity. 
+In IT environments, security controls carry an operational tax that the environment is designed to absorb: deployment effort, maintenance burden, update cycles, and the complexity they introduce are built into how IT operations run. In long-lifecycle OT, no equivalent absorption mechanism exists. The same tax lands on environments where change windows are scarce, centralized support is absent, and every modification competes for the same constrained maintenance opportunity.
 
 That tax compounds across decades. Many controls that require continuous tuning, centralized support, or frequent updates were designed around operating assumptions these environments do not hold.
 
 Patterns inherited from adjacent disciplines still shape OT security design because they are legible to the institutions that fund, procure, and audit it.
-
-## Architectural consequences
-
-Where operators must diagnose and respond to process upsets under pressure, controls that obscure system state or slow fault isolation compete with safe recovery.
 
 The test is not whether a control works at deployment. The test is whether it holds across the operational life of the asset.
 
