@@ -14,7 +14,7 @@ These systems drift. Configuration diverges from documentation. Temporary change
 
 This is not a failure of maintenance discipline. It is the structural consequence of how these environments are built, funded, and operated. The same conditions that make change slow also make degradation persistent.
 
-Operational decay is the accumulated condition in which actual state has drifted from documented, supported, and recoverable state without producing a signal that demands correction. The sections that follow examine the mechanisms through which it accumulates.
+Operational decay is a more probable cause of disruption at most sites than the adversarial scenarios the industry organizes against. It is the accumulated condition in which actual state has drifted from documented, supported, and recoverable state without producing a signal that demands correction. The sections that follow examine the mechanisms through which it accumulates.
 
 Security controls placed into that environment inherit the condition. They do not arrest it.
 
