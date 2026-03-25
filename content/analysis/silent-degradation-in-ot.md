@@ -57,7 +57,9 @@ A failed switch uplink in a redundant ring does not stop operations. A broken re
 
 In each case the system continues by spending the margin redundancy was meant to preserve, whether the surviving path is a network link, a replication primary, or a standby whose readiness has never been verified.
 
-That is why these failures feel sudden when they finally surface. The deterioration was gradual. What appears suddenly is the exhaustion of that margin.
+That dynamic also attracts consolidation. A system presented as high-availability becomes a natural home for additional services, integrations, and dependencies. The system is reliable, it has capacity, and placing new services on it is easier than provisioning independently. Over time the redundant system accumulates a service population that was never part of its original design basis. When it eventually fails, it brings down a larger population of dependent services than its original design anticipated. The margin that was meant to reduce consequence has been converted into a mechanism that increases it.
+
+That is why the exhaustion of redundant margin feels sudden when it finally surfaces. The deterioration was gradual. What appears suddenly is the moment the last margin is consumed.
 
 A system that continues running while its recovery assumptions and diagnostic clarity erode is not operationally stable. It is still functioning. That is not the same thing.
 
