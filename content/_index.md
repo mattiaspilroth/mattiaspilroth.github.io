@@ -10,11 +10,11 @@ I arrived at security architecture through operations. That origin shapes how I 
 
 ## Analysis
 
-Structural analysis of OT security architecture, operational constraints, trust models, and failure patterns in high-consequence industrial environments. The focus is on the conditions that determine whether security measures remain effective in practice, not only on the measures themselves.
+Structural analysis of how OT security architecture behaves under operational reality, why the industry's dominant investment logic is miscalibrated against the conditions that produce actual disruption, and what a consequence-driven alternative requires.
 
-### Operational Reality
+### The Structural Resilience Series
 
-Industrial control environments operate under constraints that differ fundamentally from enterprise IT. These analyses examine how long lifecycles, validated systems, segmented architectures, and operational ownership shape failure behavior and define what security measures can realistically be sustained.
+Long-lifecycle industrial environments produce specific structural conditions (constrained change authority, validated system models, operational decay) that determine whether security measures hold under production reality. These papers examine those conditions, the failure modes they produce, and why the industry's dominant approach to OT security investment is miscalibrated against both.
 
 <div class="article-item">
   <a href="/analysis/why-ot-infrastructure-appears-static/" class="article-link" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a>
@@ -26,21 +26,7 @@ Industrial control environments operate under constraints that differ fundamenta
   <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. The ownership gaps, decayed recovery paths, and eroded diagnosability that accumulate over a system's operational life are not visible until a disruption arrives that the environment can no longer absorb. Security controls placed on that foundation inherit it.</p>
 </div>
 
-### Identity and Trust in OT
-
-Identity and trust architectures in OT environments operate under constraints that standard enterprise models do not anticipate. The following analyses examine how common approaches behave across segmented networks, long system lifecycles, and distributed operational authority, and where they break down.
-
 <div class="article-item">
-  <a href="/architecture/ot-identity-architecture/" class="article-link" data-umami-event="click-ot-identity">OT Identity Architecture: Federation, PAM, and Residual Risk</a>
-  <p class="article-summary">A structural analysis of common identity models in OT. It explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.</p>
-</div>
-
-<div class="article-item">
-  <a href="/architecture/trust-decay-in-constrained-ot-environments/" class="article-link" data-umami-event="click-ot-decay">Part 1: Trust Decay in Constrained OT Environments</a>
-  <p class="article-summary">Certificate validation assumes trust material is continuously obtainable. In segmented OT architectures, that assumption may not hold. Trust erosion can remain latent until operational stress reveals it.</p>
-</div>
-
-<div class="article-item">
-  <a href="/architecture/trust-flow-in-constrained-ot-environments/" class="article-link" data-umami-event="click-ot-flow">Part 2: Trust Flow in Constrained OT Environments</a>
-  <p class="article-summary">Defines the properties required for validation to occur predictably and repeatedly inside constrained zones. Written as architectural requirements to prevent the failure modes identified in Part 1.</p>
+  <a href="/analysis/the-coverage-trap/" class="article-link" data-umami-event="click-coverage-trap">The Coverage Trap</a>
+  <p class="article-summary">OT security programs are calibrated to demonstrate coverage rather than to address the conditions under which these environments actually fail. The frameworks driving program design were built for environments with different failure cost structures, different change tolerances, and different threat populations. The assume-everywhere posture those frameworks impose has no stopping point derived from consequence and cannot distinguish between the threat populations producing disruption and those that are not. Investment is directed toward depth against adversaries that are not materializing while boundary failures and operational decay accumulate unaddressed.</p>
 </div>
