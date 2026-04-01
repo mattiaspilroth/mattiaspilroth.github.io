@@ -2,7 +2,7 @@
 title: "The Coverage Trap"
 date: 2026-03-29
 lastmod: 2026-03-29
-description: "OT security inherited IT's assume-everywhere logic, creating coverage-based programs that misallocate effort in layered industrial environments."
+description: "OT security programs are calibrated to demonstrate coverage rather than to address the realized threat population. The frameworks driving program design were built for environments with different failure cost structures, different change tolerances, and different threat populations."
 image: "images/og-coverage-trap.jpg"
 ---
 
@@ -18,15 +18,15 @@ What existed was IT security. Control systems run on computers. IT security had 
 
 Coverage-based compliance was the result. Practitioners applied the tools the discipline had. The industry conditions that produced those tools, not the judgment of the people using them, explain why the outcome was miscalibrated.
 
-## Why coverage persists: the investment logic and the competence gap
+## Why coverage persists: investment logic, competence gaps, and institutional capture
 
 That initial convergence persisted because coverage was the only investment logic that could be applied without deeply understanding the environment it was applied to.
 
-IT security operates on an assume-compromise principle. Assets are internet-connected, threats arrive from any direction, and no layer of the architecture can be assumed to provide protection that reduces the requirement for the next. Where compromise must be assumed at every layer, broad coverage across the estate follows as the logical response. That logic is internally consistent for IT.
+IT security operates on an assume-breach principle. Assets are internet-connected, threats arrive from any direction, and no layer of the architecture can be assumed to provide protection that reduces the requirement for the next. Where breach must be assumed at every layer, broad coverage across the estate follows as the logical response. That logic is internally consistent for IT.
 
-OT framework authors faced industrial environments they could not individually characterize. A framework written for environments this varied cannot assume layering. It cannot assume that a threat reaching the control network has already crossed multiple barriers. The only posture that holds across that population without requiring site-specific knowledge is the same one IT had already developed: an assume-everywhere posture that specifies controls for every layer.
+OT framework authors faced industrial environments they could not individually characterize. A framework written for environments this varied cannot assume layering. It cannot assume that a threat reaching the control network has already crossed multiple barriers. The only posture that holds across that population without requiring site-specific knowledge is the same one IT had already developed: a protect-everything posture that specifies controls for every layer.
 
-Coverage became the organizing principle because it is the correct response to an environment where layering cannot be assumed. The problem is not that this logic was adopted as a starting point. The problem is that it became the permanent organizing principle, applied uniformly to environments where genuine architectural layering exists and makes sequenced, consequence-driven investment both possible and rational.
+Coverage became the organizing principle because it is the correct response to an environment where layering cannot be assumed. The problem is not that this logic was adopted as a starting point. The problem is that it became the permanent organizing principle, applied uniformly to environments where architectural layering is real, limited in crossing points, and governable. The question the coverage model never asks is whether the boundary has been made reliable enough to change what interior investment is actually necessary.
 
 The correction mechanism that might have interrupted this convergence was absent. IT security practitioners understood frameworks and controls but had limited exposure to the operational constraints that make long-lifecycle OT structurally different. OT practitioners understood the operational environment but rarely had the IT security depth to identify where the imported logic was a poor fit. The cross-domain competence to recognize the mismatch was not a capability the industry had developed. The discipline converged on what it could execute and audit.
 
@@ -44,11 +44,11 @@ Every OT site is the product of decisions accumulated across its operational lif
 
 Each site's operational history continues to accumulate independently, and the variance a framework must absorb grows rather than converges. This property has a name: site-specificity. Each facility is the product of decisions that accumulated independently and do not replicate elsewhere.
 
-A framework defines a target state. It cannot know the distance between that target and where any given site actually starts. Per-site assessment is not an implementation preference. It is a structural requirement that the heterogeneity of industrial environments makes permanent. A framework that cannot account for that variance has no instrument for distinguishing between a site that needs its boundary rebuilt from nothing and a site where the boundary already exists. The assume-everywhere posture is the only posture available to a framework in that position.
+A framework defines a target state. It cannot know the distance between that target and where any given site actually starts. Per-site assessment is not an implementation preference. It is a structural requirement that the heterogeneity of industrial environments makes permanent. A framework that cannot account for that variance has no instrument for distinguishing between a site that needs its boundary rebuilt from nothing and a site where the boundary already exists. The protect-everything posture is the only posture available to a framework in that position.
 
 ## The realized threat population
 
-The assume-everywhere posture inherited its threat calibration from IT: any layer could be the entry point for any threat, so every layer requires protection. The threat population informing that posture is not the one producing most OT incidents at standard operators (sites outside the narrow band of strategically targeted national infrastructure). The distinction matters because threat models built for that narrow band are routinely applied to operators for whom they do not hold.
+The protect-everything posture inherits its threat calibration from IT, not from the environments it governs. The threat population informing that posture is not the one producing most OT incidents at standard operators (sites outside the narrow band of strategically targeted national infrastructure). The distinction matters because threat models built for that narrow band are routinely applied to operators for whom they do not hold.
 
 Realized OT disruption at standard operators traces predominantly to IT-origin intrusion crossing inadequate boundary controls, IT compromise triggering precautionary shutdown, and operational decay. None of these requires OT-specific attack capability.
 
@@ -58,7 +58,7 @@ Operational decay occupies a different category. It is the accumulated divergenc
 
 Coverage programs have no category for this condition. A control can be present, absent, compliant, or deficient. Degradation occupies none of those states. The firewall exists, but the network topology it was designed to segment has drifted beyond the original design. The backup system runs, but the restore path has not been validated against the current system state. Each control is present. Each control's effectiveness depends on foundation conditions the coverage model does not examine. A program organized around control presence cannot detect foundation erosion.
 
-The coverage model cannot distinguish between the threat populations that are producing disruption and those that are not, because it does not derive its control requirements from the threat population. It derives them from the catalog. Where the realized threat population is dominated by boundary failures and operational decay, the assume-everywhere posture directs investment toward depth against adversaries that are not materializing while the conditions that are producing disruption accumulate unaddressed.
+The coverage model cannot distinguish between the threat populations that are producing disruption and those that are not, because it does not derive its control requirements from the threat population. It derives them from the catalog. Where the realized threat population is dominated by boundary failures and operational decay, the protect-everything posture directs investment toward depth against adversaries that are not materializing while the conditions that are producing disruption accumulate unaddressed.
 
 ## Why OT-specific threat capability does not concentrate at standard operators
 
@@ -76,7 +76,7 @@ That misallocation persists because coverage programs measure control presence, 
 
 Coverage programs assess legitimate controls, but the metric cannot determine whether those controls are distributed where consequence is highest. The problem is not the controls. It is the investment logic that drives their selection and distribution.
 
-Because the assume-everywhere posture requires controls at every layer, a coverage score records that controls exist across the estate. It carries no information about whether they are concentrated where consequence is highest or spread uniformly regardless of consequence. A site with protection concentrated on its highest-consequence assets and a site with protection spread uniformly produce identical coverage scores. The metric cannot distinguish between them.
+Because the protect-everything posture requires controls at every layer, a coverage score records that controls exist across the estate. It carries no information about whether they are concentrated where consequence is highest or spread uniformly regardless of consequence. A site with protection concentrated on its highest-consequence assets and a site with protection spread uniformly produce identical coverage scores. The metric cannot distinguish between them.
 
 The score is accurate. What it measures is not resilience.
 
@@ -84,7 +84,7 @@ The score is accurate. What it measures is not resilience.
 
 The same logic that distorts measurement also distorts allocation.
 
-The assume-everywhere posture produces a catalog without a natural boundary. Every layer requires protection because any layer could be the entry point. Under a fixed operational budget, a catalog bounded by scope rather than consequence produces a predictable outcome: budget and engineering capacity are spread across the full control surface, and whether the controls that matter most have been adequately addressed remains unknown.
+The protect-everything posture produces a catalog without a natural boundary. Every layer requires protection because any layer could be the entry point. Under a fixed operational budget, a catalog bounded by scope rather than consequence produces a predictable outcome: budget and engineering capacity are spread across the full control surface, and whether the controls that matter most have been adequately addressed remains unknown.
 
 Coverage programs also demand sustained operational effort just to remain compliant: patching, firmware maintenance, vulnerability tracking, and triage of alerts generated by detection systems calibrated to the full asset population. The burden is continuous. In long-lifecycle OT environments it competes directly with production support for the same constrained resource pool, on IT timescales, without the maintenance infrastructure to absorb it.
 
@@ -98,14 +98,14 @@ The resource problem has no natural resolution within the coverage model because
 
 Process safety engineering operates differently because it allocates protection against consequence-bounded failure paths, not against a control catalog. Relief valves, containment areas, emergency shutdown systems, and independent protection layers are each placed where they address a specific failure mode on a specific path to harm. The model stops where incremental protection cost exceeds incremental risk reduction. That stopping point is engineered from the consequence profile, the credible failure modes, and the protection that already exists at each layer: each barrier reduces the requirement for the next, and the model terminates where the residual risk falls within the accepted tolerance.
 
-The logic that bounds process safety investment has no equivalent in OT security programs built on the coverage model. A program built on the assume-everywhere posture cannot derive an equivalent stopping point. It cannot use the consequence ceiling to bound the requirement. It cannot use the realized threat population to reduce that requirement. It cannot use the architecture to establish what protection already exists at each layer. The catalog ends where its authors stopped writing, not where the environment's risk profile permits.
+The logic that bounds process safety investment has no equivalent in OT security programs built on the coverage model. A program built on the protect-everything posture cannot derive an equivalent stopping point. It cannot use the consequence ceiling to bound the requirement. It cannot use the realized threat population to reduce that requirement. It cannot use the architecture to establish what protection already exists at each layer. The catalog ends where its authors stopped writing, not where the environment's risk profile permits.
 
 ## What the coverage model cannot provide
 
-The coverage trap is not a resourcing failure. It is an investment logic failure. The assume-everywhere posture produces programs that over-invest in demonstrable compliance and under-invest in the structural conditions that determine whether these environments can withstand and recover from disruption. The mismatch is not visible within the governance structures that control security investment, because those structures were built to measure compliance, not resilience.
- 
+The coverage trap is not a resourcing failure. It is an investment logic failure. The protect-everything posture produces programs that over-invest in demonstrable compliance and under-invest in the structural conditions that determine whether these environments can withstand and recover from disruption. The mismatch is not visible within the governance structures that control security investment, because those structures were built to measure compliance, not resilience.
+
 A different organizing logic would sequence investment by consequence and dependency rather than by catalog. That logic must derive a stopping point from the architecture and threat population that actually exist, and it cannot introduce shared control planes that flatten the isolation the architecture requires. It must also make gaps visible rather than concealing them behind percentage scores. The framework structure is not the problem. The organizing logic it has absorbed is. Those are not properties of a better compliance framework. They are the conditions the coverage model cannot satisfy.
- 
+
 Where the organizing principle is coverage, the measure of progress is compliance. Where the realized threat population is misidentified and the catalog has no stopping point, compliance measures something other than resilience. The investment continues. The gap persists.
- 
+
 What that logic requires is the subject of a subsequent paper.
