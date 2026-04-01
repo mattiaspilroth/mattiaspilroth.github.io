@@ -22,7 +22,7 @@ Coverage-based compliance was the result. Practitioners applied the tools the di
 
 That initial convergence persisted because coverage was the only investment logic that could be applied without deeply understanding the environment it was applied to.
 
-IT security operates on an assume-breach principle. Assets are internet-connected, threats arrive from any direction, and no layer of the architecture can be assumed to provide protection that reduces the requirement for the next. Where breach must be assumed at every layer, broad coverage across the estate follows as the logical response. That logic is internally consistent for IT.
+IT security operates on an assume-breach principle. Assets are internet-connected, threats arrive from any direction, and no layer of the architecture can be assumed to provide protection that reduces the requirement for the next. Where breach must be assumed at every layer, protecting every layer follows as the logical response. That logic is internally consistent for IT.
 
 OT framework authors faced industrial environments they could not individually characterize. A framework written for environments this varied cannot assume layering. It cannot assume that a threat reaching the control network has already crossed multiple barriers. The only posture that holds across that population without requiring site-specific knowledge is the same one IT had already developed: a protect-everything posture that specifies controls for every layer.
 
