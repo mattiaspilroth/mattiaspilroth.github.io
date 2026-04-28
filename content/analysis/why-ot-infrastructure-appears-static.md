@@ -1,7 +1,7 @@
 ---
 title: "Why OT Infrastructure Appears Static"
 date: 2026-02-22
-lastmod: 2026-03-15
+lastmod: 2026-04-24
 description: "Stability in process industries is an engineered response to the validated appliance model, asymmetric failure cost, and constrained change authority."
 image: "images/og-why-ot-static.jpg"
 ---
@@ -10,7 +10,7 @@ Industrial control systems in chemical plants, refineries, and generating statio
 
 From outside the operating context, this looks irrational. Inside the fence, it is a rational response to consequence, liability, validation limits, and funding mechanics. The inertia follows from the constraints that determine what change the plant can safely absorb.
 
-Many of these systems entered service under an isolation assumption. That assumption no longer holds. The contractual, technical, and organizational structures built around it still do.
+Many of these systems entered service under an isolation assumption. At many sites, later integration has weakened or removed that assumption, while the contractual, technical, and organizational structures built around it remain.
 
 This analysis focuses on continuous process industries and other high-consequence environments where disturbances can escalate into physical outcomes. Discrete manufacturing and lower-consequence operations face different trade-offs.
 
@@ -22,7 +22,7 @@ IT favors adaptability, rapid change, scalable services, and regular refresh. Re
 
 OT in continuous operations optimizes for deterministic behavior, safety, and continuity of the physical process. Predictability beats flexibility, and availability means correct action at the correct moment, not just system uptime.
 
-Control systems deployed through the 1990s and early 2000s reflected the engineering practice of the era. They were purpose-built for deterministic control, designed for decades of service, and deployed under risk models that centered on equipment failure, process upset, and human error. Enterprise connectivity stayed limited, remote access stayed tightly governed, and cyber intrusion had not yet emerged as a credible operational threat.
+Control systems deployed through the 1990s and early 2000s reflected the engineering practice of the era. They were purpose-built for deterministic control, designed for decades of service, and deployed under risk models that centered on equipment failure, process upset, and human error. Enterprise connectivity was more limited, remote access was narrower or less persistent, and cyber intrusion was not generally treated as a primary operational design basis.
 
 In that context, isolation was not a security failure waiting to happen. It was the rational design response to the environment as it was understood. Isolation became a design assumption.
 
@@ -72,7 +72,7 @@ Capital projects deliver major OT systems. After commissioning, operations inher
 
 Project funding covers engineering, integration, validation, and startup. The operations budget funds continuity, maintenance, and repair. Most sites do not fund operations teams to behave like product engineering organizations that continuously refactor running systems.
 
-The absence of a security engineering function was not an oversight. For most operators, cyber risk did not produce consequences visible enough to force budget decisions. A capability that rarely had to act delivered no observable value to the budgeting process. The funding gap persisted because the business case for closing it never arrived from inside the fence.
+In many organizations, the absence of a standing security engineering function was not experienced as an oversight at the time. For most operators, cyber risk did not produce consequences visible enough to force budget decisions. A capability that rarely had to act delivered no observable value to the budgeting process. The funding gap persisted because the business case for closing it never arrived from inside the fence.
 
 The historical baseline is changing. Integration is expanding, tooling is advancing, and the paths from IT compromise into OT environments are widening. Regulation has arrived ahead of most operators' direct experience, but not ahead of the actual threat trajectory. By the time the obligation arrives, the engineering discipline needed to respond usually does not exist.
 
@@ -84,7 +84,7 @@ OT security emerged as a discipline without a standing engineering base to devel
 
 The Purdue Enterprise Reference Architecture described how industrial systems were structured: field devices, control layers, site operations, enterprise. It documented existing reality. It gave engineering firms, operators, and auditors a common language for zones, interfaces, and responsibilities. That it described structure rather than threat paths mattered less than that it was available, legible, and practical to specify and audit across large capital programs.
 
-A descriptive model became design doctrine because it aligned with how owner-operators, engineering firms, and assessors already organized their work, and because no purpose-built security alternative existed to displace it.
+A descriptive model was often treated as design doctrine because it was legible, already aligned with engineering and audit practices, and easier to specify than a site-specific consequence model.
 
 The model persists for the same reason the infrastructure it describes persists. The organizational and funding conditions that produced both remain largely in place.
 
