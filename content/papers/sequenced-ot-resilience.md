@@ -162,11 +162,7 @@ Consider a vendor remote access path used for diagnostic support. At the safety-
 
 Four zones. Same framework. Four different outputs. None of them are deviations. The framework's posture is not minimalist. It is governed.
 
-### 8.4 Reactive activities
-
-Patching, firmware updates, and reactive configuration hardening share a structural property: the backlog grows faster than the activity can close it, because the rate of vulnerability discovery consistently exceeds the rate of remediation. The structural stages deliver risk reduction independent of the discovery rate. A governed boundary's protective value is not directly coupled to vulnerability discovery, provided the boundary remains governed and verified. The framework treats reactive activities as parallel backlog unless a specific pathway finding makes them necessary to close a governed exposure within a stage.
-
-### 8.5 The consequence ceiling
+### 8.4 The consequence ceiling
 
 The ceiling is established by confirming that the path to unacceptable consequence requires defeating more than one independent system. The form of the barrier does not define the ceiling. The verified independence of the barriers does. The ceiling is an architectural condition. It holds or it does not.
 
@@ -184,13 +180,15 @@ The credible reachable threat population does not define the ceiling, but it tes
 
 Where the ceiling does not hold, whether in a safety-defined or non-safety-defined environment, the framework can still surface and govern exposures, but all stage assessments operate as exposure management rather than consequence-bounded investment until the condition is resolved. The response is a process safety or engineering remediation, not a security control. That remediation outranks the security engagement and is outside the framework's scope to direct.
 
-## 9. The stage sequence
+### 8.5 Reactive activities
 
-With the consequence ceiling established as a verified architectural condition, the stage sequence specifies how the bounded exposure space is governed.
+Patching, firmware updates, and reactive configuration hardening share a structural property: the backlog grows faster than the activity can close it, because the rate of vulnerability discovery consistently exceeds the rate of remediation. The structural stages deliver risk reduction independent of the discovery rate. A governed boundary's protective value is not directly coupled to vulnerability discovery, provided the boundary remains governed and verified. The framework treats reactive activities as parallel backlog unless a specific pathway finding makes them necessary to close a governed exposure within a stage.
+
+## 9. The stage sequence
 
 The stage sequence below is consequence-derived. It applies wherever consequence varies by zone and where adversarial and decay-based threats become consequential through governable structures. The consequence profile of the environment determines what each stage assessment produces and how stringent the outputs are, not whether the sequence applies.
 
-Once the consequence ceiling is verified, or provisionally bounded through a documented minimal consequence assessment, the framework sequences the work below it. Whether a function warrants independent zone-level treatment is itself a finding from Stage 1: a function whose worst credible consequence is a stopped production line is still a consequence ceiling, and that ceiling bounds all subsequent investment in the same way as a formally defined safety case. The difference is in the stringency of the outputs, not in the structure of the work.
+With the ceiling verified or provisionally bounded through a documented assessment, the framework sequences the work below it. Whether a function warrants independent zone-level treatment is itself a finding from Stage 1: a function whose worst credible consequence is a stopped production line is still a consequence ceiling, and that ceiling bounds all subsequent investment in the same way as a formally defined safety case. The difference is in the stringency of the outputs, not in the structure of the work.
 
 ### 9.1 Scope definition
 
