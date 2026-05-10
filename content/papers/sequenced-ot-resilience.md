@@ -104,7 +104,7 @@ The stage sequence is not arbitrary. It instantiates a specific three-step archi
 
 Where resource constraints prevent full completion, the sequence preserves a governed position at the highest-consequence end of the work. Stages that have reached Governed status are fully assessed and governed. Stages that are incomplete are named and sequenced. The unresolved work sits below the completed work in the consequence order, and that position is explicit rather than invisible. The framework does not require full completion to produce a defensible result. It requires that what is complete is genuinely governed and what remains is honestly reported.
 
-**Reactive activities.** Patching, firmware updates, and reactive configuration hardening share a structural property: their convergence value falls as the discovery rate rises faster than the activity cadence. The structural stages deliver risk reduction independent of the discovery rate. A governed boundary's protective value is not directly coupled to vulnerability discovery, provided the boundary remains governed and verified. The framework treats reactive activities as parallel backlog unless a specific pathway finding makes them necessary to close a governed exposure within a stage.
+**Reactive activities.** Patching, firmware updates, and reactive configuration hardening share a structural property: the backlog grows faster than the activity can close it, because the rate of vulnerability discovery consistently exceeds the rate of remediation. The structural stages deliver risk reduction independent of the discovery rate. A governed boundary's protective value is not directly coupled to vulnerability discovery, provided the boundary remains governed and verified. The framework treats reactive activities as parallel backlog unless a specific pathway finding makes them necessary to close a governed exposure within a stage.
 
 ## 6. Two threats, one sequence
 
@@ -286,7 +286,7 @@ Stage 6 is structurally different from the preceding stages. Stages 1 through 5 
 
 Each indicator requires three properties at Stage 6 completion: a named owner with the operational authority to investigate and act, a defined review condition specifying frequency or trigger, and a selected review mechanism. The mechanism is a documented assessment output, not a prescription. Automated threshold monitoring, scheduled manual inspection, periodic walkdown, and periodic audit sit on the same mechanism scale the framework applies to contact points and zone conditions throughout. The appropriate mechanism for a given indicator is determined by the consequence level of the zone and by whether the monitoring infrastructure itself introduces a contact point the framework would otherwise require to be governed or removed.
 
-Where automated monitoring of a high-consequence zone would require a persistent agent, inbound credentials, or a management-plane dependency that crosses a governed boundary, manual or periodic mechanisms are the correct output. That is not a program deficiency. It is the capability-mechanism logic applied to monitoring itself.
+Where automated monitoring of a high-consequence zone would require a persistent agent, inbound credentials, or a management-plane dependency that crosses a governed boundary, manual or periodic mechanisms are the correct output: the capability-mechanism logic applied to monitoring itself.
 
 Stage 6 is Governed when every health baseline indicator defined in preceding stages has a named owner, a defined review condition, and a selected mechanism documented as an assessment output. Indicators without a named owner are ungoverned at the point where governance matters most.
 
@@ -304,7 +304,7 @@ The stage sequence in this paper follows a logic that holds across most industri
 
 ### 11.1 Instantiation as the assessment
 
-What varies across operational contexts is not the sequencing logic but its instantiation: which systems constitute the consequence ceiling, where the primary barrier sits, what the credible reachable threat population looks like, and what completion means at each stage. The sequence in this paper is the instantiation for high-hazard continuous process environments operating under functional safety regulation. The sequence in this paper is offered as a worked derivation, not as a portable template to be applied without assessment.
+What varies across operational contexts is not the sequencing logic but its instantiation: which systems constitute the consequence ceiling, where the primary barrier sits, what the credible reachable threat population looks like, and what completion means at each stage. The sequence in this paper is the instantiation for high-hazard continuous process environments operating under functional safety regulation. It is offered as a worked derivation, not as a portable template to be applied without assessment.
 
 The framework's logic is transferable. The specific instantiation is not. Every environment type requires its own derivation from consequence profile and dependency structure. For environment types not covered by this instantiation, that derivation is the first step of the assessment.
 
