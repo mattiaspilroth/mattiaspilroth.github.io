@@ -17,15 +17,21 @@ Security investment in OT has produced real progress under the existing model. C
 
 ## The Coverage Trap
 
-The Coverage Trap is a condition in which control coverage becomes the governing unit of security investment.
+The Coverage Trap is a condition in which control coverage becomes the governing unit of security investment. The trap is not arbitrary. It is the predictable execution layer of an inherited posture.
 
-Coverage measures the presence of controls. It does not establish whether those controls constrain credible pathways to consequence. The two are not the same. A program organised around coverage can expand indefinitely while remaining both structurally unbounded and decoupled from the conditions that determine whether consequence can be reached.
+OT security inherited from IT security the assume-breach posture: no architectural layer can be trusted to constrain the next, so every layer must defend independently. In IT environments, where architectural layering does not reliably hold and the perimeter is effectively absent, this posture is often valid.
 
-In OT environments, where controls are costly to deploy and maintain, this produces a compounding operational burden. Every control deployed adds a permanent obligation: patching, firmware maintenance, access review, alert triage, lifecycle replacement. The catalog grows. The burden grows with it.
+When transferred into OT as a universal assumption, it produces a universal exposure model. Every system in the estate is treated as potentially exposed to every threat, because no architectural ceiling, no verified boundary that limits how far compromise can propagate, has been established.
 
-The result is a self-reinforcing condition. The program has no defined stopping point. It cannot reach the structural gaps the catalog cannot see. The infrastructure required to sustain it becomes part of the exposure it was meant to reduce.
+Universal exposure produces an unbounded obligation surface. If every system is potentially exposed, then every system requires detection, patching, hardening, monitoring, recovery capability, and access governance. The obligation surface has no upper limit because the exposure assumption itself has no limit.
 
-Understanding how this condition became the default requires examining the institutional conditions under which OT security investment was first organised.
+Unbounded obligation cannot be executed through judgment at scale. It collapses into catalog. Coverage is what unbounded obligation looks like when it meets finite resources and the requirement for institutional legibility. Coverage measures the presence of controls, not whether those controls constrain credible pathways to consequence.
+
+A program organised around coverage can expand indefinitely while remaining structurally unbounded and decoupled from the conditions that determine whether consequence can be reached. The catalog grows. The burden grows with it. At scale, both push the program toward centralised management infrastructure, which introduces privileged cross-boundary pathways by design.
+
+The result is a self-reinforcing condition. The program has no defined stopping point because the posture it executes has no stopping point. It cannot reach the structural gaps the catalog cannot see. The infrastructure required to sustain it becomes part of the exposure it was meant to reduce.
+
+This condition did not emerge by accident. It became the default through the way OT security investment was first structured.
 
 ## Why coverage became the organizing principle
 
@@ -35,15 +41,15 @@ What was most available to procurement, audit, and program governance was IT-sha
 
 Coverage is not meaningless. Control coverage can show whether obligations were attempted, whether basic controls exist, and whether a program is producing evidence. The trap begins when coverage becomes the investment logic and is treated as a proxy for resilience. Throughout this paper, "coverage model" refers to that investment logic, and "coverage program" refers to the program operating under it.
 
-IEC 62443 and similar OT-native security standards developed the right conceptual vocabulary: zones defined by function, conduits governing what crosses between them, security levels derived from consequence profile. Those concepts are correct inputs to a consequence-derived model and remain so. The critique here is not of that conceptual architecture. It is of the institutional implementation pattern that sits on top of it. Applied as catalog coverage, which is the default institutional outcome, those requirements produce a scored compliance position against a defined set of controls without the site-specific pathway assessment the conceptual architecture assumed would be performed. The standard's concepts are sound. The conditions under which the standard is applied are the problem, and those conditions are common enough to be the default rather than the exception.
+IEC 62443 and similar OT-native security standards developed the right conceptual vocabulary: zones defined by function, conduits governing what crosses between them, security levels derived from consequence profile. Those concepts are correct inputs to a consequence-derived model. The critique is not of that conceptual architecture. It is of the institutional implementation pattern that converts those concepts into catalog coverage, producing a scored compliance position without the site-specific pathway assessment the conceptual architecture assumed would be performed.
 
-The operative mechanism is the transition of practitioners into OT environments who understand framework compliance but do not have the operational depth to exercise the contextual judgment the framework assumes. Applied by someone who understands the framework structure but not the industrial environment, the implementation requirements produce coverage that is internally consistent with the standard and structurally disconnected from the site's actual consequence profile. The result is a program whose reported state and actual protection state can diverge from the outset, with no mechanism inside the model for detecting the divergence.
+The operative mechanism is the transition of practitioners into OT environments who understand framework compliance but do not have the operational depth to exercise the contextual judgment the framework assumes. The result is coverage that is internally consistent with the standard and structurally disconnected from the site's actual consequence profile.
 
 Coverage did not win because it was correct. It won because it was the only model that could satisfy procurement, audit, and governance simultaneously under those conditions. Given those constraints, the outcome was structurally inevitable. No alternative investment logic could have emerged under those conditions.
 
 ## The logical failure
 
-Beyond its institutional inevitability, the coverage model has a separate defect: it is not logically sufficient to represent the protection state it claims to track. Protection state is the verified condition that credible pathways to consequence are constrained or terminated. A program that records deployed controls produces the same output regardless of whether those controls interrupt credible pathways to consequence or not.
+Institutional inevitability explains why the model locked in. It does not make the model logically adequate. The coverage model has a separate defect: it is not logically sufficient to represent the protection state it claims to track. Protection state is the verified condition that credible pathways to consequence are constrained or terminated. A program that records deployed controls produces the same output regardless of whether those controls interrupt credible pathways to consequence or not.
 
 Incident and absence-of-incident outcomes both confirm the model. The program has no internal mechanism for detecting divergence between its reported state and its actual protection state.
 
@@ -53,11 +59,7 @@ The model's internal consistency can be tested directly. When an incident occurs
 
 ## Why the model persisted
 
-That logical property is part of what allowed the model to persist. Coverage was the only investment logic that could be applied without deeply understanding the target environment.
-
-IT security operates on an assume-breach posture, where no layer can be assumed to provide protection that reduces the requirement for the next, and protecting every layer is internally consistent. That logic was transferred into OT environments whose architectural layering changes that assumption. The posture's transferability ends where that layering begins.
-
-The institutional implementation produced coverage, and coverage persisted because it was the only form the governance structures could process.
+That logical property is part of what allowed the model to persist. Coverage was the only investment logic that could be applied without deeply understanding the target environment, and it was the only form the institutional governance structures around it could process.
 
 Coverage persists because it is the only form of security that is institutionally legible. It produces artifacts that can be specified, implemented, and audited without requiring contextual judgment about the environment. That judgment does not produce the standardised artifacts institutional governance requires. Without auditability, a contextual approach cannot satisfy the institutional requirements governing security investment. That constraint is what prevented the correction mechanism from developing.
 
@@ -67,7 +69,7 @@ That scalability made coverage commercially viable. Vendors built products mappe
 
 ## Why it cannot correct itself
 
-The model lacks a correction mechanism.
+The logical defect does not self-correct, because the institutional structures surrounding the model have no mechanism for detecting it.
 
 Audit methodology confirms that controls are present, not whether they interrupt credible pathways to consequence. The institutional structure creates an asymmetry: when the cautious choice and the contextually correct choice diverge, the structure rewards the cautious choice regardless of which better serves the environment. A practitioner who follows an established framework and later experiences an incident can point to recognised standards. A practitioner who deviates based on contextual engineering judgment carries that judgment personally. This is a structural incentive the institutional design produces, not a property of individual practitioners.
 
@@ -105,19 +107,9 @@ This is why coverage logic is attractive: it removes the requirement to understa
 
 A framework cannot know the distance between its target state and where any given site actually starts. The same missing control can represent a catastrophic exposure at one site, an irrelevant artifact at another, and an already-governed dependency at a third. Percentage completion cannot represent that variance. The only valid baseline is the verified state of that specific environment, assessed against its specific pathways and connections.
 
-## What reaches the environment and through what pathways
-
-Once the verified state of the specific environment becomes the baseline, the central question is what can reach that environment and through which pathways.
-
-Disruption in OT environments, whether adversarial or operational, becomes consequential through governable structures: contact points, dependencies, modification capacity, degraded recovery, and loss of diagnosability. The primary structural entry point for adversarial disruption is the boundary between IT infrastructure and OT networks. The pathway through which ransomware propagation reaches a control system is the same pathway a faulty management platform update would traverse, the same pathway a vendor session with excessive privilege would exploit, and the same dependency structure operational decay would silently degrade. Actor intent varies. The structural entry condition does not.
-
-Operational decay is a distinct route to consequence. It does not need to enter through a boundary. It erodes the conditions that boundaries, recovery paths, redundancy, and diagnostics depend on. Degradation is not absence. It is failed correspondence between assumed state and actual state. Coverage logic that addresses adversarial threat without accounting for operational decay is missing the failure mode that operates through the same structural conditions.
-
-The coverage model does not derive its control requirements from these pathways. It derives them from a catalog. A program that does not assess the specific contact points and dependencies through which consequence reaches a given site cannot determine whether its controls are addressing those pathways or merely populating a catalog.
-
 ## What coverage programs measure
 
-Coverage records deployment, not effect. A firewall configured to allow all traffic is a control in place. A detection system whose alerts route to a queue that is never triaged is a control in place. A centralised backup platform with inbound credentials and write access to every protected system, and a pull-based system with device-initiated outbound transfer, both deliver backup capability. Coverage records both identically. The mechanism through which the capability is delivered, the exposure it introduces, and whether the control intercepts any credible pathway to consequence are not represented. A coverage score cannot distinguish between protection concentrated on the most critical functions and protection spread uniformly across the full surface. A site optimised for consequence and a site optimised for catalog compliance can produce identical scores.
+A program built on catalog-derived controls has no category for the pathways through which consequence is reached. It records deployment. A firewall configured to allow all traffic is a control in place. A detection system whose alerts route to a queue that is never triaged is a control in place. A centralised backup platform with inbound credentials and write access to every protected system, and a pull-based system with device-initiated outbound transfer, both deliver backup capability. Coverage records both identically. The mechanism through which the capability is delivered, the exposure it introduces, and whether the control intercepts any credible pathway to consequence are not represented. A coverage score cannot distinguish between protection concentrated on the most critical functions and protection spread uniformly across the full surface. A site optimised for consequence and a site optimised for catalog compliance can produce identical scores.
 
 The coverage model optimises for what can be demonstrated to a governance audience. Demonstrability favours presence over enforcement: a deployed control is visible, a constrained pathway is not. From that optimisation follows the assumption that deployment equals enforcement. The gap the score cannot represent is not that the control is absent. It is that presence and protection are not the same condition, and the coverage model has no category for the difference. Because enforcement is assumed rather than verified, measurement and protection state can diverge without the program detecting the divergence.
 
@@ -136,6 +128,8 @@ In OT, a control is not a one-time deployment. It is a permanent operational obl
 At scale, managing these obligations pushes programs toward centralised mechanisms: backup orchestration platforms, endpoint detection agents, centralised patch management, remote monitoring infrastructure. The function each performs, managing assets distributed across zone boundaries, cannot be delivered without crossing those boundaries. Cross-boundary access is not a configuration choice that a better implementation avoids. It is a structural requirement of the function itself. Each mechanism introduces privileged inbound access paths by design.
 
 Beyond their individual functions, controls cease to be only protective measures. They become part of the system's attack surface, because the management infrastructure required to operate them introduces privileged pathways that would not otherwise exist. The distinction between protection and exposure is no longer categorical. It becomes a function of how the control is implemented and what pathways it introduces. This is not an anomaly of poor implementation. It is a structural property of tightly coupled systems: each component is individually justified, each interaction is individually managed, and the combined failure mode is invisible at the component level.
+
+The complexity compounds beyond the security perimeter. Assume-breach posture mandates that many different parts be deployed across the estate: agents, monitoring platforms, management infrastructure, update channels, centralised services. Each part is a component that can fail. Each component depends on other systems to remain healthy: license servers, certificate authorities, network connectivity, identity infrastructure, vendor support. Each dependency is itself a system that can fail. The result is not a linear increase in failure surface. It is a combinatorial one: component failures, dependency failures, and interaction effects between components produce a failure space that grows faster than the program can map or monitor. Licenses expire. Certificate authorities lapse. Backup orchestration platforms lose connectivity. Remote monitoring agents stop reporting. Update channels fail silently. None of these failures requires an adversary. The operational fragility of the coverage program's own execution layer generates unplanned production loss risk through failure modes that are invisible at the control level and unmeasurable by coverage metrics. The program that was supposed to reduce operational risk has introduced a class of operational risk it cannot see and does not count.
 
 Coverage measurement records these mechanisms as controls. They appear on the protection side of the program's ledger while operating as contact points into the environment the program governs. The coverage metric has no category for this distinction. The program cannot detect that its management infrastructure has widened the governed exposure position, because the tools widening that position are recorded as evidence of security investment. The infrastructure required to sustain the coverage program becomes part of the exposure it was intended to reduce, and the program's own measurement confirms it is working.
 
@@ -167,13 +161,13 @@ That hidden failure has no natural endpoint within the coverage model, because t
 
 ## The stopping point problem
 
-The resource problem has no natural resolution within the coverage model because the model has no stopping point derived from consequence. The control catalog defines what must be done, but not when enough has been achieved.
+The resource problem has no natural resolution within the coverage model because the model has no stopping point derived from consequence. The control catalog defines what must be done, but not when enough has been achieved. This is not a design oversight. It is a structural inheritance. The coverage model executes unbounded assume-breach. Unbounded assume-breach has no stopping point by construction. Adding a stopping point to coverage is not possible without first bounding the exposure assumption itself, and bounding the exposure assumption requires architectural verification that assume-breach posture rules out as a precondition. The stopping point problem cannot be solved from inside the model.
 
-Process safety engineering has a discipline for bounding investment against credible failure paths and tolerated residual risk. Relief valves, containment areas, emergency shutdown systems, and independent protection layers are each placed where they address a specific failure mode on a specific pathway to harm. Investment stops where incremental protection cost exceeds incremental risk reduction. Each barrier reduces the requirement for the next, and investment terminates where the residual risk falls within the accepted tolerance.
+Process safety engineering has a discipline for bounding investment against credible failure paths and tolerated residual risk. Relief valves, containment areas, emergency shutdown systems, and independent protection layers are each placed where they address a specific failure mode on a specific pathway to harm. Investment stops where incremental protection cost exceeds incremental risk reduction. Each barrier reduces the requirement for the next, and investment terminates where the residual risk falls within the accepted tolerance. Process safety can terminate investment because it bounded the problem architecturally first. The safety case defines what is independent, what is constrained, and what the worst credible consequence is. That architectural bounding is what makes the stopping point derivable.
 
 What is being imported from process safety is the investment logic, not the practice. The principle that barriers can be placed against specific failure modes on specific pathways to consequence, and that investment can be bounded by a consequence-derived ceiling rather than run against an unbounded catalog. The analogy does not require cyber scenarios to have process safety's data quality. It requires only that investment be placed against pathways to consequence and bounded by the protection already provided by independent barriers. The parallel extends further: a compliant safety case and a genuinely independent safety architecture are indistinguishable from the outside until an incident reveals the difference. That external opacity is not specific to safety engineering. It is a structural property of any verification model that confirms artifact existence rather than verified condition.
 
-The coverage model has no equivalent stopping mechanism. A program built on the protect-everything posture cannot use the consequence ceiling to bound the requirement, cannot use a pathway assessment to reduce that requirement, and cannot use the architecture to establish what protection already exists at each boundary. Without a stopping point, the program cannot produce a defensible answer to whether the most important exposures have been governed. That is the condition the questions in the following section are designed to surface.
+The coverage model has no equivalent stopping mechanism. A program built on unbounded assume-breach cannot use the consequence ceiling to bound the requirement, cannot use a pathway assessment to reduce that requirement, and cannot use the architecture to establish what protection already exists at each boundary. Without a stopping point, the program cannot produce a defensible answer to whether the most important exposures have been governed. That is the condition the questions in the following section are designed to surface.
 
 ## Three questions coverage cannot answer
 
@@ -184,6 +178,16 @@ The coverage trap is not a resourcing failure. It is an investment logic failure
 The alternative is not a better coverage score. The alternative is a different unit of analysis: the pathway by which consequence is reached, the contact point, the dependency, the modification path, the recovery assumption, and the owner who accepts what remains.
 
 The coverage model does not fail because controls are ineffective, or because practitioners are misguided. It fails because its unit of measurement, its incentives, and its governance structures are aligned around a variable that is not causally sufficient to represent the protection state. Everything that follows from that alignment is internally consistent. And structurally misaligned with the outcome it is meant to produce.
+
+## What reaches the environment and through what pathways
+
+The pathway is the unit of analysis the coverage model was not designed to use. The central question is what can reach that environment and through which pathways.
+
+Disruption in OT environments, whether adversarial or operational, becomes consequential through governable structures: contact points, dependencies, modification capacity, degraded recovery, and loss of diagnosability. The primary structural entry point for adversarial disruption is the boundary between IT infrastructure and OT networks. The pathway through which ransomware propagation reaches a control system is the same pathway a faulty management platform update would traverse, the same pathway a vendor session with excessive privilege would exploit, and the same dependency structure operational decay would silently degrade. Actor intent varies. The structural entry condition does not.
+
+Operational decay is a distinct route to consequence. It does not need to enter through a boundary. It erodes the conditions that boundaries, recovery paths, redundancy, and diagnostics depend on. Degradation is not absence. It is failed correspondence between assumed state and actual state. Coverage logic that addresses adversarial threat without accounting for operational decay is missing the failure mode that operates through the same structural conditions.
+
+The coverage model does not derive its control requirements from these pathways. It derives them from a catalog. A program that does not assess the specific contact points and dependencies through which consequence reaches a given site cannot determine whether its controls are addressing those pathways or merely populating a catalog.
 
 ## What a consequence-derived investment model requires
 
@@ -207,7 +211,7 @@ Regulators implementing NIS2 have generally accepted coverage-based evidence bec
 
 Across an industrial sector, the aggregate of coverage-based programs produces a consistent pattern: extensive audit artifacts, mature vendor ecosystems, and high compliance visibility, coexisting with largely unverified structural resilience across the population of sites. The appearance of control scales across the sector. The verification of protection does not. That gap is what proportionality-based enforcement is designed to surface.
 
-Article 20's requirement that management bodies approve and oversee cybersecurity risk management measures is a separate accountability obligation. That requirement is not satisfied by a signature on a gap list or a maturity score. It requires that management understands what they are accepting at the level of operational consequence. A consequence-derived model produces the governance record that demonstrates that understanding, not merely the signature.
+Article 20's requirement that management bodies approve and oversee cybersecurity risk management measures is a separate and more demanding obligation. Article 21 asks whether appropriate and proportionate risk management exists. Article 20 asks whether the management body understands and owns what that risk management has determined. These are different obligations. Coverage logic produces partial evidence for Article 21 and almost no evidence for Article 20. A maturity score demonstrates that a program exists. It does not demonstrate that the management body understands the consequence position the program is governing. A consequence-derived model produces evidence for both: the pathway assessments and governed exposure records satisfy Article 21, and the management acceptance records with operational consequence language satisfy Article 20. The asymmetry is not incidental. It follows directly from the difference between a model that measures deployment and a model that requires owned decisions about consequence.
 
 ## What makes the alternative tractable
 
