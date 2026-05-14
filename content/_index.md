@@ -1,14 +1,15 @@
-OT security programs often show progress without reducing exposure. 
-Controls are deployed. Coverage increases. 
+OT security programs often show progress without reducing exposure.
+Controls are deployed. Coverage increases.
 The same structural risks remain.
 
-In industrial environments, that gap is not theoretical. It determines whether systems can withstand disruption when it arrives.
+In industrial environments, that gap determines whether a single compromise can escalate into loss of control or loss of containment.
 
-Architecture that cannot survive production reality does not reduce risk. It creates the illusion of it.
+Architecture that cannot withstand real operating conditions does not reduce risk.
+It creates the illusion of it.
 
 ## Analytical foundation
 
-These two papers establish the structural conditions that make the core argument necessary. They can be read independently or as preparation for it.
+These papers establish the structural conditions that make the core argument necessary.
 
 <div class="article-item">
   <a href="/analysis/why-ot-infrastructure-appears-static/" class="article-link" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a>
@@ -22,6 +23,6 @@ These two papers establish the structural conditions that make the core argument
 
 ## Context
 
-My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six years of operational responsibility at a SEVESO-classified PVC production facility. I currently drive enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
+My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six years of operational responsibility at a SEVESO-classified chlorvinyl production facility. I currently drive enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
 
 I arrived at security architecture through operations. That origin shapes how I evaluate what holds under operational pressure and what does not.
