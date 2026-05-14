@@ -1,7 +1,7 @@
 ---
 title: "Sequenced OT Resilience: A Framework for Consequence-Derived Investment"
-date: 2026-05-10
-lastmod: 2026-05-10
+date: 2026-05-12
+lastmod: 2026-05-12
 description: "A consequence-derived investment and execution model for OT resilience in brownfield industrial environments where change capacity is constrained and consequence varies across zones."
 image: "images/og-sor-frame.jpg"
 ---
@@ -46,7 +46,7 @@ The SOR Framework operates through four core constructs and three operating rule
 
 Across stages, zones are addressed in consequence-priority order. The stage sequence is derived from which zones carry the highest consequence and which stages are structural prerequisites for those that follow.
 
-Within each zone, the sequence is fixed. Zone-level structural conditions are established first: identity management, physical security of assets inside the zone, and recovery capability. The contact boundary is then assessed and governed. Targeted controls are derived only from the exposure that remains after structural governance is applied. Controls are the last step within a zone assessment, not the starting point.
+Within each zone, the sequence is fixed. Zone-level structural conditions are established first: identity management, physical access governance, recovery capability, and health baseline. Physical access governance is assessed at the consequence level of the zone. The contact boundary is then assessed and governed. Targeted controls are derived only from the exposure that remains after structural governance is applied. Controls are the last step within a zone assessment, not the starting point.
 
 In both dimensions, the sequence is determined by dependency and consequence, not by catalog order.
 
@@ -78,7 +78,7 @@ The assessment reaches its stopping point when additional assessment no longer c
 
 The framework operates through two distinct assessment layers that together define what a stage assessment covers. These two layers operationalise Operating Rules 1 and 2 in every stage assessment. The zone-level layer establishes structural preconditions. The contact boundary layer governs crossings. Constraint verification under Operating Rule 3 applies to findings from both.
 
-The first is zone-level structural conditions: the internal structural state the zone must satisfy for the stage to be Governed. Zone-level structural conditions include physical access posture, identity management, recovery capability, and health baseline. Each is assessed as a zone-profile property: the condition either holds for the zone as a whole or it does not. The same verification-is-binary principle applies, but the object of assessment is the zone's internal state, not a crossing. What constitutes adequate physical access posture or identity management is determined by the consequence level of the zone, not by a universal standard.
+The first is zone-level structural conditions: the internal structural state the zone must satisfy for the stage to be Governed. The items and the sequence in which they are established are specified in Operating Rule 1. Each is assessed as a zone-profile property: the condition either holds for the zone as a whole or it does not. What constitutes an adequate condition is determined by the consequence level of the zone, not by a universal standard.
 
 The second is contact boundary assessment: every connection and dependency through which influence can reach the zone from outside it. Network connections, remote access paths, data transfer points, and out-of-zone dependencies are assessed as contact points. For each contact point, the assessment works through three sequential determinations.
 
@@ -212,7 +212,16 @@ Uncertainty about what exists is itself a pathway finding. If a site cannot esta
 
 What a site has done and what it is permitted to report are governed by different rules: engineering progress is not reportable as governed posture until the stages that determine its consequence meaning are themselves Governed.
 
-**The within-stage sequence.** Every zone is assessed in the same dependency-ordered sequence: zone-level structural conditions established before the contact boundary is assessed, contact boundary assessment completed before zone-level consequence evaluation, interior hardening considered only after the assessment identifies a specific exposure that structural controls do not address. The health baseline enumeration, which runs as a thread through the full assessment, is the instrument that makes the verified structural state visible over time. The assessment also establishes what the zone depends on and what depends on it, so that if an incident occurs in or adjacent to the zone, the operational consequences of isolation or degraded operation are known before a response decision is required.
+**The within-zone sequence** follows Operating Rule 1 (Section 2). Health baseline enumeration runs as a thread through the full zone assessment and is the instrument that makes verified structural state visible over time. The assessment also establishes what the zone depends on and what depends on it, so that the operational consequences of isolation or degraded operation are known before a response decision is required.
+
+**Governed criteria template.** A stage is Governed when, for every zone or boundary within its scope:
+
+- identity management and physical access governance are verified at the consequence level of the zone
+- recovery capability is verified
+- health baseline indicators are named, owned, monitored, and meet the four-field standard (specific identity, current value at point of assessment, defined threshold, named owner)
+- every contact point is identified and governed
+- all out-of-zone dependencies are documented with understood severance implications and named owners
+- any exposure outside target tolerance is carried as exception-governed exposure with named ownership, operational consequence, review condition, and remediation expectation
 
 ### 9.3 Stage 1: Consequence structure
 
@@ -221,6 +230,10 @@ Stage 1 is first not because it is the most likely adversarial entry path but be
 Stage 2 is the first primary adversarial barrier. Stage 1 establishes what is at stake if that barrier or any later barrier fails.
 
 The framework does not replace safety engineering. Where a safety model exists, Stage 1 challenges its cyber-relevant assumptions. Where no model exists, Stage 1 constructs the minimum consequence structure needed to identify which zones require independent treatment and what independence criteria apply between them.
+
+The framework treats two genuinely independent barriers as sufficient to bound consequence. The basis for that position is adversarial effort, not layer counting. Compromising a single system requires an attacker to traverse a specific access path: to identify a target, establish a foothold, escalate privilege, and reach the assets that matter. Two genuinely independent systems require two entirely separate sequences of that kind, with no shared credentials, no shared network infrastructure, and no shared administrative access between them. Neither compromise informs or enables the other. An attacker who has fully compromised the control system has gained nothing toward compromising the safety system if the independence is real. The two operations are decoupled by architecture, not by policy.
+
+That decoupling is what makes simultaneous defeat by a single adversarial action architecturally excluded rather than merely unlikely. The difficulty of executing two independent, fully decoupled compromise sequences within a timeframe that matters operationally is not twice the difficulty of one. It is categorically higher, because the attacker cannot leverage the access, knowledge, or credentials from one domain to reduce the work required in the other. Where a third independent barrier exists, the marginal reduction in the probability of simultaneous defeat becomes very small against the engineering cost of maintaining genuine independence for that additional layer. The standard for Stage 1 is therefore two genuinely independent barriers with no shared elements through which a single compromise could defeat both simultaneously.
 
 In practice, the distribution of Stage 1 conditions follows a predictable pattern. Most environments where consequence is high enough to warrant independent treatment already have functional safety systems: the SIS, the certified protection layer, the mechanical interlock. Stage 1 in those environments is primarily a cyber independence verification, not a safety architecture assessment. The safety architecture exists. The question is whether it has remained independent in the cyber-relevant sense. Most Stage 1 findings in safety-defined environments are of this type: functional independence present, cyber independence degraded or unverified. Environments where the worst credible consequence is within acceptable bounds require verification of that bound but rarely produce significant Stage 1 findings. Environments where unacceptable consequence is reachable and no independent mitigating function exists are the least common condition, and the one that produces the most significant Stage 1 output.
 
@@ -232,17 +245,17 @@ Where the assessment surfaces a hard independence failure, the finding outranks 
 
 Data dependencies through constrained and governed connections are assessable. These are treated as contact points in scope for the Stage 1 assessment, evaluated against the specific consequence of the dependency, and governed or accepted accordingly.
 
-Stage 1 is Governed in Mode A when the consequence-bearing zones are identified, the cyber-relevant independence between them is verified against current architecture, all interfaces and dependencies are governed with named owners, health baseline indicators are named and monitored, and any exposure outside target tolerance is carried as exception-governed exposure with named ownership, operational consequence, review condition, and remediation expectation.
+Stage 1 is Governed in Mode A when, in addition to the template criteria: the consequence-bearing zones are identified, the cyber-relevant independence between them is verified against current architecture with no shared elements between domains, and all interfaces and dependencies are governed with named owners.
 
 **Mode B: Non-safety-defined environments.** There is no formal safety case and no certified independent protection layer. Stage 1 begins by establishing whether the worst credible consequence of control system compromise is within acceptable bounds. The worst credible consequence is knowable from the physical process: the engineering basis of the site defines what happens under loss of control, loss of containment, or failure of critical functions.
 
 Where the worst credible consequence is within acceptable bounds, Stage 1 documents and verifies the architectural conditions that enforce that bound. The ceiling holds by the nature of the process. Stage 1 records it, verifies it holds under current architecture, and assigns ownership of the assumptions behind it.
 
-Where the worst credible consequence is not within acceptable bounds, Stage 1 identifies whether any independent mitigating function already exists: a physical interlock, a mechanical safeguard, a second control system with genuinely separate architecture, or any other function capable of preventing the worst outcome independently of the control system that can produce it. In practice, some form of mitigation usually exists. Stage 1 verifies its cyber-relevant independence from the control system using the same criteria as Mode A: a single compromise must not be able to defeat both the control system and the independent function simultaneously.
+Where the worst credible consequence is not within acceptable bounds, Stage 1 identifies whether any independent mitigating function already exists: a physical interlock, a mechanical safeguard, a second control system with genuinely separate architecture, or any other function capable of preventing the worst outcome independently of the control system that can produce it. In practice, some form of mitigation usually exists. Stage 1 verifies its cyber-relevant independence from the control system using the same criteria as Mode A: no shared credentials, shared network paths, or shared administrative access between the control system and the independent function.
 
 Where no independent mitigating function exists and the worst consequence is not within acceptable bounds, Stage 1 defines the engineering requirement to create one. The requirement is functional: a mechanism capable of preventing the unacceptable consequence independently of the control system. The form of that mechanism is an engineering design decision outside the framework's scope. Its existence, independence, and verified condition are within Stage 1's scope. Stage 1 cannot reach Governed in this condition until the independent function exists and its independence is confirmed. In this condition Stage 1 is not only an assessment. It is the engineering brief for the work that must precede all subsequent stages.
 
-Stage 1 is Governed in Mode B when the consequence-bearing zones are identified, the worst credible consequence is established from the physical process, the architectural conditions enforcing the ceiling are verified and recorded with named owners, health baseline indicators are named and monitored, and any exposure outside target tolerance is carried as exception-governed exposure with named ownership, operational consequence, review condition, and remediation expectation.
+Stage 1 is Governed in Mode B when, in addition to the template criteria: the consequence-bearing zones are identified, the worst credible consequence is established from the physical process, and the architectural conditions enforcing the ceiling are verified against current architecture with no shared elements between domains and named owners assigned.
 
 Stage 1 completion has a specific effect on every subsequent investment decision. Before Stage 1 is Governed, the consequence space is open: any exposure anywhere in the estate carries an uncertain worst-case outcome, because the architecture has not established what is reachable under a single compromise. After Stage 1 is Governed, the consequence space is bounded: the ceiling defines what is architecturally excluded, and residual risk across all remaining stages is bounded at an acceptable consequence level rather than open-ended. That conversion is what makes the subsequent investment model tractable. Without it, no investment at lower stages can be correctly calibrated because the consequence ceiling that determines proportionality has not been established.
 
@@ -256,9 +269,9 @@ Contact points include connections between IT and OT networks, remote access pat
 
 Every contact point at the IT/OT boundary requires assessment and conscious acceptance of its OT-side exposure. A contact point delivering value to IT operations, business systems, or commercial functions is assessed on the same basis as any other: what capability does it deliver, what does it expose on the OT side, and is the lowest-exposure mechanism being used to deliver it. The assessment produces a governed position for every contact point. Commercial benefit to non-OT functions is a valid justification where the OT-side exposure is understood, owned, and accepted at the appropriate consequence level.
 
-The Stage 2 assessment establishes how OT operations depend on IT connectivity and what can be sustained when those dependencies are severed. An architecture that requires OT shutdown to manage an IT security incident has not achieved a governed boundary; it has produced a boundary whose failure mode is operational loss. That condition is not a Stage 2 completion criterion, but it is a diagnostic for whether the boundary is functioning or merely present. Recovery capability for the boundary configuration is a Stage 2 completion criterion, verified to the same standard as all other governed conditions.
+The Stage 2 assessment establishes how OT operations depend on IT connectivity and what can be sustained when those dependencies are severed. An architecture that requires OT shutdown to manage an IT security incident has not achieved a governed boundary; it has produced a boundary whose failure mode is operational loss. That condition is not a Stage 2 completion criterion, but it is a diagnostic for whether the boundary is functioning or merely present.
 
-Stage 2 is Governed when every contact point is identified and governed, IT connectivity dependencies are documented with understood operational implications and named owners, recovery capability is verified, health baseline indicators are named, owned, and monitored, and any exposure outside target tolerance is carried as exception-governed exposure with named ownership, operational consequence, review condition, and remediation expectation. The boundary is deterministic when its population of contact points is completely known, every member of that population is governed, and no contact point exists that was not assessed and deliberately kept.
+Stage 2 is Governed when, in addition to the template criteria: IT connectivity dependencies are documented with understood operational implications and named owners, and the boundary population is deterministic (every member is known, governed, and deliberately kept; no contact point exists that was not assessed).
 
 ### 9.5 Stage 3: Operational control zones
 
@@ -266,11 +279,9 @@ Stage 3 addresses the receiving end of what the governed IT/OT boundary permits 
 
 Each zone is assessed individually across the full population of paths through which influence can reach it from outside the zone. That population includes governed contact points arriving through the IT/OT boundary, connections from other OT zones, engineering workstation access originating outside the zone, historian and visibility system connections, and any other out-of-zone dependency. Dependencies from adjacent OT zones require the same assessment logic as IT-origin contact points: what capability does the dependency create inside this zone, through what mechanism, and is that mechanism the lowest-exposure option for delivering the required function.
 
-Dependency mapping establishes what the zone depends on and what it can sustain if those dependencies are severed. Every out-of-zone dependency is identified, assessed, and either governed at the lowest-exposure mechanism the operational requirement permits or carried as documented accepted exposure with named ownership. The consequence of severing each dependency is documented.
+Dependency mapping establishes what the zone depends on and what it can sustain if those dependencies are severed. Every out-of-zone dependency is identified, assessed, and either governed at the lowest-exposure mechanism the operational requirement permits or carried as documented accepted exposure with named ownership. Zone-level structural conditions, including identity management, physical security of assets inside the zone, and recovery capability, are assessed as conditions of the zone rather than as contact points. Physical access governance is assessed at the consequence level of the zone.
 
-Zone-level structural conditions, including identity management, physical security of assets inside the zone, and recovery capability, are assessed as conditions of the zone rather than as contact points. Physical access governance is assessed at the consequence level of the zone. Recovery capability is a Stage 3 completion criterion, verified to the same standard as all other governed conditions.
-
-Stage 3 is Governed when every zone has documented and accepted out-of-zone dependencies with understood severance implications, verified recovery capability, health baseline indicators named, owned, and monitored, and any exposure outside target tolerance is either resolved or carried as exception-governed exposure with named ownership, operational consequence, review condition, and remediation expectation.
+Stage 3 is Governed when the template criteria are met for every zone in scope.
 
 ### 9.6 Stage 4: Process operational visibility
 
@@ -278,7 +289,7 @@ Stage 4 addresses the infrastructure providing operators with real-time process 
 
 Stage 4 zones receive influence from Stage 3 control zones through data feeds, process state connections, and alarm sources. These OT-to-OT dependencies are assessed using the same contact boundary logic: what capability does the dependency create inside this zone, through what mechanism, and is the mechanism the lowest-exposure option for the required function. The consequence profile at each Stage 4 zone is assessed from the site architecture rather than assumed to be lower than control zones.
 
-Stage 4 is Governed when every zone has documented and governed contact points, out-of-zone dependencies assessed with understood severance implications and named owners, verified recovery capability, health baseline indicators named, owned, and monitored, and any exposure outside target tolerance is either resolved or carried as exception-governed exposure with named ownership, operational consequence, review condition, and remediation expectation.
+Stage 4 is Governed when the template criteria are met for every zone in scope.
 
 ### 9.7 Stage 5: Operational support infrastructure
 
@@ -288,19 +299,17 @@ This is distinct from the assessment of shared service dependencies that occurs 
 
 A shared service that reaches multiple zones is a contact point for every zone it reaches, not only the zone it was originally deployed to support. The cross-zone exposure created by shared trust relationships must be assessed for each dependent zone. Where shared services are required to establish Stage 2 or Stage 3 conditions, those dependencies are assessed as part of the earlier stage.
 
-Stage 5 is Governed when each shared service zone has documented dependencies, governed contact points, verified recovery capability, health baseline indicators named, owned, and monitored, and any exposure outside target tolerance is either resolved or carried as exception-governed exposure with named ownership, operational consequence, review condition, and remediation expectation.
+Stage 5 is Governed when the template criteria are met for each shared service zone in scope.
 
 ### 9.8 Stage 6: Health baseline confirmation and monitoring
 
 Stage 6 is structurally different from the preceding stages. Stages 1 through 5 each govern a zone or boundary. Stage 6 does not. It has no zone of its own and introduces no new assessment logic.
 
-During Stages 1 through 5, every zone assessment enumerates health baseline indicators and records them to the four-field standard: specific identity, current value at point of assessment, defined threshold, and named owner. The review mechanism assigned at that point is manual or periodic. Automated monitoring infrastructure is not deployed as part of zone assessment. The governed state of a zone is a prerequisite for assessing whether monitoring infrastructure directed at that zone can itself be governed: a contact point, management dependency, or privileged inbound path introduced before the zone assessment is complete cannot be evaluated against criteria that have not yet been established.
+During Stages 1 through 5, every zone assessment enumerates health baseline indicators and records them to the four-field standard. The review mechanism assigned at that point is manual or periodic. Automated monitoring infrastructure is not deployed as part of zone assessment. The governed state of a zone is a prerequisite for assessing whether monitoring infrastructure directed at that zone can itself be governed: a contact point, management dependency, or privileged inbound path introduced before the zone assessment is complete cannot be evaluated against criteria that have not yet been established.
 
 Once the zones are governed, Stage 6 evaluates which health baseline indicators warrant automated monitoring and whether the infrastructure required to deliver it can be governed as a contact point under the framework. The evaluation applies the same capability-mechanism logic as any other contact point assessment: what capability does the monitoring infrastructure deliver, what does it expose, and is the lowest-exposure mechanism being used. Where the monitoring infrastructure can be governed without introducing dependencies the assessment would otherwise require to be redesigned or removed, automated monitoring is a valid Stage 6 output. Where it cannot, the manual or periodic mechanism assigned during zone assessment is the correct output for that indicator.
 
-Each indicator requires at Stage 6 completion: the four-field specification confirmed current, a named owner with operational authority to investigate and act, a defined review condition specifying frequency or trigger, and a selected review mechanism documented as an assessment output.
-
-Stage 6 is Governed when every health baseline indicator defined in preceding stages meets these requirements. Indicators without a named owner are ungoverned at the point where governance matters most.
+Stage 6 is Governed when every health baseline indicator defined in preceding stages carries: the four-field specification confirmed current, a named owner with operational authority to investigate and act, a defined review condition specifying frequency or trigger, and a selected review mechanism documented as an assessment output. Indicators without a named owner are ungoverned at the point where governance matters most.
 
 Stage 6 completion is completion of the SOR sequence within the assessed scope. Regulatory compliance, corporate security programs, and sector-specific mandates are managed by the site through their own governance processes.
 
@@ -324,15 +333,11 @@ The methodology delivers its highest return in environments where consequence is
 
 Correct instantiation may produce findings that require architectural change before governance is achievable. A zone whose assets span consequence levels that require different treatment may need to be divided into functionally separate zones. Shared identity infrastructure that violates zone independence criteria may need to be separated. A boundary that exists only nominally may need to be rebuilt from a different architectural basis before it can be governed. These are assessment outputs, not scope exceptions. The framework evaluates whether the current architecture is adequate for governed consequence. Where it is not, the finding is an architectural requirement. Governance of the existing architecture is not the only outcome the assessment can produce.
 
-### 11.2 The judgment requirement
+### 11.2 What the framework requires and where it fails
 
-The SOR Framework requires more judgment at the assessment layer than coverage logic in its base implementation. That is not a weakness. It is what prevents false assurance. Coverage logic in its minimal form can be specified against a catalog, implemented against control categories, and verified against documented presence. SOR cannot be correctly applied without judgment across process operations, functional safety, and IT infrastructure simultaneously. A framework that produces correct outputs only when correctly applied is more demanding than one that produces plausible-looking outputs regardless.
+The SOR Framework requires more judgment at the assessment layer than coverage logic in its base implementation. That is not a weakness. It is what prevents false assurance. Coverage logic in its minimal form can be specified against a catalog, implemented against control categories, and verified against documented presence. SOR cannot be correctly applied without judgment across process operations, functional safety, and IT infrastructure simultaneously. A framework that produces correct outputs only when correctly applied is more demanding than one that produces plausible-looking outputs regardless. The SOR Framework implemented without adequate judgment produces outputs that are structurally wrong in visible ways: zone boundaries that do not reflect actual modification paths, pathway assessments that do not match the site's architecture, governance records that cannot be reconciled with operational reality. That visibility of failure is the mechanism by which inadequate judgment is exposed rather than concealed.
 
-The SOR Framework implemented without adequate judgment produces outputs that are structurally wrong in visible ways: zone boundaries that do not reflect actual modification paths, pathway assessments that do not match the site's architecture, governance records that cannot be reconciled with operational reality. That visibility of failure is the mechanism by which inadequate judgment is exposed rather than concealed.
-
-### 11.3 Framework failure modes
-
-The stage structure is a working model, not a validated standard. It has been developed and applied within one environment type: high-hazard continuous process facilities operating under functional safety regulation. Whether the instantiation logic transfers correctly to other environment types has not been tested. Every framework has failure modes. SOR's are worth naming explicitly because they define the conditions under which the framework produces artifacts without producing posture.
+The stage structure is a working model, not a validated standard. It has been developed and applied within one environment type: high-hazard continuous process facilities operating under functional safety regulation. Whether the instantiation logic transfers correctly to other environment types has not been tested. The failure modes below define the conditions under which the framework produces artifacts without producing posture.
 
 **Scope inflation** is the primary structural failure. Zones are defined too broadly, absorbing external systems into the zone rather than assessing them as contact points. The contact point list becomes artificially short. Dependencies that require governance are instead concealed inside the zone boundary. The assessment cannot see what it needs to see.
 
