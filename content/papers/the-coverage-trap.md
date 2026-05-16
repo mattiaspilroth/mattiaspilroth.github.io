@@ -1,7 +1,7 @@
 ---
 title: "The Coverage Trap"
 date: 2026-03-29
-lastmod: 2026-05-11
+lastmod: 2026-05-15
 url: "/papers/the-coverage-trap/"
 aliases:
     - /analysis/the-coverage-trap/
@@ -16,6 +16,8 @@ This paper argues that the mismatch is structural rather than circumstantial. It
 Security investment in OT has produced real progress under the existing model. Controls have been deployed, gaps inventoried, and audit structures established that gave security programs organisational legitimacy they previously lacked. The practitioners who built those programs made reasonable decisions with the tools and institutional conditions available. The argument here is not that the work was misguided. It is that the investment logic those programs use has a structural ceiling in OT environments, and that correcting the investment logic is different from discarding the work.
 
 This mismatch is not the result of incomplete execution. It is the result of organising investment around the wrong unit of measurement.
+
+This paper develops the diagnostic structure in stages: the condition (how coverage becomes the governing unit), the causes (why coverage became the only institutionally legible form of security investment), the failure modes (what coverage measurement cannot represent), and the diagnostic instrument (three questions a coverage program cannot answer that determine whether security investment is producing resilience or degrading it). Readers who want the diagnostic instrument directly can skip to "Three questions coverage cannot answer".
 
 ## The Coverage Trap
 
