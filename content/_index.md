@@ -1,6 +1,6 @@
 I arrived at security architecture through operations. That origin determines what I treat as a real constraint and what I treat as a proxy for one.
 
-## Three questions your OT security program should be able to answer
+### Three questions your OT security program should be able to answer
 
 1. What specific pathway leads to your highest-consequence scenario?
 2. Which controls interrupt that pathway?

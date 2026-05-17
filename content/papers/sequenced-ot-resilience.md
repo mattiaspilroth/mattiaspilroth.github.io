@@ -346,4 +346,4 @@ The SOR Framework is built to answer them. Every contact point is assessed and g
 
 That is a different promise from coverage. It is also a more accurate one.
 
-The instantiation in this document has been developed and tested within one environment type. It will need revision as application surfaces conditions it did not anticipate. Practitioners who find cases the framework cannot handle correctly are the intended source of that revision. A framework derived from practice should be corrected by practice.
+The instantiation in this document has been developed and is being tested within one environment type. It will need revision as application surfaces conditions it did not anticipate. Practitioners who find cases the framework cannot handle correctly are the intended source of that revision. A framework derived from practice should be corrected by practice.
