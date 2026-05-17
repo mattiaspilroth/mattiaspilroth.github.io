@@ -1,28 +1,66 @@
-OT security programs often show progress without reducing exposure.
-Controls are deployed. Coverage increases.
-The same structural risks remain.
+I arrived at security architecture through operations. That origin determines what I treat as a real constraint and what I treat as a proxy for one.
 
-In industrial environments, that gap determines whether a single compromise can escalate into loss of control or loss of containment.
+Three questions your OT security program should be able to answer:
 
-Architecture that cannot withstand real operating conditions does not reduce risk.
-It creates the illusion of it.
+1. What specific pathway leads to your highest-consequence scenario?
+2. Which controls interrupt that pathway?
+3. What exposure remains, and who owns it?
 
-## Analytical foundation
+If those answers are unclear, coverage is being measured. Not protection.
 
-These papers establish the structural conditions that make the core argument necessary.
+## The Shift
+
+The coverage model measures control presence.
+The alternative measures pathways to consequence.
+
+That difference determines whether a security program can describe exposure, define completion, and demonstrate what has actually been reduced.
+
+## The Argument
+
+OT security investment is organised around the wrong unit of analysis. The dominant model measures control coverage. It has no stopping point derived from consequence and no mechanism for detecting when deployed controls are not enforcing the constraints they were placed to maintain.
+
+The result is predictable: programs that demonstrate progress but cannot answer what risk has actually been reduced, or when enough has been done.
+
+The alternative is a consequence-derived investment model. Controls placed against specific pathways into control systems and safety-relevant functions. Exposures explicitly owned at the level of operational consequence. A completion state the coverage model cannot produce.
+
+The papers below specify what that model looks like and what it produces.
+
+## The Work
+
+Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The Grounding papers establish the structural conditions and can be read at any point.
+
+### Core argument
+
+<div class="article-item">
+  <a href="/papers/the-coverage-trap/" class="article-link" data-umami-event="click-coverage-trap">The Coverage Trap</a>
+  <p class="article-summary"> The diagnosis. OT security programs are calibrated to demonstrate coverage rather than to address the conditions under which these environments actually fail. The dominant model assumes increasing control presence proportionally reduces risk. In OT environments with real architectural layering, that assumption does not hold.
+</p>
+</div>
+
+<div class="article-item">
+  <a href="/papers/sequenced-ot-resilience/" class="article-link" data-umami-event="click-sor-paper">Sequenced OT Resilience: A Framework for Consequence-Derived Investment</a>
+  <p class="article-summary"> The methodology. The investment model the Coverage Trap argument requires. Sequenced by operational consequence and system dependency. Controls derived from specific pathways. Exposure owned at the level of operational consequence. A completion state defined within assessed scope.
+</p>
+</div>
+
+<div class="article-item">
+  <a href="/papers/sor-reference-assessment/" class="article-link" data-umami-event="click-sor-ref1">SOR Framework: Practitioner Reference and Illustrative Assessment</a>
+  <p class="article-summary"> The output. What the framework produces in practice. A composite high-hazard process site assessed through Stage 1 consequence structure and Stage 2 IT/OT boundary governance. Findings, exposure states, pathway-derived eliminations, and architectural requirements in concrete form.
+</p>
+</div>
+
+### Grounding
 
 <div class="article-item">
   <a href="/analysis/why-ot-infrastructure-appears-static/" class="article-link" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a>
-  <p class="article-summary">OT environments look frozen from the outside. From inside the fence, the behavior follows directly from how these systems were funded, validated, and operated. Understanding why requires mapping the constraints, because security strategies that ignore them will be overridden by them.</p>
+  <p class="article-summary"> OT environments appear static. They are not. Their behaviour follows directly from how they were funded, validated, and operated. Security strategies that ignore those constraints will be overridden by them.</p>
 </div>
 
 <div class="article-item">
   <a href="/analysis/silent-degradation-in-ot/" class="article-link" data-umami-event="click-ot-degradation">Silent Degradation in OT Systems</a>
-  <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. The ownership gaps, decayed recovery paths, and eroded diagnosability that accumulate over a system's operational life are not visible until a disruption arrives that the environment can no longer absorb. Security controls placed on that foundation inherit it.</p>
+  <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. Security controls placed on a degraded foundation inherit the degradation rather than resolving it.</p>
 </div>
 
-## Context
+## About
 
-My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six years of operational responsibility at a SEVESO-classified chlorvinyl production facility. I currently drive enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
-
-I arrived at security architecture through operations. That origin shapes how I evaluate what holds under operational pressure and what does not.
+My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six years of operational responsibility at a SEVESO-classified chlorvinyl production facility. I currently govern enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
