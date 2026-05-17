@@ -299,7 +299,7 @@ footer {
 }
 
 /* --- Mobile Responsiveness --- */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   main {
     margin: 40px auto;
     padding: 0 16px;
