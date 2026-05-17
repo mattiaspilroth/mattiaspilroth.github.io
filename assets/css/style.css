@@ -432,7 +432,32 @@ footer {
     font-size: 11pt;
   }
 
-  nav, footer .links, .article-nav {
+  /* 1. Hide the entire social link group and their dots */
+  .social-links {
+    display: none !important;
+  }
+
+  /* 2. Strip link color and underlines from the license text */
+  .license-text a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+
+  /* 3. Global link expansion for actual content articles */
+  .content a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+    word-break: break-all;
+  }
+
+  /* 4. Explicitly suppress the URL printing for the license link */
+  .license-text a::after {
+    content: "" !important;
+  }
+
+  /* Layout and page-break optimizations */
+  .article-nav {
     display: none !important;
   }
 
@@ -449,15 +474,8 @@ footer {
     margin-top: 24pt;
   }
 
-  p, img, blockquote, pre, code, table {
+  p, img, blockquote, pre, code, table, footer {
     page-break-inside: avoid;
     break-inside: avoid;
-  }
-
-  .content a::after {
-    content: " (" attr(href) ")";
-    font-size: 0.9em;
-    color: #333;
-    word-break: break-all;
   }
 }
