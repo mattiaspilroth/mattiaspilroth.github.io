@@ -8,18 +8,13 @@ I arrived at security architecture through operations. That origin determines wh
 
 If those answers are unclear, coverage is being measured. Not protection.
 
-## The Shift
-
-The coverage model measures control presence. <br>
-The alternative measures whether a pathway to consequence still exists.
-
 ## The Argument
 
 OT security investment is organised around the wrong unit of analysis.
 
 The dominant model measures control coverage. It assumes increasing control presence proportionally reduces risk. In OT environments with real architectural layering, that assumption does not hold.
 
-It has no stopping point derived from consequence and no mechanism for detecting when deployed controls are not enforcing the constraints they were placed to maintain.
+It has no stopping point derived from consequence. It has no mechanism for detecting when deployed controls are not enforcing the constraints they were placed to maintain.
 
 The result is predictable: programs that demonstrate progress but cannot determine whether the conditions that lead to loss have been removed, cannot define when enough has been done, and cannot assign ownership of what remains.
 
