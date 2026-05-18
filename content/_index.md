@@ -1,10 +1,10 @@
 I arrived at security architecture through operations. That origin determines what I treat as a real constraint and what I treat as a proxy for one.
 
-### Three questions your OT security program should be able to answer
+### Three questions your OT security program should be able to answer:
 
-1. What specific pathway leads to your highest-consequence scenario?
-2. Which controls interrupt that pathway?
-3. What exposure remains, and who owns it?
+1. What is the worst credible outcome your architecture can produce, and what conditions bound it?
+2. Which controls verify that those conditions actually hold?
+3. What exposure remains, and who has accepted it?
 
 If those answers are unclear, coverage is being measured. Not protection.
 
@@ -12,7 +12,7 @@ If those answers are unclear, coverage is being measured. Not protection.
 
 OT security investment is organised around the wrong unit of analysis.
 
-The dominant model measures control coverage. It assumes increasing control presence proportionally reduces risk. In OT environments with real architectural layering, that assumption does not hold.
+The dominant model measures control coverage. It assumes increasing control presence proportionally reduces risk. In OT environments that assumption does not hold.
 
 It has no stopping point derived from consequence. It has no mechanism for detecting when deployed controls are not enforcing the constraints they were placed to maintain.
 
@@ -28,7 +28,7 @@ This is a completion condition the coverage model cannot produce.
 
 ## The Work
 
-Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The Grounding papers establish the structural conditions and can be read at any point.
+Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The context papers establish the structural conditions and can be read at any point.
 
 ### Core argument
 
@@ -50,7 +50,7 @@ Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The Grou
 </p>
 </div>
 
-### Grounding
+### Context
 
 <div class="article-item">
   <a href="/analysis/why-ot-infrastructure-appears-static/" class="article-link" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a>
