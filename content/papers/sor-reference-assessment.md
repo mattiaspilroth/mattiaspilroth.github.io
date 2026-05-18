@@ -182,16 +182,7 @@ Where the operator accepts the current mechanism for Stage 1 and Stage 3 zones, 
 
 Where the operator intends to move to a lower-exposure mechanism, the governance state is exception-governed during the transition period. The acceptance record below documents that position for the full estate pending mechanism review.
 
----
-
 **Exception-governed acceptance record: S2-F4**
-
-| Field | Content |
-|---|---|
-| Finding reference | S2-F4 |
-| Named owner | OT Operations Manager |
-| Date of acceptance | [date of sign-off] |
-| Review date | Annual, or earlier per conditions below |
 
 **Operational consequence accepted:** The EDR management plane is reachable from IT infrastructure and carries remote command capability into OT endpoints. A compromise of the IT-side management plane provides a credentialed path to execute process isolation, process termination, or software deployment against any OT host enrolled in the platform. The credible operational outcome from a single management plane action is loss of control or unplanned shutdown of the affected production train. Estimated production impact: EUR 350-500k per day until the affected hosts are restored and verified. Worst credible outcome: simultaneous disruption across multiple production trains if the management plane action is policy-wide rather than host-specific, enabled by the fact that the management plane credential path is not scoped per zone. This acceptance is made against an open consequence ceiling: Stage 1 findings S1-F1 and S1-F2 remain unresolved, and the worst credible outcome is not yet architecturally bounded.
 
