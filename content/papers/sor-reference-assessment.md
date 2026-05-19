@@ -86,11 +86,11 @@ Named in Section 11.2 of the main specification. They define the conditions unde
 
 **S1-F2: DCS override interface can hold SIS trip functions in a non-actuating state**
 
-**Finding:** The override is implemented as a DCS-initiated command path into the SIS via the maintenance interface: the DCS issues override commands that the SIS executes, not an HMI surface providing operator access to SIS-internal override logic. The override logic does not enforce a minimum unoverridden sensor count before permitting override on a trip function. The DCS can place all sensors on a trip function into override simultaneously. For trip functions with a single sensor, DCS-initiated override of that sensor removes the only actuation path in a single operation.
+**Finding:** The DCS has an interface to the SIS that can be used to place trip functions in a non-actuating state. The interface does not enforce constraints sufficient to prevent a compromised DCS from defeating the trip function independently of the SIS.
 
 **Operational consequence:** A compromised DCS with access to the override interface can hold one or more SIS trip functions in a non-actuating state without requiring compromise of the SIS itself. A single control system compromise enables a path to loss of containment.
 
-**Governance state:** Ceiling invalidation finding. Requires remediation. Stage 1 cannot reach Governed until override logic is revised and verified at the system: override constrained so no combination of DCS-initiated sensor overrides can produce a non-actuating trip function state, physical key authorisation required on the SIS cabinet, and time-bounded override with automatic restoration and named authorisation logging implemented. While remediation is outstanding, formal exception-governed acceptance is required from the SIS responsible engineer, safety manager, and operations manager, with a documented remediation timeline and stated compensating measures.
+**Governance state:** Ceiling invalidation finding. Requires remediation. Stage 1 cannot reach Governed until the interface constraints are revised and verified at the system such that no reachable condition allows a single DCS compromise to produce a non-actuating trip function state. While remediation is outstanding, formal exception-governed acceptance is required from the SIS responsible engineer, safety manager, and operations manager, with a documented remediation timeline and stated compensating measures.
 
 ---
 
