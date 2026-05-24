@@ -62,11 +62,6 @@ Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The cont
   <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. Security controls placed on a degraded foundation inherit the degradation rather than resolving it.</p>
 </div>
 
-<div class="article-item">
-  <a href="/analysis/the-burden-map/" class="article-link" data-umami-event="click-ot-burden">The Burden Map</a>
-  <p class="article-summary">OT security activity is produced upstream and resolved nowhere. The work that cannot be completed is transferred downward until it reaches the one person positioned to absorb it. That person is a dependency the governance model has never named.</p>
-</div>
-
 ## About
 
 My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six years of operational responsibility at a SEVESO-classified chlorovinyl production facility, to enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
