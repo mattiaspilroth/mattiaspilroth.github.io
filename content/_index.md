@@ -14,7 +14,7 @@ OT security investment is organised around the wrong unit of analysis.
 
 The dominant model measures control coverage. It assumes increasing control presence proportionally reduces risk. In OT environments that assumption does not hold.
 
-It has no stopping point derived from consequence. It has no mechanism for detecting when deployed controls are not enforcing the constraints they were placed to maintain.
+The model has no stopping point derived from consequence. It has no mechanism for detecting when deployed controls are not enforcing the constraints they were placed to maintain.
 
 The result is predictable: programs that demonstrate progress but cannot determine whether the conditions that lead to loss have been removed, cannot define when enough has been done, and cannot assign ownership of what remains.
 
@@ -28,7 +28,7 @@ This is a completion condition the coverage model cannot produce.
 
 ## The Work
 
-Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The context papers establish the structural conditions and can be read at any point.
+Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The context papers establish the structural conditions and can be read at any point, and work well as an entry to the series.
 
 ### Core argument
 
@@ -60,6 +60,11 @@ Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The cont
 <div class="article-item">
   <a href="/analysis/silent-degradation-in-ot/" class="article-link" data-umami-event="click-ot-degradation">Silent Degradation in OT Systems</a>
   <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. Security controls placed on a degraded foundation inherit the degradation rather than resolving it.</p>
+</div>
+
+<div class="article-item">
+  <a href="/analysis/the-burden-map/" class="article-link" data-umami-event="click-ot-burden">The Burden Map</a>
+  <p class="article-summary">OT security activity is produced upstream and resolved nowhere. The work that cannot be completed is transferred downward until it reaches the one person positioned to absorb it. That person is a dependency the governance model has never named.</p>
 </div>
 
 ## About
