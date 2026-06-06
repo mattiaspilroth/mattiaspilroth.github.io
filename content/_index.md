@@ -8,11 +8,13 @@ I arrived at security architecture through operations. That origin determines wh
 
 If those answers are unclear, coverage is being measured. Not protection.
 
-## The Alternative
+## The problem
 
 OT security investment is organised around the wrong unit of analysis. The dominant model measures control coverage and assumes increasing control presence proportionally reduces risk. In OT environments that assumption does not hold. The model has no stopping point derived from consequence, no mechanism for detecting when deployed controls are not enforcing the constraints they were placed to maintain, and no way to assign ownership of what remains.
 
-The alternative is a consequence-derived investment model. Controls are placed at specific interruption points along identified pathways into control systems and safety-relevant functions. Exposure is defined and owned at the level of operational consequence. Completion is reached when those pathways are either eliminated or reduced to an explicitly accepted state. That is a completion condition the coverage model cannot produce.
+## The alternative
+
+Controls are placed at specific interruption points along identified pathways into control systems and safety-relevant functions. Exposure is defined and owned at the level of operational consequence. Completion is reached when those pathways are either eliminated or reduced to an explicitly accepted state. That is a completion condition the coverage model cannot produce.
 
 The difference is not a higher score. It is a position from which a decision about what remains can be made, documented, and owned by someone who understands what they are accepting.
 
