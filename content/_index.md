@@ -36,12 +36,6 @@ Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The cont
 </p>
 </div>
 
-<div class="article-item">
-  <a href="/papers/sor-reference-assessment/" class="article-link" data-umami-event="click-sor-ref1">SOR Framework: Practitioner Reference and Illustrative Assessment</a>
-  <p class="article-summary"> The output. What the framework produces in practice. A composite high-hazard process site assessed through Stage 1 consequence structure and Stage 2 IT/OT boundary governance. Findings, exposure states, pathway-derived eliminations, and architectural requirements in concrete form.
-</p>
-</div>
-
 ### Context
 
 <div class="article-item">
