@@ -73,7 +73,9 @@ F_{\mathrm{total}} &= F_{\mathrm{ordinary}} + F_{\mathrm{selected}}
 \end{aligned}
 $$
 
-Consequence modifiers such as occupancy or ignition probability are omitted throughout for clarity. In an applied analysis they belong in the relevant line unless already embedded in the frequencies, and they need not take the same values on the ordinary and selected lines. The original initiating causes are not reclassified. A cause absent from them is added.
+The index in the first term runs over the initiating causes the study already contains, each with the function credited at its assessed figure against causes it is independent of. The second term covers the shared-authority cause, on which the function is not credited, and its product runs only over the layers that survive that authority. The original causes are not reclassified. A cause absent from them is added.
+
+Consequence modifiers such as occupancy or ignition probability are omitted throughout for clarity. In an applied analysis they belong in the relevant line unless already embedded in the frequencies, and they need not take the same values on the ordinary and selected lines.
 
 An erroneous change made through the same authority is not this term, for the reason given in the scope: it introduces a systematic fault that waits for a demand the study already contains, and it is addressed through the lifecycle controls for systematic safety integrity. The rare case where a single mistake both degrades the function and drives the process shares the mechanism described here but not the frequency basis.
 
@@ -211,7 +213,7 @@ The claim throughout concerns what a figure is licensed to assert. Where the sel
 
 ---
 
-This paper concerns one mechanism, assessed through one method: a standing configuration authority reaching both the control and safety domains, examined through layer of protection analysis. The wider claim it sits inside, that a compliance programme and a consequence-bounding demonstration are separate obligations and that the second can remain unperformed, is developed in [Compliance Has a Working Range](/papers/compliance-working-range/).
+This paper concerns one mechanism, assessed through one method: a standing configuration authority reaching both the control and safety domains, examined through layer of protection analysis. The wider claim it sits inside, that a compliance programme and a consequence-bounding demonstration are separate obligations and that the second can remain unperformed, is developed in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-icbd-chwr">Compliance Has a Working Range</a>.
 
 [^1]: Clause references are to BS EN 61511-1:2017+A1:2017 and BS EN 61511-2:2017, published by BSI and identical to IEC 61511-1:2016 incorporating Amendment 1:2017 and IEC 61511-2:2016. Part 1 clauses are normative; Annex A of Part 2 is informative. The quoted phrase in the opening section is reproduced for criticism and review.
 
