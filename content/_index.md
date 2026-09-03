@@ -20,10 +20,6 @@ The difference is not a higher score. It is a position from which a decision abo
 
 ## The Work
 
-Recommended reading order: Coverage Trap, SOR Framework, SOR Reference. The context papers establish the structural conditions and can be read at any point, and work well as an entry to the series.
-
-### Core argument
-
 <div class="article-item">
   <a href="/papers/the-coverage-trap/" class="article-link" data-umami-event="click-coverage-trap">The Coverage Trap</a>
   <p class="article-summary"> The diagnosis. OT security programs are calibrated to demonstrate coverage rather than to address the conditions under which these environments actually fail. The dominant model assumes increasing control presence proportionally reduces risk. In OT environments with real architectural layering, that assumption does not hold.
