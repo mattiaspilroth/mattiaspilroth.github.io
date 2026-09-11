@@ -16,7 +16,7 @@ This is not adequately explained as a failure of maintenance discipline. It is t
 
 Operational decay is a persistent path to disruption. It reaches consequence through many of the same structural conditions that other disruptive events exploit: unclear ownership, degraded recovery, unmanaged dependencies, and loss of diagnosability. Any account of resilience that excludes these conditions describes the paper system, not the operating system.
 
-Security controls placed into that environment inherit the condition. They do not arrest it.
+Security controls inherit the operational conditions on which they depend. Their presence does not by itself arrest degradation of those conditions.
 
 ## Why degradation is structural
 
@@ -121,7 +121,7 @@ That enlarged set of degradation conditions removes the floor under any disrupti
 
 An adversary crossing a boundary into a maintained environment encounters known architecture, functional recovery paths, and operators who can accurately diagnose and respond. The same adversary crossing into a degraded environment encounters conditions the operators themselves do not fully understand. The recovery path may not exist in the form assumed. Manual overrides that have not been exercised may not function as expected. Backups that have not been tested may not restore cleanly.
 
-An adversary may not need to attack recovery infrastructure directly if recovery paths have already degraded through normal operation. But adversarial action is not the only trigger. Any disruptive event, whether a ransomware propagation, a failed update, an equipment fault, or a process upset, produces worse outcomes against a degraded foundation than against a maintained one.
+An adversary may not need to attack recovery infrastructure directly if recovery paths have already degraded through normal operation. Adversarial action is not the only trigger. Any disruptive event, whether ransomware, a failed update, an equipment fault or a process upset, produces worse outcomes against a degraded foundation than against a maintained one.
 
 Where recovery paths have decayed, backups remain untested, and actual system state is unknown, the environment has no foundation. Security controls accumulated on top of that condition do not raise the floor. They provide the appearance of a floor that does not exist.
 
