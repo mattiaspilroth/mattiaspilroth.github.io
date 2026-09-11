@@ -157,4 +157,4 @@ The items nobody argues about are the ones with something to show. For most of t
 
 ---
 
-*Where that axis produces a stopping point, and what obligation it belongs to, are treated in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-cnaa-chwr">Compliance Has a Working Range</a>. One arrangement in which the state that ends a control can be written and tested is worked through in <a href="/papers/independence-cannot-be-discounted/" class="article-link-text" data-umami-event="click-cnaa-icbd">Independence Cannot Be Discounted</a>.*
+*Where that axis produces a stopping point, and what obligation it belongs to, are treated in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-cnaa-chwr">Compliance Has a Working Range</a>.*
