@@ -1,7 +1,7 @@
 ---
 title: "The Control Nobody Argues About"
-date: 2026-09-06
-lastmod: 2026-09-06
+date: 2026-09-13
+lastmod: 2026-09-13
 slug: "control-nobody-argues-about"
 url: "/papers/control-nobody-argues-about/"
 aliases: []
@@ -43,7 +43,7 @@ There is a second reason the question never becomes well formed, and this one is
 
 ## What the controls still establish
 
-None of this disputes the controls, because the missing figure is not the only kind of justification available. A severed connection cannot be traversed. A boundary that passes no inbound sessions limits what is reachable from where. Those are claims about mechanism, established by engineering rather than by an observed rate, and they hold without one. What they do not convert into is a figure for the change in the chance of a loss, because that change depends on what else is available to whoever is choosing. What the absent figure withholds is the second kind of justification: how much, compared against what else.
+None of this disputes the controls, because the missing figure is not the only kind of justification available, and not every control is justified the same way. Where a control's contribution is whether a path exists at all, mechanism is the justification: a severed connection cannot be traversed, and a boundary that passes no inbound sessions limits what is reachable from where. Those are claims about mechanism, established by engineering rather than by an observed rate, and they hold without one. Where a control's contribution is a matter of degree rather than a testable state, credentials and monitoring among them, the judgement already described is the justification instead, and it needs no mechanism either. Neither kind converts into a figure for the change in the chance of a loss, because that change depends on what else is available to whoever is choosing. What the absent figure withholds is a further thing: how much, compared against what else.
 
 Those claims also have to keep being true. A severed connection stays severed because something governs what gets reconnected, and a boundary passes no inbound sessions only while its rules remain what they were. What holds a mechanism claim in place between the day it was established and the day anyone checks is the control programme. That is not sizing and it is not a figure. It is maintenance, and it is what the programme is for.
 
@@ -65,9 +65,9 @@ The other is the termination condition. A safety instrumented function is bounde
 
 Segment the network has no termination condition, and its absence has nothing to do with the missing comparison. A requirement could oblige the operator to state what must be unreachable from where, in what as-built configuration, and verified by what means, and to be finished when that state holds. None of the requirements asks for that.
 
-Another part of the same series does require a boundary to be produced, and the system requirements do reach for it. The operator partitions the system under consideration into zones and conduits, draws them, and documents each logical boundary, its access points and the data flows crossing it. One system requirement then calls for the capability to monitor and control communications at those boundaries, in order to enforce the partitioning that model defines. What it asks for is a capability. Whether the partitioning holds in the plant as built is a fact about achievement rather than capability, and the document stating the requirements places achieved levels outside its own scope. The adjacent requirement to segment control system networks from other networks, and critical control system networks from the rest, does not reach for the produced boundary at all. It does not say which networks are critical, or when the segmentation is finished. The exercise that produced the boundary closes instead through comparison with a tolerable risk level that the organisation defines for itself and is required only to write down.
+One adjacent requirement does not reach for a boundary at all: it asks for segmentation without saying which networks are critical or when the work is finished. Another does reach for it, asking only for the capability to enforce the boundary the operator has already documented. Neither requirement asks for verification that the partitioning holds in the plant as built. The defect is not the division of labour but the incomplete handoff.
 
-That is a different absence, and it is of a different kind. It is missing because nothing asks for it, and asking requires no quantity that does not exist. Where a requirement does not reach for the boundary at all, the state that ends the control could be required tomorrow. An operator specifying the control for its own plant need not wait to be asked. Where the requirement reaches for the boundary but stops at capability, the limit is proper: verification of the achieved state belongs elsewhere. The defect is not the division of labour but the incomplete handoff. The boundary-producing exercise ends with a documented specification. The system requirement states the capability. Neither requires verification of the as-built state that would end the control. The closest either comes is the requirement to evaluate existing countermeasures for their effectiveness, which returns a judgement about what they deliver rather than verification that the partitioning holds.
+The state that ends the control could be required tomorrow. An operator specifying the control for its own plant need not wait to be asked.
 
 A termination condition is necessary and not sufficient. Give one to a likelihood control and the question of what it delivered becomes askable; it remains unanswerable, because the answer needs the counterfactual pair that does not exist. Give one to a consequence control and the question becomes both askable and answerable. That is what allows one item on the list to be measured against what it delivers, rather than merely against its specification.
 
@@ -149,7 +149,7 @@ Where that threshold sits is an engineering question about the physical plant. T
 
 Three things are missing from the requirements, and they are missing for three different reasons.
 
-The benefit figure on the likelihood axis is not coming. No amount of better instrumentation will produce it, because the comparison required to establish it is not one anything observes. The termination condition is absent in two places. In one, nothing asks for it, and the operator specifying a control need not wait to be asked. In the other, the requirement properly stops at capability and the handoff to verification of the achieved state is incomplete. Neither is an evidentiary question. The cost figure is estimable today from records the operator already holds, and goes unproduced because nothing asks for it and the obvious way of asking creates a document nobody wants to have written.
+The benefit figure on the likelihood axis is not coming. No amount of better instrumentation will produce it, because the comparison required to establish it is not one anything observes. The termination condition is absent because nothing asks for it, and the operator specifying a control for its own plant need not wait to be asked. That is not an evidentiary question. The cost figure is estimable from records the operator already holds, and goes unproduced because nothing asks for it and the obvious way of asking creates a document nobody wants to have written.
 
 None of this stops the work. The controls go in and they are kept, and they always have been. What is absent is the account of them, not the doing of them.
 
