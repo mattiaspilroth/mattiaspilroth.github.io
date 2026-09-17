@@ -8,11 +8,13 @@ Security work reduces the opportunity to acquire that authority and limits the c
 
 It leaves a separate question, and not because the work is done badly. What can the plant be driven to if it is not enough, and does anything stand between that and a consequence the operator cannot accept? A programme executed perfectly still does not answer it. Across most operational technology, no standard lifecycle deliverable requires the answer.
 
-The two are not the same obligation. One is a programme: broad, continuous, maintained, and attested through evidence that controls are present and operating. The other is a demonstration: bounded around a named outcome, and capable of being shown wrong. A compliance programme discharges the first. No accumulation of control attestations discharges the second.
+Where everything a compromise can reach is recoverable and an acceptable loss, no separate answer is owed, and the programme is the correct instrument for it. Where it is not, something else has to stand between that reach and the outcome, and the programme does not supply it.
 
-The second obligation is narrower than it sounds. State the outcome that must not occur. Identify the pathways by which one compromised authority can reach it. Establish that something the same authority cannot also defeat stands in the way. Test the bound, and repeat when the plant or an assumption supporting it changes.
+The two are not the same question. One is a programme: broad, continuous, maintained, and attested through evidence that controls are present and operating. The other is a demonstration: bounded around a named outcome, and capable of being shown wrong. A compliance programme answers the first. No accumulation of control attestations closes the second.
 
-Either that has been demonstrated, or it has been assumed.
+The second question is narrower than it sounds. State the outcome that must not occur. Identify the pathways by which one compromised authority can reach it. Establish that something the same authority cannot also defeat stands in the way. Test the bound, and repeat when the plant or an assumption supporting it changes.
+
+Demonstrated, assumed, or ruled out. Nobody is required to know which.
 
 ## The work
 
@@ -20,7 +22,7 @@ Either that has been demonstrated, or it has been assumed.
 
 <div class="article-item">
   <a href="/papers/compliance-working-range/" class="article-link" data-umami-event="click-chwr">Compliance Has a Working Range</a>
-  <p class="article-summary">Keeping the commands in the right hands is one obligation, attested for presence and maintained continuously. Establishing what the plant can be driven to is another, and across most operational technology no standard lifecycle deliverable requires the answer. Where compliance governs, it governs correctly. What it cannot establish is that an unacceptable outcome is bounded.</p>
+  <p class="article-summary">Keeping the commands in the right hands is one question, answered by a programme attested for presence and maintained continuously. Establishing what the plant can be driven to is another, and across most operational technology no standard lifecycle deliverable requires the answer. Where compliance governs, it governs correctly. What it cannot establish is that an unacceptable outcome is bounded.</p>
 </div>
 
 <div class="article-item">
