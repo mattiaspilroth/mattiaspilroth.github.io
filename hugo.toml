@@ -1,11 +1,11 @@
 baseURL = 'https://mattiaspilroth.com/'
 languageCode = 'en-us'
-title = 'Mattias Pilroth | Principal OT Security Architect'
+title = 'Mattias Pilroth | OT Security Architecture'
 enableRobotsTXT = true
 
 [params]
     author = "Mattias Pilroth"
-    description = "Principal OT Security Architect. Consequence-derived assessment for brownfield industrial environments. Author of the SOR Framework."
+    description = "OT security architecture for chemical manufacturing, grounded in operational experience at a SEVESO high-hazard facility. IEC 61511 and IEC 62443."
     profile_image = "images/profile.jpg"
     og_image = "images/og-image.jpg"
     github = "https://github.com/mattiaspilroth"

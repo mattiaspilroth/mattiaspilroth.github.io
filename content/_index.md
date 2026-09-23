@@ -35,14 +35,12 @@ Demonstrated, assumed, or ruled out. Nobody is required to know which.
   <p class="article-summary">Where one configuration authority can create the demand and defeat the credited safety function in the same causal sequence, that function is not an independent protection layer against that cause. Its credit cannot be discounted into the scenario. Against that specific cause, it is lost, not reduced.</p>
 </div>
 
-### Method
+### Earlier work
 
 <div class="article-item">
   <a href="/papers/sequenced-ot-resilience/" class="article-link" data-umami-event="click-sor-paper">Sequenced OT Resilience Framework</a>
   <p class="article-summary">A consequence-first method for determining whether unacceptable or unrecoverable outcomes are bounded, and for assessing the external, shared and administrative authorities capable of invalidating those bounds. Its Stage 1 and Stage 2 methods stand; the estate-wide pathway and completion model in the later stages is under major revision.</p>
 </div>
-
-### Earlier work
 
 <div class="article-item">
   <a href="/papers/the-coverage-trap/" class="article-link" data-umami-event="click-coverage-trap">The Coverage Trap</a>
@@ -63,4 +61,4 @@ Demonstrated, assumed, or ruled out. Nobody is required to know which.
 
 ## About
 
-My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six years of operational responsibility for the full OT estate at a SEVESO-classified chlorovinyl production facility, to enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries. It includes work with control and safety instrumented systems under the IEC 61511 lifecycle, and with the network, identity and platform infrastructure that carries authority across the IT and OT boundary.
+My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six and a half years of operational responsibility for the full OT estate at a SEVESO-classified chlorovinyl production facility, to enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries. It includes work with control and safety instrumented systems under the IEC 61511 lifecycle, and with the network, identity and platform infrastructure that carries authority across the IT and OT boundary.
