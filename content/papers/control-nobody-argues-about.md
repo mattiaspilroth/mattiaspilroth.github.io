@@ -157,4 +157,4 @@ The items nobody argues about are the ones with something to show. For most of t
 
 ---
 
-*Where that axis produces a stopping point, and what obligation it belongs to, are treated in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-cnaa-chwr">Compliance Has a Working Range</a>.*
+*Where that axis produces a stopping point, and which question it belongs to, are treated in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-cnaa-chwr">Compliance Has a Working Range</a>.*
