@@ -26,7 +26,7 @@ What changes is not only the equipment. It is the relationship between the docum
 
 Capital projects fund commissioning. Operations budgets fund continuity and production support. The engineering resource capable of verifying that the documented system matches the system in its current state is the same resource managing the production change queue. Production demand is continuous. Verification is deferrable. It loses the priority competition systematically, not occasionally.
 
-Silent degradation begins when documented state, supported state, and operational state stop matching. No organizational mechanism reliably forces them back into alignment.
+Silent degradation begins when documented state, supported state, and operational state stop matching. No organisational mechanism reliably forces them back into alignment.
 
 ## The ownership gap is the mechanism
 
@@ -36,13 +36,13 @@ In capital-delivered, operations-maintained environments, responsibility is assi
 
 This is not negligence. It is the operating model expressing itself over time.
 
-A named asset in a maintenance scope gets serviced. A dependency crossing scopes is tolerated until it interrupts production. If it does not create immediate operational consequence, it rarely attracts sustained engineering attention. That is why these failures arrive as surprises even when warning conditions existed. The condition sat in a part of the architecture no one was funded or authorized to continuously govern.
+A named asset in a maintenance scope gets serviced. A dependency crossing scopes is tolerated until it interrupts production. If it does not create immediate operational consequence, it rarely attracts sustained engineering attention. That is why these failures arrive as surprises even when warning conditions existed. The condition sat in a part of the architecture no one was funded or authorised to continuously govern.
 
 Examples of this pattern are recognizable to practitioners in these environments:
 
 - A pair of domain controllers stays online while replication has been failing for weeks. Authentication appears normal until failover, password change, or incident response action turns inconsistency into an operational problem.
-- Backup jobs complete on schedule, but the restore path has degraded through media failure, catalog corruption, credential expiration, or application inconsistency. Success is recorded. Recoverability is assumed.
-- Software licenses and certificates carry known expiry dates that cross the boundary between vendor relationship management and operations. Neither side owns the renewal calendar. The service stops on a date that had always been visible and never acted on.
+- Backup jobs complete on schedule, but the restore path has degraded through media failure, catalogue corruption, credential expiration, or application inconsistency. Success is recorded. Recoverability is assumed.
+- Software licences and certificates carry known expiry dates that cross the boundary between vendor relationship management and operations. Neither side owns the renewal calendar. The service stops on a date that had always been visible and never acted on.
 - A redundant network path or hardware component fails but production continues on the surviving path. The loss remains local until maintenance or a second fault removes the remaining margin.
 
 These are not merely edge cases. They are predictable outputs of an operating model in which dependencies cross ownership, funding, and diagnostic boundaries.
@@ -53,7 +53,7 @@ The most consequential form of this pattern produces no failure signal at all. A
 
 Redundancy is designed to preserve availability. In degraded environments, redundancy conceals the consumption of the margin it was meant to preserve.
 
-A failed switch uplink in a redundant ring does not stop operations. A broken replication path does not matter while the primary remains available. A standby server can sit unpatched, unsynchronized, or dependent on storage paths that no longer fail over cleanly while the primary continues carrying the load.
+A failed switch uplink in a redundant ring does not stop operations. A broken replication path does not matter while the primary remains available. A standby server can sit unpatched, unsynchronised, or dependent on storage paths that no longer fail over cleanly while the primary continues carrying the load.
 
 In each case the system continues by spending the margin redundancy was meant to preserve, whether the surviving path is a network link, a replication primary, or a standby whose readiness has never been verified.
 
@@ -67,7 +67,7 @@ A system that continues running while its recovery assumptions and diagnostic cl
 
 Every OT site is the product of decisions made across its operational life: vendor selection, project modifications, local engineering adaptations, emergency workarounds that became permanent, and support contracts that determined which systems received attention and which did not. There is no external baseline to measure drift against.
 
-This is why degradation remains silent. In a standardized environment, deviation is detectable because there is a reference state. In a site-specific environment built from decades of accumulated decisions, the current state becomes the only available reference. Nothing authoritative describes what the system should look like. The system cannot drift from a reference that does not exist.
+This is why degradation remains silent. In a standardised environment, deviation is detectable because there is a reference state. In a site-specific environment built from decades of accumulated decisions, the current state becomes the only available reference. Nothing authoritative describes what the system should look like. The system cannot drift from a reference that does not exist.
 
 Documentation does not close this gap once divergence has accumulated. Drawings, inventories, and recovery procedures reflect the last formally governed state, not the current operational state. When divergence accumulates gradually and no routine forces revalidation, documents retain institutional authority after they have lost descriptive accuracy.
 
@@ -77,9 +77,9 @@ Where no external baseline exists, internal signals become the only available in
 
 Degradation does not only affect hardware and configurations. It erodes the properties that everything else in the environment depends on.
 
-Health signals are indications that something has changed or degraded: alarms, lag, checksum errors, failed jobs, disk faults, synchronization drift, replication warnings. They require infrastructure to generate and paths to reach the people who can act on them.
+Health signals are indications that something has changed or degraded: alarms, lag, checksum errors, failed jobs, disk faults, synchronisation drift, replication warnings. They require infrastructure to generate and paths to reach the people who can act on them.
 
-Diagnostic channels are the mechanisms that allow operators and engineers to inspect state across system boundaries: management access, logs, status interfaces, controller diagnostics, backup catalogs, authentication records, time sources, and the network paths required to retrieve them.
+Diagnostic channels are the mechanisms that allow operators and engineers to inspect state across system boundaries: management access, logs, status interfaces, controller diagnostics, backup catalogues, authentication records, time sources, and the network paths required to retrieve them.
 
 Diagnosability is different from both. It is the operational ability, under pressure, to determine what is healthy, what is degraded, what dependencies still hold, and whether the recovery path is known and intact.
 
@@ -87,7 +87,7 @@ A system can emit health signals and still lack diagnosability. It can have diag
 
 Degradation attacks diagnosability directly because it breaks the correspondence between assumed architecture and actual state. A system whose actual state is unknown cannot be confidently restored. Recovery actions taken against incorrect assumptions do not simply extend outages. They can introduce new faults and leave the actual condition harder to identify than it was before the attempt began.
 
-A recovery procedure documented at commissioning but never tested against current system state is an assumption about recoverability, not a demonstration of it. The backup job that completes successfully after an OS upgrade or virtualization platform update may be recording success against a restore path that no longer works. The signal is green. The capability is gone.
+A recovery procedure documented at commissioning but never tested against current system state is an assumption about recoverability, not a demonstration of it. The backup job that completes successfully after an OS upgrade or virtualisation platform update may be recording success against a restore path that no longer works. The signal is green. The capability is gone.
 
 Diagnosability is a prerequisite for resilience. Where it has eroded, resilience is assumed rather than known.
 
@@ -101,7 +101,7 @@ The deeper problem is dependency.
 
 Security controls are selected and deployed against assumed conditions about how the environment will behave. Their effectiveness depends on the environment behaving as documented.
 
-A degraded environment does not behave as documented. A boundary control assumes a defined perimeter. Degraded network state may mean the perimeter is not where the diagram shows it. An identity control assumes a functional directory. Where replication has failed, that assumption does not hold. A detection control assumes known baseline behavior. Configuration drift means the baseline may no longer reflect what normal looks like.
+A degraded environment does not behave as documented. A boundary control assumes a defined perimeter. Degraded network state may mean the perimeter is not where the diagram shows it. An identity control assumes a functional directory. Where replication has failed, that assumption does not hold. A detection control assumes known baseline behaviour. Configuration drift means the baseline may no longer reflect what normal looks like.
 
 A control added to a decayed network boundary provides only the appearance of security. The control is present. The foundation is not stable. Security layered onto a degraded foundation inherits the instability it was meant to address.
 
@@ -109,7 +109,7 @@ A control added to a decayed network boundary provides only the appearance of se
 
 IT and OT convergence did not introduce this failure pattern. Convergence enlarged the surface over which the pattern operates and reduced the chance that normal operating routines will surface degradation early.
 
-Converged infrastructure fails differently from traditional control systems. Virtualization platforms, shared storage, domain services, and management networks degrade internally before the applications they support show symptoms, and those early signals do not naturally enter the process alarm model. Convergence also introduces dependencies the original OT architecture did not carry: identity depends on time, recovery depends on backup integrity, redundancy depends on opaque network state. Each dependency is a boundary where ownership may be incomplete and degradation can accumulate silently.
+Converged infrastructure fails differently from traditional control systems. Virtualisation platforms, shared storage, domain services, and management networks degrade internally before the applications they support show symptoms, and those early signals do not naturally enter the process alarm model. Convergence also introduces dependencies the original OT architecture did not carry: identity depends on time, recovery depends on backup integrity, redundancy depends on opaque network state. Each dependency is a boundary where ownership may be incomplete and degradation can accumulate silently.
 
 Those dependencies are also the paths that monitoring and management traffic must traverse to surface degrading conditions. Security segmentation designed to limit lateral movement can inadvertently block those same paths, suppressing the indicators needed to detect degradation before it reaches a failure threshold.
 

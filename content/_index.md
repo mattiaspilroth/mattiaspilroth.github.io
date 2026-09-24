@@ -39,7 +39,7 @@ Demonstrated, assumed, or ruled out. Nobody is required to know which.
 
 <div class="article-item">
   <a href="/papers/sequenced-ot-resilience/" class="article-link" data-umami-event="click-sor-paper">Sequenced OT Resilience Framework</a>
-  <p class="article-summary">A consequence-first method for determining whether unacceptable or unrecoverable outcomes are bounded, and for assessing the external, shared and administrative authorities capable of invalidating those bounds. Its Stage 1 and Stage 2 methods stand; the estate-wide pathway and completion model in the later stages is under major revision.</p>
+  <p class="article-summary">A consequence-first method for determining whether unacceptable or unrecoverable outcomes are bounded, and for assessing the external, shared and administrative authorities capable of invalidating those bounds. Its Stage 1 method stands and moves to a separate method document; the pathway work and completion model in the later stages are under major revision.</p>
 </div>
 
 <div class="article-item">

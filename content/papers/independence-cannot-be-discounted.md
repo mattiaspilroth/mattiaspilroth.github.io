@@ -227,7 +227,7 @@ The claim throughout concerns what a figure is licensed to assert. Where the sel
 
 ---
 
-The wider claim this paper sits inside, that a compliance programme and a consequence-bounding demonstration are separate obligations and that the second can remain unperformed, is developed in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-icbd-chwr">Compliance Has a Working Range</a>.
+*The wider claim this paper sits inside, that keeping the commands in the right hands and establishing what the plant can be driven to are separate questions, and that the second can go unasked, is developed in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-icbd-chwr">Compliance Has a Working Range</a>.*
 
 [^1]: Clause references are to BS EN 61511-1:2017+A1:2017 and BS EN 61511-2:2017, published by BSI and identical to IEC 61511-1:2016 incorporating Amendment 1:2017 and IEC 61511-2:2016. Part 1 clauses are normative; Annex A of Part 2 is informative. The quoted phrase in the opening section is reproduced for criticism and review.
 

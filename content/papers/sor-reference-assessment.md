@@ -2,18 +2,18 @@
 title: "SOR Framework: Practitioner Reference"
 date: 2026-05-14
 lastmod: 2026-08-01
-description: "A compressed reference map of the SOR Framework."
-image: "images/og-sor-companion.jpg"
+description: "A compressed reference map of the Sequenced OT Resilience (SOR) Framework."
+image: "images/og-sor-frame.jpg"
 ---
 
 ## Framework overview
 
 **Four core constructs**
 
-- **Consequence ceiling** — The verified architectural condition where unacceptable consequence cannot be reached through a single compromise.
-- **Governed exposure** — Every contact point assessed, documented, and owned. Three states: acceptable governed, exception-governed, ungoverned. Completion = zero ungoverned exposure within assessed scope.
-- **Contact boundary** — The governed perimeter between zones and external dependencies.
-- **Health baseline** — Indicators that confirm the system remains in its assessed state. Each specified to four fields: identity, current value, threshold, owner.
+- **Consequence ceiling**: The verified architectural condition where unacceptable consequence cannot be reached through a single compromise.
+- **Governed exposure**: Every contact point assessed, documented, and owned. Three states: acceptable governed, exception-governed, ungoverned. Completion = zero ungoverned exposure within assessed scope.
+- **Contact boundary**: The governed perimeter between zones and external dependencies.
+- **Health baseline**: Indicators that confirm the system remains in its assessed state. Each specified to four fields: identity, current value, threshold, owner.
 
 **Three operating rules**
 
@@ -40,4 +40,4 @@ Every control exists because a specific pathway requires it. Every absent contro
 
 **Failure modes**
 
-Named in Section 11.2 of the main specification. They define the conditions under which the framework produces artifacts without producing posture. Reading them before beginning the stage sequence is recommended.
+Named in Section 11.2 of the main specification. They define the conditions under which the framework produces artefacts without producing posture. Reading them before beginning the stage sequence is recommended.

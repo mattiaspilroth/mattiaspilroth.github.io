@@ -5,7 +5,7 @@ lastmod: 2026-09-06
 url: "/papers/the-coverage-trap/"
 aliases:
     - /analysis/the-coverage-trap/
-description: "The case that coverage-based security investment has a structural ceiling in OT environments, and what a consequence-derived alternative requires."
+description: "The earlier diagnosis of coverage as the governing unit of security investment. Coverage is a valid measure of programme delivery, not a demonstration that an unacceptable outcome is bounded."
 image: "images/og-coverage-trap.jpg"
 ---
 

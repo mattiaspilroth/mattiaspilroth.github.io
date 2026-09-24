@@ -65,7 +65,7 @@ The other is the termination condition. A safety instrumented function is bounde
 
 Segment the network has no termination condition, and its absence has nothing to do with the missing comparison. A requirement could oblige the operator to state what must be unreachable from where, in what as-built configuration, and verified by what means, and to be finished when that state holds. None of the requirements asks for that.
 
-The segmentation requirement itself does not say which networks are critical or when the work is finished. The adjacent boundary requirement asks only for the capability to enforce the boundary the operator has already documented, which is the proper scope of a capability standard. Neither asks for verification that the partitioning holds in the plant as built. The gap is in the handoff between them.
+The segmentation requirement itself does not say which networks are critical or when the work is finished. The adjacent boundary requirement asks only for the capability to enforce the boundary the operator has already documented, which is the proper scope of a capability standard. Neither asks for verification that the partitioning holds in the plant as built. Verification falls in the handoff between them, and neither owns it.
 
 The state that ends the control could be required tomorrow. An operator specifying the control for its own plant need not wait to be asked.
 
