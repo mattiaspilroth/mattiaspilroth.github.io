@@ -14,11 +14,9 @@ The two are not the same question. One is a programme: broad, continuous, mainta
 
 The second question is narrower than it sounds. State the outcome that must not occur. Identify the pathways by which one compromised authority can reach it. Establish that something the same authority cannot also defeat stands in the way. Test the bound, and repeat when the plant or an assumption supporting it changes.
 
+Where a site relies on a credited safety instrumented function, the question has a specific form: whether one authority can both create the demand on that function and defeat it.
+
 Demonstrated, assumed, or ruled out. Nobody is required to know which.
-
-## Independence
-
-A safety instrumented function is credited on condition that it is independent of the cause it protects against. Where one configuration authority can create the demand and defeat the function in the same sequence, the credit against that cause is not reduced but lost. <a href="/papers/independence-cannot-be-discounted/" class="article-link-text" data-umami-event="click-home-indep-icbd">Independence Cannot Be Discounted</a> works through why.
 
 ## The work
 
