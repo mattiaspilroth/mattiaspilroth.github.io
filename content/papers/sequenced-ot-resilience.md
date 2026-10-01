@@ -2,6 +2,8 @@
 title: "Sequenced OT Resilience: A Framework for Consequence-Derived Investment"
 date: 2026-05-14
 lastmod: 2026-09-06
+aliases:
+    - /papers/sor-reference-assessment/
 description: "An earlier consequence-derived investment model for OT, under major revision. Its Stage 1 method moves to a separate method document."
 image: "images/og-sor-frame.jpg"
 ---

@@ -16,6 +16,10 @@ The second question is narrower than it sounds. State the outcome that must not 
 
 Demonstrated, assumed, or ruled out. Nobody is required to know which.
 
+## Independence
+
+A safety instrumented function is credited on condition that it is independent of the cause it protects against. Where one configuration authority can create the demand and defeat the function in the same sequence, the credit against that cause is not reduced but lost. <a href="/papers/independence-cannot-be-discounted/" class="article-link-text" data-umami-event="click-home-indep-icbd">Independence Cannot Be Discounted</a> works through why.
+
 ## The work
 
 ### Argument
@@ -35,18 +39,6 @@ Demonstrated, assumed, or ruled out. Nobody is required to know which.
   <p class="article-summary">Where one configuration authority can create the demand and defeat the credited safety function in the same causal sequence, that function is not an independent protection layer against that cause. Its credit cannot be discounted into the scenario. Against that specific cause, it is lost, not reduced.</p>
 </div>
 
-### Earlier work
-
-<div class="article-item">
-  <a href="/papers/sequenced-ot-resilience/" class="article-link" data-umami-event="click-sor-paper">Sequenced OT Resilience Framework</a>
-  <p class="article-summary">A consequence-first method for determining whether unacceptable or unrecoverable outcomes are bounded, and for assessing the external, shared and administrative authorities capable of invalidating those bounds. Its Stage 1 method stands and moves to a separate method document; the pathway work and completion model in the later stages are under major revision.</p>
-</div>
-
-<div class="article-item">
-  <a href="/papers/the-coverage-trap/" class="article-link" data-umami-event="click-coverage-trap">The Coverage Trap</a>
-  <p class="article-summary">The original diagnosis of coverage as the governing unit of security investment. Its central problem remains, but the later work corrects the conclusion: coverage is a valid measure of programme delivery, not a demonstration that an unacceptable outcome is bounded.</p>
-</div>
-
 ### Context
 
 <div class="article-item">
@@ -62,3 +54,5 @@ Demonstrated, assumed, or ruled out. Nobody is required to know which.
 ## About
 
 My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six and a half years of operational responsibility for the full OT estate at a SEVESO-classified chlorovinyl production facility, to enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries. It includes work with control and safety instrumented systems under the IEC 61511 lifecycle, and with the network, identity and platform infrastructure that carries authority across the IT and OT boundary.
+
+Contact: <a href="mailto:mattias@pilroth.com" class="article-link-text" data-umami-event="click-about-email">mattias@pilroth.com</a>
