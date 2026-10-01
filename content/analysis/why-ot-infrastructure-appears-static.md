@@ -103,3 +103,6 @@ Patterns inherited from adjacent disciplines still shape OT security design beca
 The test is not whether a control works at deployment. The test is whether it holds across the operational life of the asset.
 
 Security in long-lifecycle OT is not primarily a deployment problem. It is a durability problem.
+
+
+*Which question a security programme answers in these environments, and which it leaves open, is set out in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-static-chwr">Compliance Has a Working Range</a>.*

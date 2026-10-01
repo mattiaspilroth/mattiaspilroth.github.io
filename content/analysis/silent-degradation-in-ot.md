@@ -117,14 +117,17 @@ The system becomes harder to understand at the same rate that it becomes more de
 
 ## Degradation as consequence amplifier
 
-That enlarged set of degradation conditions removes the floor under any disruptive event that reaches the environment, adversarial or otherwise. A routine equipment failure, a process upset, or a planned maintenance action hitting unexpected system state all produce worse outcomes in a degraded environment than in a maintained one.
+That enlarged set of degradation conditions removes the margin under any disruptive event that reaches the environment, adversarial or otherwise. A routine equipment failure, a process upset, or a planned maintenance action hitting unexpected system state all produce worse outcomes in a degraded environment than in a maintained one.
 
 An adversary crossing a boundary into a maintained environment encounters known architecture, functional recovery paths, and operators who can accurately diagnose and respond. The same adversary crossing into a degraded environment encounters conditions the operators themselves do not fully understand. The recovery path may not exist in the form assumed. Manual overrides that have not been exercised may not function as expected. Backups that have not been tested may not restore cleanly.
 
 An adversary may not need to attack recovery infrastructure directly if recovery paths have already degraded through normal operation. Adversarial action is not the only trigger. Any disruptive event, whether ransomware, a failed update, an equipment fault or a process upset, produces worse outcomes against a degraded foundation than against a maintained one.
 
-Where recovery paths have decayed, backups remain untested, and actual system state is unknown, the environment has no foundation. Security controls accumulated on top of that condition do not raise the floor. They provide the appearance of a floor that does not exist.
+Where recovery paths have decayed, backups remain untested, and actual system state is unknown, the environment has no foundation. Security controls accumulated on top of that condition do not supply one. They provide the appearance of a foundation that does not exist.
 
 The work required to establish that foundation is operational, not security work. Until that work has occurred, security controls operate against conditions they were not designed for. Any claim of resilience that does not account for foundation condition rests on a state it has not verified.
 
 In that condition, coverage measures compliance. It does not measure resilience.
+
+
+*What a security programme is the correct instrument for once that foundation holds, and the question it cannot answer, are set out in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-degr-chwr">Compliance Has a Working Range</a>.*
