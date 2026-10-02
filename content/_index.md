@@ -28,11 +28,6 @@ Demonstrated, assumed, or ruled out. Nobody is required to know which.
 </div>
 
 <div class="article-item">
-  <a href="/papers/control-nobody-argues-about/" class="article-link" data-umami-event="click-cnaa">The Control Nobody Argues About</a>
-  <p class="article-summary">What each control reduces, when it is finished, and what it costs are all missing from the requirement lists. The benefit cannot be established on the likelihood axis, the completion state is not required, and the cost can be produced but is not asked for. Nothing here disputes the controls.</p>
-</div>
-
-<div class="article-item">
   <a href="/papers/independence-cannot-be-discounted/" class="article-link" data-umami-event="click-icbd">Independence Cannot Be Discounted</a>
   <p class="article-summary">Where one configuration authority can create the demand and defeat the credited safety function in the same causal sequence, that function is not an independent protection layer against that cause. Its credit cannot be discounted into the scenario. Against that specific cause, it is lost, not reduced.</p>
 </div>

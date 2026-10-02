@@ -4,7 +4,7 @@ date: 2026-09-13
 lastmod: 2026-09-13
 slug: "compliance-working-range"
 url: "/papers/compliance-working-range/"
-aliases: []
+aliases: ["/papers/control-nobody-argues-about/"]
 description: "A plant run by a control system can be driven by it. Keeping the commands in the right hands is one question. What it can be driven to is another."
 image: "/images/compliance-working-range.jpg"
 ---
@@ -203,4 +203,4 @@ The mode of governance they would serve is not experimental. It is taught, it is
 
 ---
 
-*One arrangement in which a bound is credited and not established, and what the calculation requires of anyone who wishes to retain it, is worked through in <a href="/papers/independence-cannot-be-discounted/" class="article-link-text" data-umami-event="click-chwr-icbd">Independence Cannot Be Discounted</a>. Why an individual control cannot be sized on the likelihood axis, and what one costs to apply rather than to buy, is treated in <a href="/papers/control-nobody-argues-about/" class="article-link-text" data-umami-event="click-chwr-cnaa">The Control Nobody Argues About</a>.*
+*One arrangement in which a bound is credited and not established, and what the calculation requires of anyone who wishes to retain it, is worked through in <a href="/papers/independence-cannot-be-discounted/" class="article-link-text" data-umami-event="click-chwr-icbd">Independence Cannot Be Discounted</a>.*
