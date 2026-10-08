@@ -16,7 +16,7 @@ The second question is narrower than it sounds. State the outcome that must not 
 
 Where a site relies on a credited safety instrumented function, the question has a specific form: whether one authority can both create the demand on that function and defeat it.
 
-Demonstrated, assumed, or ruled out. Nobody is required to know which.
+Demonstrated, assumed, or ruled out. No required review determines which.
 
 ## The work
 
