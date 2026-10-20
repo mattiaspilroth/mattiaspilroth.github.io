@@ -48,4 +48,4 @@ Demonstrated, assumed, or ruled out. No required review determines which.
 
 My background runs from field automation engineering and EPCM project delivery in oil and gas and petrochemicals, through six and a half years of operational responsibility for the full OT estate at a SEVESO-classified chlorovinyl production facility, to enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries. It includes work with control and safety instrumented systems under the IEC 61511 lifecycle, and with the network, identity and platform infrastructure that carries authority across the IT and OT boundary.
 
-Contact: <a href="mailto:mattias@pilroth.com" class="article-link-text" data-umami-event="click-about-email">mattias@pilroth.com</a>
+Contact: <a href="mailto:mattias@pilroth.com" class="article-link-text" data-umami-event="click-about-email">mattias&#64;pilroth.com</a>

@@ -38,7 +38,7 @@ This is not negligence. It is the operating model expressing itself over time.
 
 A named asset in a maintenance scope gets serviced. A dependency crossing scopes is tolerated until it interrupts production. If it does not create immediate operational consequence, it rarely attracts sustained engineering attention. That is why these failures arrive as surprises even when warning conditions existed. The condition sat in a part of the architecture no one was funded or authorised to continuously govern.
 
-Examples of this pattern are recognizable to practitioners in these environments:
+Examples of this pattern are recognisable to practitioners in these environments:
 
 - A pair of domain controllers stays online while replication has been failing for weeks. Authentication appears normal until failover, password change, or incident response action turns inconsistency into an operational problem.
 - Backup jobs complete on schedule, but the restore path has degraded through media failure, catalogue corruption, credential expiration, or application inconsistency. Success is recorded. Recoverability is assumed.
