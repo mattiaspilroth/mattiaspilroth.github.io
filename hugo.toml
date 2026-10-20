@@ -2,6 +2,7 @@ baseURL = 'https://mattiaspilroth.com/'
 languageCode = 'en-gb'
 title = 'Mattias Pilroth | OT Security Architecture'
 enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
 
 [params]
     author = "Mattias Pilroth"
@@ -34,8 +35,16 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [outputs]
-  home = ["HTML", "RSS", "Sitemap"]
+  home = ["HTML", "RSS"]
+  section = ["RSS"]
 
 [outputFormats]
   [outputFormats.RSS]
     baseName = "feed"
+
+# Sections render RSS only; keep their feeds out of the sitemap.
+[[cascade]]
+  [cascade.sitemap]
+    disable = true
+  [cascade._target]
+    kind = 'section'

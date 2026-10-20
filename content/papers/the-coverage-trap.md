@@ -7,6 +7,8 @@ aliases:
     - /analysis/the-coverage-trap/
 description: "Withdrawn. An earlier diagnosis of coverage as the governing unit of OT security investment, and why it was revisited."
 image: "images/og-coverage-trap.jpg"
+sitemap:
+    disable: true
 ---
 
 *Editorial note, October 2026: this paper has been withdrawn.*

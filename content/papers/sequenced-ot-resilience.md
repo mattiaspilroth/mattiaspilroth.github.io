@@ -6,6 +6,8 @@ aliases:
     - /papers/sor-reference-assessment/
 description: "An earlier consequence-derived investment model for OT, to be withdrawn. Its first stage continues in a separate method document."
 image: "images/og-sor-frame.jpg"
+sitemap:
+    disable: true
 ---
 
 *Editorial note, October 2026: this paper will be withdrawn when the method document that succeeds it is published. It proposed a staged framework: first establish whether an unacceptable outcome is bounded, then work through every pathway on the site, removing what is not needed and relying on the boundaries that remain, so that the systems behind them needed less of the ordinary programme of their own. The first stage continues in the method document. The later stages have been revisited. Relying on a boundary in place of the controls behind it means keeping that boundary true through every vendor visit, project and maintenance window. Whether that is worth the cost depends on how often that part of the site changes: a boundary around systems left untouched for a decade is a different proposition from one crossed by every project. Where an outcome the operator cannot accept depends on the boundary, the cost has to be carried either way. Removing what is not needed is still worth doing, and elsewhere the ordinary programme continues. The question the first stage answers is set out in <a href="/papers/compliance-working-range/" class="article-link-text" data-umami-event="click-sor-chwr">Compliance Has a Working Range</a>.*
