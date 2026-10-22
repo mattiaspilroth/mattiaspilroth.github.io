@@ -2,19 +2,13 @@ I arrived at security architecture through operations. That origin determines wh
 
 ## The consequence question
 
-A plant run by a control system can be driven by that control system.
+A plant run by a control system can be driven by that control system, and so by whoever holds its commands, however they came to hold them.
 
-Security work reduces the opportunity to acquire that authority and limits the cost when compromise succeeds: vulnerabilities removed, access governed, boundaries maintained, and recovery prepared. That work is required, it does real work, and it is what the discipline is organised around.
+A safety case credits a safety instrumented function on the condition that it is independent of the cause it protects against. Where one configuration authority can both create the demand on that function and defeat it, the condition does not hold against a deliberate cause, and the credit against that cause is lost, not reduced.
 
-It leaves a separate question, and not because the work is done badly. What can the plant be driven to if it is not enough, and does anything stand between that and a consequence the operator cannot accept? A programme executed perfectly still does not answer it. Across most operational technology, no standard lifecycle deliverable requires the answer.
+Whether anything stands between one compromised authority and an outcome the operator cannot accept is a question about the plant, and it has an answer. For each named outcome a bound is established, a bound is absent, or the evidence cannot settle it, and whichever it is can be shown wrong by someone holding better records.
 
-Where everything a compromise can reach is recoverable and an acceptable loss, no separate answer is owed, and the programme is the correct instrument for it. Where it is not, something else has to stand between that reach and the outcome, and the programme does not supply it.
-
-The two are not the same question. One is a programme: broad, continuous, maintained, and attested through evidence that controls are present and operating. The other is a demonstration: bounded around a named outcome, and capable of being shown wrong. A compliance programme answers the first. No accumulation of control attestations closes the second.
-
-The second question is narrower than it sounds. State the outcome that must not occur. Identify the pathways by which one compromised authority can reach it. Establish that something the same authority cannot also defeat stands in the way. Test the bound, and repeat when the plant or an assumption supporting it changes.
-
-Where a site relies on a credited safety instrumented function, the question has a specific form: whether one authority can both create the demand on that function and defeat it.
+The security programme is the correct instrument for everything a compromise can reach that the operation can recover from and may carry as ordinary loss. Beyond that range it does not establish whether a bound holds.
 
 Demonstrated, assumed, or ruled out. No required review determines which.
 
@@ -24,24 +18,24 @@ Demonstrated, assumed, or ruled out. No required review determines which.
 
 <div class="article-item">
   <a href="/papers/compliance-working-range/" class="article-link" data-umami-event="click-chwr">Compliance Has a Working Range</a>
-  <p class="article-summary">Keeping the commands in the right hands is one question, answered by a programme attested for presence and maintained continuously. Establishing what the plant can be driven to is another, and across most operational technology no standard lifecycle deliverable requires the answer. Where compliance governs, it governs correctly. What it cannot establish is that an unacceptable outcome is bounded.</p>
+  <p class="article-summary">Keeping the commands in the right hands is one question, answered by a programme attested for presence and maintained continuously. Establishing what the plant can be driven to is another. Inside its working range compliance is the correct instrument, and it still cannot establish that an unacceptable outcome is bounded.</p>
 </div>
 
 <div class="article-item">
   <a href="/papers/independence-cannot-be-discounted/" class="article-link" data-umami-event="click-icbd">Independence Cannot Be Discounted</a>
-  <p class="article-summary">Where one configuration authority can create the demand and defeat the credited safety function in the same causal sequence, that function is not an independent protection layer against that cause. Its credit cannot be discounted into the scenario. Against that specific cause, it is lost, not reduced.</p>
+  <p class="article-summary">Where one configuration authority can create the demand and defeat a credited safety function, the function's integrity level does not entitle it to partial credit against that cause. A probability derived from the security measures in place is no substitute, because it describes a different conditional event, and where the scenario cannot be characterised to the assurance the safety case requires, removing the coupling is what closes the question.</p>
 </div>
 
 ### Context
 
 <div class="article-item">
   <a href="/analysis/why-ot-infrastructure-appears-static/" class="article-link" data-umami-event="click-ot-static">Why OT Infrastructure Appears Static</a>
-  <p class="article-summary">OT environments appear static. Their slow rate of deliberate change follows from how they were validated, funded and operated, while their actual condition continues to move. Security strategies that ignore those constraints will be overridden by them.</p>
+  <p class="article-summary">OT environments appear static because deliberate change is slow, a consequence of how they were validated, funded and operated, while their actual condition keeps moving. A security strategy that ignores those constraints is overridden by them.</p>
 </div>
 
 <div class="article-item">
   <a href="/analysis/silent-degradation-in-ot/" class="article-link" data-umami-event="click-ot-degradation">Silent Degradation in OT Systems</a>
-  <p class="article-summary">OT systems do not hold their commissioning state. They drift silently, without producing signals that demand correction. Security controls inherit the operational conditions on which they depend; their presence does not establish that those conditions still hold.</p>
+  <p class="article-summary">OT systems drift from their commissioning state without producing any signal that demands correction. Security controls depend on operational conditions, and a control being present does not establish that the conditions it depends on still hold.</p>
 </div>
 
 ## About
