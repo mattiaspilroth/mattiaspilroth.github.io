@@ -30,67 +30,21 @@
   <script defer src="https://cloud.umami.is/script.js" data-website-id="7175ecb6-6d10-4e70-8f33-cc9f0e1226b4"></script>
 
   <script type="application/ld+json">
-  {{ if .IsHome }}
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}",
-    "description": "{{ .Site.Params.description }}",
-    "publisher": {
-      "@type": "Person",
-      "name": "{{ .Site.Params.author }}",
-      "jobTitle": "OT security architecture: IEC 61511 independence and IEC 62443",
-      "knowsAbout": [
-        "Industrial Control Systems Security",
-        "Operational Technology Security",
-        "IEC 61511 Functional Safety",
-        "IEC 62443",
-        "Process Safety",
-        "Safety Instrumented System Independence"
-      ],
-      "sameAs": [
-        "{{ .Site.Params.github }}",
-        "{{ .Site.Params.linkedin }}"
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ .Site.BaseURL }}#website",
+        "name": "{{ .Site.Title }}",
+        "url": "{{ .Site.BaseURL }}",
+        "description": "{{ .Site.Params.description }}",
+        "inLanguage": "{{ .Site.Language.Locale }}",
+        "publisher": { "@id": "{{ .Site.BaseURL }}#person" }
+      },
+      {{ partial "person.html" . | jsonify | safeJS }}
+    ]
   }
-  {{ else }}
-  {
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "{{ .Title }}",
-    {{ with .Description }}"description": "{{ . }}",{{ end }}
-    {{ with .Params.image }}"image": "{{ . | absURL }}",{{ end }}
-    "datePublished": "{{ .Date.Format "2006-01-02" }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-    "url": "{{ .Permalink }}",
-    "inLanguage": "{{ .Site.Language.Locale }}",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "{{ .Site.Title }}",
-      "url": "{{ .Site.BaseURL }}"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "{{ .Site.Params.author }}",
-      "jobTitle": "OT security architecture: IEC 61511 independence and IEC 62443",
-      "sameAs": [
-        "{{ .Site.Params.github }}",
-        "{{ .Site.Params.linkedin }}"
-      ]
-    },
-    "publisher": {
-      "@type": "Person",
-      "name": "{{ .Site.Params.author }}",
-      "jobTitle": "OT security architecture: IEC 61511 independence and IEC 62443",
-      "sameAs": [
-        "{{ .Site.Params.github }}",
-        "{{ .Site.Params.linkedin }}"
-      ]
-    }
-  }
-  {{ end }}
   </script>
 
 </head>

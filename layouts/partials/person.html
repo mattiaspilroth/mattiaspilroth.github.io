@@ -1,0 +1,17 @@
+{{- /* The one Person entity for JSON-LD. Pages include it in their @graph and refer to it by @id. */ -}}
+{{- return dict
+  "@type" "Person"
+  "@id" (printf "%s#person" site.BaseURL)
+  "name" site.Params.author
+  "url" site.BaseURL
+  "image" (site.Params.profile_image | absURL)
+  "jobTitle" "OT security architecture: IEC 61511 independence and IEC 62443"
+  "knowsAbout" (slice
+    "Industrial Control Systems Security"
+    "Operational Technology Security"
+    "IEC 61511 Functional Safety"
+    "IEC 62443"
+    "Process Safety"
+    "Safety Instrumented System Independence")
+  "sameAs" (slice site.Params.github site.Params.linkedin)
+-}}
