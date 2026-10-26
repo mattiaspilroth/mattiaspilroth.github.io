@@ -1,0 +1,14 @@
+{{- /* Render TeX to MathML at build time. MathML only, with the TeX annotation stripped: one copy of each formula for search snippets, the clipboard and screen readers. */ -}}
+{{- $opts := dict "output" "mathml" "displayMode" (eq .Type "block") -}}
+{{- with try (transform.ToMath .Inner $opts) -}}
+  {{- with .Err -}}
+    {{- errorf "transform.ToMath failed at %s: %s" $.Position . -}}
+  {{- else -}}
+    {{- $math := replaceRE `(?s)<annotation encoding="application/x-tex">.*?</annotation>` "" .Value | safeHTML -}}
+    {{- if eq $.Type "block" -}}
+      <div class="math-display">{{ $math }}</div>
+    {{- else -}}
+      {{- $math -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

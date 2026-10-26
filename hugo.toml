@@ -1,5 +1,5 @@
 baseURL = 'https://mattiaspilroth.com/'
-languageCode = 'en-gb'
+locale = 'en-gb'
 title = 'Mattias Pilroth | OT Security Architecture'
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term']
@@ -46,5 +46,5 @@ disableKinds = ['taxonomy', 'term']
 [[cascade]]
   [cascade.sitemap]
     disable = true
-  [cascade._target]
+  [cascade.target]
     kind = 'section'

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Locale }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +65,7 @@
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
     "url": "{{ .Permalink }}",
-    "inLanguage": "{{ .Site.LanguageCode }}",
+    "inLanguage": "{{ .Site.Language.Locale }}",
     "isPartOf": {
       "@type": "WebSite",
       "name": "{{ .Site.Title }}",
