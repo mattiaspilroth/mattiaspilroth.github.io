@@ -79,7 +79,7 @@ The index $i$ in the first term runs over the initiating causes the study alread
 
 Consequence modifiers such as occupancy or ignition probability are omitted throughout for clarity. In an applied analysis they belong in the relevant line unless already embedded in the frequencies, and they need not take the same values on the ordinary and selected lines.
 
-An erroneous change made through the same authority is not this term, for the reason given in the scope. Where a single mistake both degrades the function and drives the process, the causal structure is the one described here, but the frequency basis is not, and that case needs its own dependency treatment rather than this one.
+An erroneous change made through the same authority is not this term, for the reason given in the scope. Where a single mistake both degrades the function and drives the process, the causal structure is the one described here, but the demand and the defeat are not selected together, and that case needs its own dependency treatment rather than this one.
 
 Where the criterion applies to the total, the condition on the new line is not that it fall below the tolerable frequency but that it be no greater than whatever the existing causes have left:
 
